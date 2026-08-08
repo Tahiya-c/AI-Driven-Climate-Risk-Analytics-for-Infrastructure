@@ -9,3 +9,6 @@ venv/
 .streamlit/secrets.toml
 artifacts/*
 !artifacts/.gitkeep
+
+data/raw/
+data/processed/
