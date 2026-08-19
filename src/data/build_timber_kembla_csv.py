@@ -37,9 +37,6 @@ COLMAP = {
     17: "knot_presence",  # Q: Knot
     18: "zone",  # R
     19: "exposure",  # S
-    # Results-to-plot fields
-    27: "plot_failure_probability",  # AA: Prob
-    28: "plot_mean_deterioration_mm",  # AB: d_mean
     # Timber deterioration model inputs and factors
     39: "design_time_years",  # AM: t_design
     40: "model_salinity_ppt",  # AN: Salinity
@@ -55,18 +52,17 @@ COLMAP = {
     50: "environment_factor",  # AX: k_env
     51: "construction_factor",  # AY: k_const
     # Calculated deterioration outputs
-    52: "base_rate_factor",  # AZ: k_0
-    53: "sapwood_rate_mm_year",  # BA: r_sap
-    54: "sapwood_lag_years",  # BB: t_lag,sap
-    55: "heartwood_rate_mm_year",  # BC: r_heart
-    56: "heartwood_lag_years",  # BD: t_lag,heart
-    57: "sapwood_duration_years",  # BE: t_sap
-    58: "mean_deterioration_mm",  # BF: d_mean
-    59: "remaining_diameter_mm",  # BG: D_t
-    60: "failure_probability",  # BH: Prob
-    61: "design_deterioration_mm",  # BI: d_design
-    62: "design_diameter_mm",  # BJ: D_design
-    63: "replacement_time_years",  # BK: t_replacement
+    52: "sapwood_rate_mm_year",  # AZ: r_sap
+    53: "sapwood_lag_years",  # BA: t_lag,sap
+    54: "heartwood_rate_mm_year",  # BB: r_heart
+    55: "heartwood_lag_years",  # BC: t_lag,heart
+    56: "sapwood_duration_years",  # BD: t_sap
+    57: "mean_deterioration_mm",  # BE: d_mean
+    58: "remaining_diameter_mm",  # BF: D_t
+    59: "failure_probability",  # BG: Prob
+    60: "design_deterioration_mm",  # BH: d_design
+    61: "design_diameter_mm",  # BI: D_design
+    62: "replacement_time_years",  # BJ: t_replacement
 }
 
 SCENARIO_LABEL = {
@@ -132,8 +128,6 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "initial_diameter_mm",
         "layer_of_sapwood_mm",
         "replacement_diameter_mm",
-        "plot_failure_probability",
-        "plot_mean_deterioration_mm",
         "design_time_years",
         "model_salinity_ppt",
         "water_factor",
@@ -147,7 +141,6 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "model_knot_factor",
         "environment_factor",
         "construction_factor",
-        "base_rate_factor",
         "sapwood_rate_mm_year",
         "sapwood_lag_years",
         "heartwood_rate_mm_year",
@@ -212,7 +205,6 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "model_knot_factor",
         "environment_factor",
         "construction_factor",
-        "base_rate_factor",
         "sapwood_rate_mm_year",
         "sapwood_lag_years",
         "heartwood_rate_mm_year",
@@ -224,8 +216,6 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "design_deterioration_mm",
         "design_diameter_mm",
         "replacement_time_years",
-        "plot_failure_probability",
-        "plot_mean_deterioration_mm",
         "source_row",
     ]
     frame = (
