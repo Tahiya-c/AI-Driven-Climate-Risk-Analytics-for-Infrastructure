@@ -57,13 +57,22 @@ def _render_materials_comparison(
             st.error(f"Could not load comparison data: {exc}")
             return
 
-    st.subheader("Projection conditions")
-    st.caption("The same three conditions are shown for both materials to make comparison direct.")
-    summary_columns = st.columns(4)
-    summary_columns[0].metric("Historical window", "2000 - present")
-    summary_columns[1].metric("Projection window", "21 years")
-    summary_columns[2].metric("Materials", "2")
-    summary_columns[3].metric("Conditions", "3")
+    st.subheader("Prediction parameters")
+    parameter_columns = st.columns(4)
+    available = numeric_columns(frame) if frame is not None else []
+    defaults = ["Pile age", "Chloride level", "Crack width", "Exposure zone"]
+    for index, container in enumerate(parameter_columns):
+        with container:
+            if available:
+                selected = st.selectbox(
+                    f"Parameter {index + 1}", available, index=index % len(available)
+                )
+                st.number_input(
+                    f"{selected} value", value=float(frame[selected].median()),
+                    key=f"value_{index}",
+                )
+            else:
+                st.number_input(defaults[index], min_value=0.0, value=0.0, key=f"demo_{index}")
 
     concrete, timber = st.columns(2, gap="large")
     for container, material in ((concrete, "Concrete"), (timber, "Timber")):
