@@ -58,7 +58,9 @@ def render_dashboard() -> None:
     for index, container in enumerate(parameter_columns):
         with container:
             if available:
-                selected = st.selectbox(f"Parameter {index + 1}", available, index=index % len(available))
+                selected = st.selectbox(
+                    f"Parameter {index + 1}", available, index=index % len(available)
+                )
                 st.number_input(
                     f"{selected} value", value=float(frame[selected].median()),
                     key=f"value_{index}",
