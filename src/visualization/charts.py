@@ -1,15 +1,13 @@
 """Plotly chart builders for historical condition and forecasts."""
 
 from collections.abc import Mapping
-from datetime import date
 from typing import Any
 
-import joblib
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 
-from src.config import MODEL_DIR
+from src.config import ROOT_DIR
 
 SCENARIO_LABELS = ("Most Likely", "Hotter & Drier", "Colder & Wetter")
 SCENARIO_COLORS = {
@@ -69,11 +67,15 @@ def condition_forecast_chart() -> go.Figure:
     return figure
 
 
-def demo_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
-    """Return concrete demo data and timber predictions from the linear model."""
-    current_year = date.today().year
+def dashboard_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
+    """Load dashboard CSV data and retain a concrete fallback until its export exists."""
+    timber = _load_dashboard_csv("timber")
+    current_year = int(timber["historical"]["year"].max())
     historical_years = np.arange(2000, current_year + 1)
-    projection_years = np.arange(current_year + 1, current_year + 22)
+    projection_years = np.arange(
+        int(timber["projection"]["year"].min()),
+        int(timber["projection"]["year"].max()) + 1,
+    )
     years_from_start = historical_years - historical_years[0]
     rng = np.random.default_rng(12)
 
@@ -90,14 +92,47 @@ def demo_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
         "Hotter & Drier": concrete_last_value - np.linspace(0, 12.0, len(projection_years)),
         "Colder & Wetter": concrete_last_value - np.linspace(0, 2.5, len(projection_years)),
     }
-    data = {
+    data: dict[str, dict[str, pd.DataFrame]] = {
         "Concrete": {
             "historical": pd.DataFrame({"year": historical_years, "value": concrete_values}),
             "projection": _scenario_frame(projection_years, concrete_projection),
         }
     }
-    data["Timber"] = _timber_model_data(current_year, projection_years)
+    data["Timber"] = timber
     return data
+
+
+def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
+    """Convert one shared dashboard CSV into chart-ready history and projections."""
+    path = ROOT_DIR / "data" / "dashboard" / f"dashboard_data_{material}.csv"
+    if not path.exists():
+        raise FileNotFoundError(f"Dashboard data file not found: {path}")
+
+    frame = pd.read_csv(path)
+    required = {"material", "asset_id", "scenario", "year", "value", "method"}
+    missing = sorted(required - set(frame.columns))
+    if missing:
+        raise ValueError(f"Dashboard CSV is missing columns: {', '.join(missing)}")
+
+    scenario_map = {
+        "CSIRO Mk3.5": "Hotter & Drier",
+        "MRI-CGCM2.3.2": "Most Likely",
+        "MIROC-Medres": "Colder & Wetter",
+    }
+    frame["condition"] = frame["scenario"].map(
+        lambda value: next(
+            (label for model, label in scenario_map.items() if model in value),
+            "Most Likely",
+        )
+    )
+    historical = frame.loc[frame["method"] == "observed"]
+    projection = frame.loc[frame["method"] != "observed"]
+    if historical.empty or projection.empty:
+        raise ValueError(f"Dashboard CSV for {material} needs observed and projected rows.")
+
+    historical = historical.groupby("year", as_index=False)["value"].mean()
+    projection = projection.groupby(["year", "condition"], as_index=False)["value"].mean()
+    return {"historical": historical, "projection": projection}
 
 
 def _scenario_frame(years: np.ndarray, values: dict[str, np.ndarray]) -> pd.DataFrame:
@@ -108,56 +143,6 @@ def _scenario_frame(years: np.ndarray, values: dict[str, np.ndarray]) -> pd.Data
             for condition, scenario_values in values.items()
         ]
     )
-
-
-def _timber_model_data(
-    current_year: int,
-    projection_years: np.ndarray,
-) -> dict[str, pd.DataFrame]:
-    """Generate the timber comparison series using the saved linear model."""
-    data_path = MODEL_DIR.parent / "data" / "processed" / "timber_kembla_v6_3_consolidated.csv"
-    artifact_path = MODEL_DIR / "timber_replacement_linear.joblib"
-    if not data_path.exists() or not artifact_path.exists():
-        return _fallback_timber_data(current_year, projection_years)
-
-    artifact = joblib.load(artifact_path)
-    frame = pd.read_csv(data_path)
-    scenario_map = {"Baseline": "Colder & Wetter"}
-    frame["scenario_label"] = frame["scenario_label"].replace(scenario_map)
-    frame = frame.loc[frame["scenario_label"].isin(SCENARIO_LABELS)].copy()
-    frame["value"] = artifact["model"].predict(frame[artifact["features"]])
-    historical = (
-        frame.loc[frame["year"].between(2000, current_year)]
-        .groupby("year", as_index=False)["value"]
-        .mean()
-    )
-    future = frame.loc[frame["year"].isin(projection_years)].copy()
-    projection = future[["year", "scenario_label", "value"]].rename(
-        columns={"scenario_label": "condition"}
-    )
-    projection = projection.groupby(["year", "condition"], as_index=False)["value"].mean()
-    return {"historical": historical, "projection": projection}
-
-
-def _fallback_timber_data(
-    current_year: int,
-    projection_years: np.ndarray,
-) -> dict[str, pd.DataFrame]:
-    """Keep the page usable when the local model artifact is unavailable."""
-    historical_years = np.arange(2000, current_year + 1)
-    historical_values = 28.0 - np.linspace(0, 8, len(historical_years))
-    values = {
-        condition: historical_values[-1] - decline * np.linspace(0, 10, len(projection_years))
-        for condition, decline in (
-            ("Most Likely", 0.8),
-            ("Hotter & Drier", 1.2),
-            ("Colder & Wetter", 0.5),
-        )
-    }
-    return {
-        "historical": pd.DataFrame({"year": historical_years, "value": historical_values}),
-        "projection": _scenario_frame(projection_years, values),
-    }
 
 
 def material_forecast_chart(
@@ -178,10 +163,14 @@ def material_forecast_chart(
     )
     for condition in SCENARIO_LABELS:
         rows = projection.loc[projection["condition"] == condition]
+        # Start each forecast trace at the final historical point so the
+        # history-to-projection transition is visually continuous.
+        boundary_year = int(historical["year"].max())
+        boundary_value = float(historical.loc[historical["year"] == boundary_year, "value"].iloc[0])
         figure.add_trace(
             go.Scatter(
-                x=rows["year"],
-                y=rows["value"],
+                x=pd.concat([pd.Series([boundary_year]), rows["year"]], ignore_index=True),
+                y=pd.concat([pd.Series([boundary_value]), rows["value"]], ignore_index=True),
                 name=condition,
                 mode="lines",
                 line={"color": SCENARIO_COLORS[condition], "width": 2, "dash": "dot"},
@@ -191,16 +180,20 @@ def material_forecast_chart(
     figure.add_vline(x=boundary_year, line_dash="dash", line_color="#94A3B8")
     figure.update_layout(
         title=material,
-        height=390,
-        margin={"l": 20, "r": 20, "t": 55, "b": 20},
+        height=520,
+        autosize=True,
+        margin={"l": 30, "r": 30, "t": 55, "b": 70},
         xaxis_title="Year",
         yaxis_title="Replacement time (years)",
         hovermode="x unified",
-        legend={"orientation": "h", "y": -0.2},
+        legend={"orientation": "h", "y": -0.18},
         paper_bgcolor="white",
         plot_bgcolor="white",
     )
-    figure.update_xaxes(showgrid=False)
+    figure.update_xaxes(
+        showgrid=False,
+        range=[int(historical["year"].min()), int(projection["year"].max())],
+    )
     figure.update_yaxes(gridcolor="#E2E8F0")
     return figure
 
