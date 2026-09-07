@@ -14,3 +14,6 @@ ruff>=0.5,<1.0
 lightgbm>=4.0,<5.0
 shap>=0.45,<1.0
 
+# Concrete carbonation RNN (src/models/rnn_model.py, train_final_model.py, inference.py).
+torch>=2.0,<3.0
+
