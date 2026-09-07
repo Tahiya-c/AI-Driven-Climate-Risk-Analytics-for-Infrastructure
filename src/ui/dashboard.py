@@ -1,9 +1,15 @@
 """Main Streamlit dashboard matching the supplied low-fidelity layout."""
 
+from collections.abc import Mapping
+from typing import Any
+
 import streamlit as st
 
-from src.data.loader import load_csv, numeric_columns
-from src.visualization.charts import condition_forecast_chart
+from src.visualization.charts import (
+    comparison_data_from_payload,
+    demo_material_comparison_data,
+    material_forecast_chart,
+)
 
 
 def _apply_styles() -> None:
@@ -22,34 +28,34 @@ def _apply_styles() -> None:
     )
 
 
-def render_dashboard() -> None:
-    st.set_page_config(page_title="Port Pile Health", page_icon="🏗️", layout="wide")
+def render_dashboard(comparison_payload: Mapping[str, Any] | None = None) -> None:
+    st.set_page_config(page_title="Port Pile Deterioration", page_icon="🏗️", layout="wide")
     _apply_styles()
 
     with st.sidebar:
-        st.title("⚓ Port Pile Health")
-        page = st.radio(
-            "Navigation", ["Predictive Model", "Geospatial Mapping", "Settings"],
-            label_visibility="collapsed",
-        )
+        st.title("⚓ Port Pile Deterioration")
         st.divider()
-        uploaded_file = st.file_uploader("Concrete pile dataset", type="csv")
-        st.caption("Upload the project CSV to populate parameter controls.")
+    _render_materials_comparison(comparison_payload)
 
-    st.title("Dashboard")
-    st.caption("Monitor structural condition and explore future deterioration scenarios.")
 
-    if page != "Predictive Model":
-        st.info(f"{page} is scaffolded for the next development phase.")
-        return
+def _render_materials_comparison(
+    comparison_payload: Mapping[str, Any] | None = None,
+) -> None:
+    """Render the concrete and timber history-to-projection comparison page."""
+    st.title("Concrete and timber outlook")
+    st.caption(
+        "Compare historical replacement-time predictions with a 21-year projection."
+    )
 
-    frame = None
-    if uploaded_file is not None:
+    if comparison_payload is None:
+        data = demo_material_comparison_data()
+        st.info("Concrete uses deterministic demo data; timber uses the saved linear model.")
+    else:
         try:
-            frame = load_csv(uploaded_file)
-            st.success(f"Loaded {len(frame):,} pile inspection records.")
-        except (ValueError, OSError) as exc:
-            st.error(f"Could not load the CSV: {exc}")
+            data = comparison_data_from_payload(comparison_payload)
+        except ValueError as exc:
+            st.error(f"Could not load comparison data: {exc}")
+            return
 
     st.subheader("Prediction parameters")
     parameter_columns = st.columns(4)
@@ -68,14 +74,28 @@ def render_dashboard() -> None:
             else:
                 st.number_input(defaults[index], min_value=0.0, value=0.0, key=f"demo_{index}")
 
-    st.divider()
-    metric_columns = st.columns(4)
-    metric_columns[0].metric("Predicted level", "Moderate", "Demo")
-    metric_columns[1].metric("Condition index", "62 / 100", "-4.1%")
-    metric_columns[2].metric("Remaining life", "12.4 years")
-    metric_columns[3].metric("Inspection priority", "Medium")
+    concrete, timber = st.columns(2, gap="large")
+    for container, material in ((concrete, "Concrete"), (timber, "Timber")):
+        material_data = data[material]
+        with container:
+            st.plotly_chart(
+                material_forecast_chart(
+                    material,
+                    material_data["historical"],
+                    material_data["projection"],
+                ),
+                use_container_width=True,
+            )
 
-    st.subheader("Historical change and future prediction")
-    st.plotly_chart(condition_forecast_chart(), use_container_width=True)
-    st.caption("Illustrative forecast until the trained model and agreed CSV schema are connected.")
+    with st.expander("Backend response contract"):
+        st.code(
+            '''{
+  "concrete": {
+    "historical": [{"year": 2000, "value": 86.0}],
+    "projection": [{"year": 2027, "condition": "Most Likely", "value": 70.0}]
+  },
+  "timber": {"historical": [], "projection": []}
+}''',
+            language="json",
+        )
 
