@@ -7,3 +7,13 @@ joblib>=1.3,<2.0
 pytest>=8.0,<9.0
 ruff>=0.5,<1.0
 
+# GBM comparison model + SHAP importance (src/timber/compare.py --model gbm).
+# xgboost is the documented fallback if lightgbm ever lacks a wheel for a
+# given platform/Python version -- see src/timber/model_gbm.py -- but is
+# not installed by default since lightgbm covers the current environment.
+lightgbm>=4.0,<5.0
+shap>=0.45,<1.0
+
+# Concrete carbonation RNN (src/models/rnn_model.py, train_final_model.py, inference.py).
+torch>=2.0,<3.0
+
