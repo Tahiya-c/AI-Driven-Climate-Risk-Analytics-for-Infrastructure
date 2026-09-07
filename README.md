@@ -1,8 +1,6 @@
 # Port Pile Deterioration Dashboard
 
-A Streamlit dashboard for exploring concrete pile inspection data and predicting deterioration levels at seaports. The first version follows the supplied low-fidelity layout: side navigation, prediction parameters, condition indicators, and a historical-to-future forecast chart.
-
-The app currently provides a working UI scaffold and deterministic demonstration forecast. Once the project CSV schema and trained model are finalized, the demo forecast can be replaced through the isolated data, feature, and model modules.
+A Streamlit dashboard for predicting deterioration levels of concrete, steel, and timber piles at seaports. The first version follows the supplied low-fidelity layout: side navigation, prediction parameters, condition indicators, and a historical-to-future forecast chart.
 
 ## Quick start
 
@@ -14,8 +12,6 @@ python -m venv .venv
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-Upload the processed CSV from the dashboard sidebar. Uploaded data is handled in memory and is not stored in the repository. Trained model binaries are ignored by Git to avoid accidentally committing large files.
 
 ## Repository structure
 
