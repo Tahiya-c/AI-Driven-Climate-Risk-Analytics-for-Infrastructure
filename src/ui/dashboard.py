@@ -1,79 +1,145 @@
 """Main Streamlit dashboard matching the supplied low-fidelity layout."""
 
+from collections.abc import Mapping
+from typing import Any
+
 import streamlit as st
 
-from src.data.loader import load_csv, numeric_columns
-from src.visualization.charts import condition_forecast_chart
+from src.visualization.charts import (
+    comparison_data_from_payload,
+    dashboard_material_comparison_data,
+    material_forecast_chart,
+)
 
 
 def _apply_styles() -> None:
     st.markdown(
         """
         <style>
-        .block-container {padding-top: 1.5rem; padding-bottom: 2rem; max-width: 1450px;}
+        html, body {overflow-x: hidden;}
+        *, *::before, *::after {box-sizing: border-box;}
+        .block-container {
+            padding: 1.5rem 1rem 2rem;
+            width: auto;
+            max-width: 1450px;
+            margin: 0 auto;
+        }
         [data-testid="stSidebar"] {border-right: 1px solid #D8E0E8;}
         [data-testid="stMetric"] {background: white; border: 1px solid #E2E8F0;
             border-radius: 10px; padding: 0.9rem;}
-        div[data-testid="stPlotlyChart"] {background: white; border: 1px solid #E2E8F0;
+        div[data-testid="stHorizontalBlock"] {width: 100%; min-width: 0;}
+        div[data-testid="stHorizontalBlock"] > div {min-width: 0 !important;}
+        div[data-testid="stPlotlyChart"] {width: 100%; max-width: 100%; min-width: 0;
+            overflow: hidden;
+            background: white; border: 1px solid #E2E8F0;
             border-radius: 12px; padding: 0.5rem;}
+        div[data-testid="stPlotlyChart"] > div {width: 100% !important; min-width: 0 !important;}
+        div[data-testid="stPlotlyChart"] .modebar-container,
+        div[data-testid="stPlotlyChart"] .modebar {
+            position: absolute !important;
+            top: 0.4rem !important;
+            right: auto !important;
+            left: 7rem !important;
+        }
+        .modebar-btn[data-title="Autoscale"],
+        .modebar-btn[data-title="Reset axes"] {display: none !important;}
+        @media (max-width: 900px) {
+            div[data-testid="stHorizontalBlock"] {flex-wrap: wrap !important;}
+            div[data-testid="stHorizontalBlock"] > div {
+                flex: 1 1 100% !important;
+                width: 100% !important;
+            }
+        }
         </style>
         """,
         unsafe_allow_html=True,
     )
 
 
-def render_dashboard() -> None:
-    st.set_page_config(page_title="Port Pile Health", page_icon="🏗️", layout="wide")
+@st.dialog("Expanded chart", width="large")
+def _show_expanded_chart(
+    material: str,
+    historical: Any,
+    projection: Any,
+) -> None:
+    """Show a material chart in a larger modal dialog."""
+    figure = material_forecast_chart(material, historical, projection)
+    figure.update_layout(height=680)
+    st.plotly_chart(
+        figure,
+        use_container_width=True,
+        config={
+            "displayModeBar": False,
+            "responsive": True,
+        },
+    )
+
+
+def render_dashboard(comparison_payload: Mapping[str, Any] | None = None) -> None:
+    st.set_page_config(page_title="Port Pile Deterioration", page_icon="🏗️", layout="wide")
     _apply_styles()
 
     with st.sidebar:
-        st.title("⚓ Port Pile Health")
-        page = st.radio(
-            "Navigation", ["Predictive Model", "Geospatial Mapping", "Settings"],
-            label_visibility="collapsed",
-        )
+        st.title("⚓ Port Pile Deterioration")
         st.divider()
-        uploaded_file = st.file_uploader("Concrete pile dataset", type="csv")
-        st.caption("Upload the project CSV to populate parameter controls.")
+    _render_materials_comparison(comparison_payload)
 
-    st.title("Dashboard")
-    st.caption("Monitor structural condition and explore future deterioration scenarios.")
 
-    if page != "Predictive Model":
-        st.info(f"{page} is scaffolded for the next development phase.")
-        return
+def _render_materials_comparison(
+    comparison_payload: Mapping[str, Any] | None = None,
+) -> None:
+    """Render the concrete and timber history-to-projection comparison page."""
+    st.title("Concrete and timber outlook")
+    st.caption(
+        "Compare historical replacement-time predictions with a 21-year projection."
+    )
 
-    frame = None
-    if uploaded_file is not None:
+    if comparison_payload is None:
+        data = dashboard_material_comparison_data()
+    else:
         try:
-            frame = load_csv(uploaded_file)
-            st.success(f"Loaded {len(frame):,} pile inspection records.")
-        except (ValueError, OSError) as exc:
-            st.error(f"Could not load the CSV: {exc}")
+            data = comparison_data_from_payload(comparison_payload)
+        except ValueError as exc:
+            st.error(f"Could not load comparison data: {exc}")
+            return
 
-    st.subheader("Prediction parameters")
-    parameter_columns = st.columns(4)
-    available = numeric_columns(frame) if frame is not None else []
-    defaults = ["Pile age", "Chloride level", "Crack width", "Exposure zone"]
-    for index, container in enumerate(parameter_columns):
+    concrete, timber = st.columns(2, gap="small")
+    for container, material in ((concrete, "Concrete"), (timber, "Timber")):
+        material_data = data[material]
         with container:
-            if available:
-                selected = st.selectbox(f"Parameter {index + 1}", available, index=index % len(available))
-                st.number_input(
-                    f"{selected} value", value=float(frame[selected].median()),
-                    key=f"value_{index}",
+            st.plotly_chart(
+                material_forecast_chart(
+                    material,
+                    material_data["historical"],
+                    material_data["projection"],
+                ),
+                use_container_width=True,
+                config={
+                    "displayModeBar": False,
+                    "responsive": True,
+                },
+            )
+            if st.button(
+                "Open larger view",
+                key=f"expand_{material.lower()}",
+                icon=":material/open_in_full:",
+                use_container_width=True,
+            ):
+                _show_expanded_chart(
+                    material,
+                    material_data["historical"],
+                    material_data["projection"],
                 )
-            else:
-                st.number_input(defaults[index], min_value=0.0, value=0.0, key=f"demo_{index}")
 
-    st.divider()
-    metric_columns = st.columns(4)
-    metric_columns[0].metric("Predicted level", "Moderate", "Demo")
-    metric_columns[1].metric("Condition index", "62 / 100", "-4.1%")
-    metric_columns[2].metric("Remaining life", "12.4 years")
-    metric_columns[3].metric("Inspection priority", "Medium")
-
-    st.subheader("Historical change and future prediction")
-    st.plotly_chart(condition_forecast_chart(), use_container_width=True)
-    st.caption("Illustrative forecast until the trained model and agreed CSV schema are connected.")
+    with st.expander("Backend response contract"):
+        st.code(
+            '''{
+  "concrete": {
+    "historical": [{"year": 2000, "value": 86.0}],
+    "projection": [{"year": 2027, "condition": "Most Likely", "value": 70.0}]
+  },
+  "timber": {"historical": [], "projection": []}
+}''',
+            language="json",
+        )
 
