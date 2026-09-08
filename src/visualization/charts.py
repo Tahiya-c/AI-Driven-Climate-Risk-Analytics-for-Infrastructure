@@ -184,7 +184,7 @@ def material_forecast_chart(
         autosize=True,
         margin={"l": 30, "r": 30, "t": 55, "b": 70},
         xaxis_title="Year",
-        yaxis_title="Replacement time (years)",
+        yaxis_title="Material loss (mm)",
         hovermode="x unified",
         legend={"orientation": "h", "y": -0.18},
         paper_bgcolor="white",
