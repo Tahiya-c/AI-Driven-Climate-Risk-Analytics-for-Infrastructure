@@ -7,6 +7,14 @@ import pandas as pd
 TARGET_COLUMN = "remaining_diameter_mm"
 
 # Numeric, already-engineered columns from the deterministic model output.
+#
+# sapwood_rate_mm_year and heartwood_rate_mm_year are deliberately EXCLUDED:
+# together with age_years and initial_diameter_mm (both still included below),
+# they let the target be reconstructed algebraically to within floating-point
+# noise (max abs error 2.27e-13mm, verified against the full Kembla dataset --
+# see docs/timber_kembla_to_sydney_eval.md, section 2). They are the deterministic
+# engine's own internal rate variables, not upstream inputs, so they belong in
+# LEAKY_COLUMNS alongside mean_deterioration_mm et al., not in the feature set.
 FEATURE_COLUMNS = [
     "age_years",
     "summer_sea_temp_c",
@@ -20,8 +28,6 @@ FEATURE_COLUMNS = [
     "model_knot_factor",
     "environment_factor",
     "construction_factor",
-    "sapwood_rate_mm_year",
-    "heartwood_rate_mm_year",
     "initial_diameter_mm",
 ]
 
@@ -36,13 +42,19 @@ CATEGORICAL_COLUMNS = [
 
 # These are OUTPUTS of the deterministic model this project replicates.
 # Using them as inputs would leak the answer -- keep them for validation
-# and comparison only, never as model features.
+# and comparison only, never as model features. sapwood_rate_mm_year and
+# heartwood_rate_mm_year are included here (rather than in FEATURE_COLUMNS)
+# for the same reason: they are the engine's own internal rate variables, and
+# together with age_years/initial_diameter_mm they reconstruct the target
+# almost exactly -- see the note above FEATURE_COLUMNS.
 LEAKY_COLUMNS = [
     "failure_probability",
     "replacement_time_years",
     "mean_deterioration_mm",
     "design_deterioration_mm",
     "design_diameter_mm",
+    "sapwood_rate_mm_year",
+    "heartwood_rate_mm_year",
 ]
 
 
