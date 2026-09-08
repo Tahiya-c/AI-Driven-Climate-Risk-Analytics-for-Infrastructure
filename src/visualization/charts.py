@@ -102,6 +102,14 @@ def dashboard_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
     return data
 
 
+def dashboard_timber_model_data() -> dict[str, dict[str, dict[str, pd.DataFrame]]]:
+    """Load the separate GBM and MLP Timber dashboard exports."""
+    return {
+        "GBM": _load_dashboard_csv("timber_gbm"),
+        "MLP": _load_dashboard_csv("timber_mlp"),
+    }
+
+
 def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
     """Convert one shared dashboard CSV into chart-ready history and projections."""
     path = ROOT_DIR / "data" / "dashboard" / f"dashboard_data_{material}.csv"

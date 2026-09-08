@@ -7,7 +7,7 @@ import streamlit as st
 
 from src.visualization.charts import (
     comparison_data_from_payload,
-    dashboard_material_comparison_data,
+    dashboard_timber_model_data,
     material_forecast_chart,
 )
 
@@ -81,37 +81,46 @@ def render_dashboard(comparison_payload: Mapping[str, Any] | None = None) -> Non
 
     with st.sidebar:
         st.title("⚓ Port Pile Deterioration")
+        page = st.radio(
+            "Material",
+            ["Concrete", "Timber"],
+            index=1,
+            label_visibility="collapsed",
+        )
         st.divider()
-    _render_materials_comparison(comparison_payload)
+    if page == "Timber":
+        _render_timber_page(comparison_payload)
+    else:
+        _render_concrete_page()
 
 
-def _render_materials_comparison(
+def _render_timber_page(
     comparison_payload: Mapping[str, Any] | None = None,
 ) -> None:
-    """Render the concrete and timber history-to-projection comparison page."""
-    st.title("Concrete and timber outlook")
+    """Render GBM and MLP Timber forecasts side by side."""
+    st.title("Timber outlook")
     st.caption(
-        "Compare historical replacement-time predictions with a 21-year projection."
+        "Compare material loss projections from the GBM and MLP models."
     )
 
     if comparison_payload is None:
-        data = dashboard_material_comparison_data()
+        data = dashboard_timber_model_data()
     else:
         try:
-            data = comparison_data_from_payload(comparison_payload)
+            data = comparison_data_from_payload(comparison_payload)["Timber"]
         except ValueError as exc:
             st.error(f"Could not load comparison data: {exc}")
             return
 
-    concrete, timber = st.columns(2, gap="small")
-    for container, material in ((concrete, "Concrete"), (timber, "Timber")):
-        material_data = data[material]
+    gbm, mlp = st.columns(2, gap="small")
+    for container, model_name in ((gbm, "GBM"), (mlp, "MLP")):
+        model_data = data[model_name]
         with container:
             st.plotly_chart(
                 material_forecast_chart(
-                    material,
-                    material_data["historical"],
-                    material_data["projection"],
+                    f"Timber - {model_name}",
+                    model_data["historical"],
+                    model_data["projection"],
                 ),
                 use_container_width=True,
                 config={
@@ -121,14 +130,14 @@ def _render_materials_comparison(
             )
             if st.button(
                 "Open larger view",
-                key=f"expand_{material.lower()}",
+                key=f"expand_timber_{model_name.lower()}",
                 icon=":material/open_in_full:",
                 use_container_width=True,
             ):
                 _show_expanded_chart(
-                    material,
-                    material_data["historical"],
-                    material_data["projection"],
+                    f"Timber - {model_name}",
+                    model_data["historical"],
+                    model_data["projection"],
                 )
 
     with st.expander("Backend response contract"):
@@ -142,4 +151,11 @@ def _render_materials_comparison(
 }''',
             language="json",
         )
+
+
+def _render_concrete_page() -> None:
+    """Render the reserved Concrete page shell."""
+    st.title("Concrete outlook")
+    st.caption("Concrete model results will be displayed here.")
+    st.columns(2, gap="small")
 
