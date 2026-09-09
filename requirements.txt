@@ -17,3 +17,6 @@ shap>=0.45,<1.0
 # Concrete carbonation RNN (src/models/rnn_model.py, train_final_model.py, inference.py).
 torch>=2.0,<3.0
 
+# Concrete model comparison (src/models/concrete_benchmark_all.py, --models catboost).
+catboost>=1.2,<2.0
+

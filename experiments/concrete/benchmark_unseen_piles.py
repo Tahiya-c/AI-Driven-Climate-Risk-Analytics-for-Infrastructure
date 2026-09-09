@@ -22,11 +22,12 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 # ---------------------------------------------------------
 
 cwd = Path.cwd()
-project_root = cwd if (cwd / "docs").exists() else cwd.parent
+project_root = cwd if (cwd / "data").exists() else cwd.parents[1]
 
 csv_path = (
     project_root
-    / "docs"
+    / "data"
+    / "processed"
     / "concrete_kembla_v6_consolidated.csv"
 )
 

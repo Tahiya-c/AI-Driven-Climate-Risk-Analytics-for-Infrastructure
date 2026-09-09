@@ -1,201 +1,22 @@
-import os
+# ARCHIVED exploration (Aisha). Superseded by src/models/concrete_benchmark_all.py,
+# which runs these models on the shared spec (real data, annual_rate target, trimmed
+# features, 2026-forward autoregressive forecast). Kept only for reference. The
+# synthetic-data generator that used to live here has been removed -- it now reads
+# the real consolidated CSV, but the target/features/split below are the OLD setup.
+
 from pathlib import Path
-from catboost import CatBoostRegressor, Pool
+
 import numpy as np
 import pandas as pd
+from catboost import CatBoostRegressor, Pool
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, r2_score, root_mean_squared_error
 from sklearn.preprocessing import MinMaxScaler
 
-# ---------------------------------------------------------
-# 1. LOCATE OR AUTO-GENERATE DATASET FROM SCHEMA
-# ---------------------------------------------------------
 cwd = Path.cwd()
-project_root = cwd if (cwd / "docs").exists() else cwd.parent
-docs_dir = project_root / "docs"
-docs_dir.mkdir(exist_ok=True)
-csv_path = docs_dir / "concrete_kembla_v6_consolidated.csv"
-
-if not csv_path.exists():
-    print(
-        f"Generating dataset matching data dictionary specs at: {csv_path}"
-    )
-    np.random.seed(42)
-    assets = [f"Pile{chr(65+i)}" for i in range(7)]  # PileA - PileG
-    years = list(range(2000, 2071))  # 71 years (2000-2070)
-    scenarios = [
-        ("Base", "(Reference)", "Baseline"),
-        ("A1FI", "MRI-CGCM2.3.2", "Most Likely"),
-        ("A1FI", "CSIRO Mk3.5", "Hotter & Drier"),
-        ("A1FI", "MIROC(hires)", "Colder & Wetter"),
-        ("A1B", "MRI-CGCM2.3.2", "Most Likely"),
-        ("A1B", "CSIRO Mk3.5", "Hotter & Drier"),
-        ("A1B", "MIROC(hires)", "Colder & Wetter"),
-    ]
-
-    asset_meta = {
-        "PileA": {
-            "year_built": 1997,
-            "zone": "splash",
-            "dist_km": 0.5,
-            "exp": "C2",
-            "carb_c": "CB3",
-            "ch_c": "CL4",
-            "cover": 75,
-            "dia": 1400,
-            "fc": 50,
-            "wc": 0.40,
-            "cement": 290,
-        },
-        "PileB": {
-            "year_built": 2005,
-            "zone": "atmospheric",
-            "dist_km": 1.2,
-            "exp": "B2",
-            "carb_c": "CB2",
-            "ch_c": "CL2",
-            "cover": 60,
-            "dia": 1200,
-            "fc": 40,
-            "wc": 0.45,
-            "cement": 270,
-        },
-        "PileC": {
-            "year_built": 1902,
-            "zone": "tidal",
-            "dist_km": 0.4,
-            "exp": "C2",
-            "carb_c": "CB4",
-            "ch_c": "CL5",
-            "cover": 50,
-            "dia": 1500,
-            "fc": 40,
-            "wc": 0.55,
-            "cement": 250,
-        },
-        "PileD": {
-            "year_built": 1980,
-            "zone": "splash",
-            "dist_km": 0.8,
-            "exp": "C1",
-            "carb_c": "CB3",
-            "ch_c": "CL3",
-            "cover": 70,
-            "dia": 1300,
-            "fc": 60,
-            "wc": 0.38,
-            "cement": 300,
-        },
-        "PileE": {
-            "year_built": 2010,
-            "zone": "atmospheric",
-            "dist_km": 2.0,
-            "exp": "B1",
-            "carb_c": "CB1",
-            "ch_c": "CL1",
-            "cover": 80,
-            "dia": 1200,
-            "fc": 80,
-            "wc": 0.35,
-            "cement": 310,
-        },
-        "PileF": {
-            "year_built": 1965,
-            "zone": "tidal",
-            "dist_km": 0.4,
-            "exp": "C2",
-            "carb_c": "CB4",
-            "ch_c": "CL5",
-            "cover": 55,
-            "dia": 1800,
-            "fc": 45,
-            "wc": 0.50,
-            "cement": 260,
-        },
-        "PileG": {
-            "year_built": 1990,
-            "zone": "splash",
-            "dist_km": 0.6,
-            "exp": "C1",
-            "carb_c": "CB2",
-            "ch_c": "CL3",
-            "cover": 90,
-            "dia": 1600,
-            "fc": 65,
-            "wc": 0.36,
-            "cement": 305,
-        },
-    }
-
-    rows = []
-    for asset in assets:
-        meta = asset_meta[asset]
-        for ep, cm, sl in scenarios:
-            for yr in years:
-                age = yr - meta["year_built"]
-                temp = 18.0 + (yr - 2000) * 0.04 + np.random.normal(0, 0.5)
-                rh = 70.0 - (yr - 2000) * 0.05 + np.random.normal(0, 1.2)
-                co2 = 370.0 + (yr - 2000) * 3.5 + np.random.normal(0, 2.0)
-
-                base_rate = (meta["wc"] * 2.5) / (meta["cover"] / 50.0)
-                temp_factor = np.exp(0.03 * (temp - 18.0))
-                co2_factor = np.sqrt(co2 / 370.0)
-                time_decay = 1.0 / np.sqrt(max(age, 1))
-                carb_increment = (
-                    base_rate
-                    * temp_factor
-                    * co2_factor
-                    * time_decay
-                    * np.random.uniform(0.95, 1.05)
-                )
-
-                rows.append(
-                    {
-                        "asset_code": asset,
-                        "description": f"Pile @ Berth 107 - {asset}",
-                        "source_row": 100,
-                        "year_built": meta["year_built"],
-                        "zone": meta["zone"],
-                        "dist_from_coast_km": meta["dist_km"],
-                        "exposure_class": meta["exp"],
-                        "carbonation_class": meta["carb_c"],
-                        "chloride_class": meta["ch_c"],
-                        "protection": "NONE",
-                        "cover_h_mm": meta["cover"],
-                        "member_diameter_mm": meta["dia"],
-                        "fc_mpa": meta["fc"],
-                        "wc_ratio": meta["wc"],
-                        "cement_content_kgm3": meta["cement"],
-                        "rebar_diameter_mm": 12,
-                        "emissions_pathway": ep,
-                        "climate_model": cm,
-                        "scenario_label": sl,
-                        "year": yr,
-                        "age_years": age,
-                        "mean_temp_c": round(temp, 2),
-                        "mean_rh_pct": round(rh, 2),
-                        "co2_ppm": round(co2, 1),
-                        "surface_chloride_co_kgm3": round(
-                            np.random.uniform(2.5, 5.0), 2
-                        ),
-                        "chloride_diffusion_m2yr": round(
-                            np.random.uniform(0.0001, 0.0005), 5
-                        ),
-                        "carb_depth_xc_mm": round(carb_increment * 10, 2),
-                        "carb_depth_increment_mm": round(carb_increment, 4),
-                        "carb_initiation_prob": 0.1,
-                        "carb_icorr_ua_cm2": 0.05,
-                        "chloride_c_at_xc_kgm3": 1.2,
-                        "chloride_c_at_cover_kgm3": 0.8,
-                        "chloride_initiation_prob": 0.05,
-                        "chloride_icorr_ua_cm2": 0.02,
-                        "combined_initiation_prob": np.nan,
-                    }
-                )
-
-    df_synth = pd.DataFrame(rows)
-    df_synth.to_csv(csv_path, index=False)
+project_root = cwd if (cwd / "data").exists() else cwd.parents[1]
+csv_path = project_root / "data" / "processed" / "concrete_kembla_v6_consolidated.csv"
 
 # ---------------------------------------------------------
 # 2. PREPROCESSING & HOLDOUT SETUP
