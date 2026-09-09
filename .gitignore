@@ -9,9 +9,8 @@ venv/
 .streamlit/secrets.toml
 artifacts/*
 !artifacts/.gitkeep
+catboost_info/
 
 data/raw/
-data/processed/
-
-data/raw/
-data/processed/
+data/processed/*
+!data/processed/concrete_kembla_v6_consolidated.csv
