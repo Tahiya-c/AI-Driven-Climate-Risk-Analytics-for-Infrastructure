@@ -1,0 +1,1471 @@
+material,asset_id,scenario,year,value,unit,metric,method
+concrete,PileA,Colder & Wetter,2001,1.6969,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2002,1.8995,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2003,2.0586,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2004,2.192,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2005,2.308,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2006,2.4114,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2007,2.5053,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2008,2.5916,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2009,2.6717,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2010,2.7467,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2011,2.8181,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2012,2.8864,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2013,2.9519,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2014,3.015,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2015,3.076,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2016,3.1351,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2017,3.1925,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2018,3.2484,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2019,3.3028,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2020,3.356,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2021,3.4082,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2022,3.4594,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2023,3.5097,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2024,3.5593,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2025,3.6081,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2026,3.6562,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2027,3.6979,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2028,3.735,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2029,3.7684,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2030,3.7989,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2031,3.8269,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2032,3.8527,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2033,3.8765,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2034,3.8986,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2035,3.9188,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2036,3.9373,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2037,3.9541,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2038,3.9692,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2039,3.9826,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2040,3.9944,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2041,4.0045,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2042,4.0132,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2043,4.0204,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2044,4.0262,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2045,4.0305,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2046,4.0334,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2047,4.0349,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2048,4.035,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2049,4.0337,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2050,4.0309,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2051,4.0269,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2052,4.0215,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2053,4.015,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2054,4.0073,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2055,3.9983,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2056,3.9882,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2057,3.9769,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2058,3.9645,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2059,3.9508,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2060,3.936,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2061,3.9201,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2062,3.9031,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2063,3.885,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2064,3.8659,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2065,3.8457,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2066,3.8245,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2067,3.8022,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2068,3.7789,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2069,3.7545,mm,carbonation_depth,ridge
+concrete,PileA,Colder & Wetter,2070,3.7291,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2001,1.6969,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2002,1.8995,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2003,2.0586,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2004,2.192,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2005,2.308,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2006,2.4114,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2007,2.5053,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2008,2.5916,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2009,2.6717,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2010,2.7467,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2011,2.8181,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2012,2.8863,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2013,2.9518,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2014,3.0149,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2015,3.0758,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2016,3.1348,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2017,3.1921,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2018,3.2479,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2019,3.3023,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2020,3.3554,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2021,3.4074,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2022,3.4585,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2023,3.5088,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2024,3.5582,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2025,3.6069,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2026,3.6549,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2027,3.6966,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2028,3.7337,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2029,3.7672,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2030,3.7977,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2031,3.8258,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2032,3.8518,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2033,3.8758,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2034,3.8979,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2035,3.9183,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2036,3.937,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2037,3.9539,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2038,3.9692,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2039,3.9829,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2040,3.9948,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2041,4.0052,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2042,4.0141,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2043,4.0215,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2044,4.0275,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2045,4.0321,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2046,4.0352,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2047,4.037,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2048,4.0373,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2049,4.0362,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2050,4.0338,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2051,4.03,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2052,4.025,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2053,4.0187,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2054,4.0113,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2055,4.0027,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2056,3.9929,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2057,3.9819,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2058,3.9698,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2059,3.9565,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2060,3.9421,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2061,3.9265,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2062,3.9099,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2063,3.8922,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2064,3.8734,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2065,3.8536,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2066,3.8328,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2067,3.8109,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2068,3.788,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2069,3.764,mm,carbonation_depth,ridge
+concrete,PileA,Hotter & Drier,2070,3.7391,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2001,1.6969,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2002,1.8995,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2003,2.0586,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2004,2.192,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2005,2.308,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2006,2.4114,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2007,2.5053,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2008,2.5916,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2009,2.6717,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2010,2.7467,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2011,2.8178,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2012,2.8855,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2013,2.9502,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2014,3.0123,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2015,3.0722,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2016,3.13,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2017,3.1859,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2018,3.2402,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2019,3.2929,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2020,3.3443,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2021,3.3946,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2022,3.4438,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2023,3.4921,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2024,3.5395,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2025,3.586,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2026,3.6318,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2027,3.671,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2028,3.7052,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2029,3.7357,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2030,3.7629,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2031,3.7875,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2032,3.8098,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2033,3.8299,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2034,3.8479,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2035,3.864,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2036,3.8782,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2037,3.8905,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2038,3.9009,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2039,3.9094,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2040,3.916,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2041,3.921,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2042,3.9242,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2043,3.9257,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2044,3.9256,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2045,3.9239,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2046,3.9206,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2047,3.9157,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2048,3.9092,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2049,3.9011,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2050,3.8914,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2051,3.8802,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2052,3.8675,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2053,3.8533,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2054,3.8378,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2055,3.8208,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2056,3.8024,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2057,3.7827,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2058,3.7615,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2059,3.739,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2060,3.7151,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2061,3.6898,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2062,3.6632,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2063,3.6353,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2064,3.6062,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2065,3.5758,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2066,3.5441,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2067,3.5111,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2068,3.4769,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2069,3.4414,mm,carbonation_depth,ridge
+concrete,PileA,Most Likely,2070,3.4046,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2001,1.3951,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2002,1.564,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2003,1.6969,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2004,1.8084,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2005,1.9054,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2006,1.9919,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2007,2.0705,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2008,2.1428,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2009,2.2099,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2010,2.2728,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2011,2.3327,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2012,2.3899,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2013,2.4449,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2014,2.498,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2015,2.5492,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2016,2.5989,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2017,2.6471,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2018,2.6941,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2019,2.7399,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2020,2.7847,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2021,2.8286,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2022,2.8717,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2023,2.9141,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2024,2.9558,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2025,2.997,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2026,3.0375,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2027,3.0734,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2028,3.1057,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2029,3.1351,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2030,3.1618,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2031,3.1864,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2032,3.2089,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2033,3.2295,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2034,3.2484,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2035,3.2655,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2036,3.2809,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2037,3.2946,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2038,3.3066,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2039,3.317,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2040,3.3257,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2041,3.3328,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2042,3.3384,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2043,3.3426,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2044,3.3452,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2045,3.3465,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2046,3.3464,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2047,3.3448,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2048,3.3418,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2049,3.3374,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2050,3.3316,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2051,3.3245,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2052,3.3161,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2053,3.3065,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2054,3.2957,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2055,3.2837,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2056,3.2705,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2057,3.2562,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2058,3.2407,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2059,3.224,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2060,3.2061,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2061,3.1871,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2062,3.167,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2063,3.1459,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2064,3.1237,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2065,3.1005,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2066,3.0762,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2067,3.0508,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2068,3.0244,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2069,2.997,mm,carbonation_depth,ridge
+concrete,PileB,Colder & Wetter,2070,2.9686,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2001,1.3951,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2002,1.564,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2003,1.6969,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2004,1.8084,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2005,1.9054,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2006,1.9919,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2007,2.0705,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2008,2.1428,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2009,2.2099,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2010,2.2728,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2011,2.3326,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2012,2.3899,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2013,2.4449,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2014,2.4978,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2015,2.549,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2016,2.5986,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2017,2.6468,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2018,2.6937,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2019,2.7394,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2020,2.7841,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2021,2.8279,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2022,2.8709,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2023,2.9132,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2024,2.9549,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2025,2.9959,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2026,3.0363,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2027,3.0722,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2028,3.1046,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2029,3.134,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2030,3.1608,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2031,3.1855,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2032,3.2081,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2033,3.2289,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2034,3.2479,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2035,3.2652,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2036,3.2808,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2037,3.2947,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2038,3.3069,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2039,3.3174,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2040,3.3263,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2041,3.3336,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2042,3.3395,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2043,3.3438,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2044,3.3468,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2045,3.3483,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2046,3.3484,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2047,3.347,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2048,3.3443,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2049,3.3402,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2050,3.3347,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2051,3.3278,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2052,3.3197,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2053,3.3104,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2054,3.2999,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2055,3.2883,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2056,3.2754,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2057,3.2614,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2058,3.2462,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2059,3.2298,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2060,3.2123,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2061,3.1937,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2062,3.174,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2063,3.1532,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2064,3.1314,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2065,3.1086,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2066,3.0847,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2067,3.0597,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2068,3.0337,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2069,3.0067,mm,carbonation_depth,ridge
+concrete,PileB,Hotter & Drier,2070,2.9787,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2001,1.3951,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2002,1.564,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2003,1.6969,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2004,1.8084,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2005,1.9054,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2006,1.9919,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2007,2.0705,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2008,2.1428,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2009,2.2099,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2010,2.2728,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2011,2.3324,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2012,2.3892,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2013,2.4435,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2014,2.4956,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2015,2.5459,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2016,2.5944,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2017,2.6414,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2018,2.687,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2019,2.7313,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2020,2.7745,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2021,2.8167,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2022,2.8581,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2023,2.8987,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2024,2.9385,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2025,2.9777,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2026,3.0162,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2027,3.0497,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2028,3.0793,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2029,3.1057,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2030,3.1293,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2031,3.1505,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2032,3.1695,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2033,3.1864,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2034,3.2013,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2035,3.2143,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2036,3.2253,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2037,3.2345,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2038,3.2419,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2039,3.2473,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2040,3.2509,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2041,3.2528,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2042,3.2529,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2043,3.2514,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2044,3.2482,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2045,3.2435,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2046,3.2371,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2047,3.2291,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2048,3.2196,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2049,3.2084,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2050,3.1956,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2051,3.1813,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2052,3.1656,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2053,3.1484,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2054,3.1297,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2055,3.1097,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2056,3.0883,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2057,3.0655,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2058,3.0413,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2059,3.0157,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2060,2.9887,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2061,2.9603,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2062,2.9307,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2063,2.8997,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2064,2.8675,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2065,2.834,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2066,2.7993,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2067,2.7633,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2068,2.726,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2069,2.6874,mm,carbonation_depth,ridge
+concrete,PileB,Most Likely,2070,2.6476,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2001,1.142,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2002,1.2823,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2003,1.3927,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2004,1.4855,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2005,1.5663,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2006,1.6384,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2007,1.704,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2008,1.7642,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2009,1.8203,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2010,1.8728,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2011,1.9228,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2012,1.9707,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2013,2.0167,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2014,2.0611,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2015,2.104,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2016,2.1456,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2017,2.1861,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2018,2.2255,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2019,2.2639,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2020,2.3015,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2021,2.3383,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2022,2.3746,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2023,2.4102,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2024,2.4453,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2025,2.4799,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2026,2.514,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2027,2.5399,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2028,2.5601,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2029,2.5759,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2030,2.5884,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2031,2.5982,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2032,2.6056,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2033,2.611,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2034,2.6145,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2035,2.6162,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2036,2.6161,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2037,2.6143,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2038,2.6108,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2039,2.6056,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2040,2.5987,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2041,2.5903,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2042,2.5803,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2043,2.5689,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2044,2.5561,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2045,2.5418,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2046,2.5261,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2047,2.5089,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2048,2.4904,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2049,2.4705,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2050,2.4491,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2051,2.4264,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2052,2.4025,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2053,2.3773,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2054,2.351,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2055,2.3234,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2056,2.2947,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2057,2.2648,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2058,2.2337,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2059,2.2015,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2060,2.168,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2061,2.1335,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2062,2.0979,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2063,2.0612,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2064,2.0234,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2065,1.9846,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2066,1.9448,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2067,1.9039,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2068,1.8619,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2069,1.819,mm,carbonation_depth,ridge
+concrete,PileC,Colder & Wetter,2070,1.7749,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2001,1.142,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2002,1.2823,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2003,1.3927,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2004,1.4855,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2005,1.5663,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2006,1.6384,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2007,1.704,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2008,1.7642,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2009,1.8203,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2010,1.8728,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2011,1.9228,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2012,1.9707,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2013,2.0166,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2014,2.061,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2015,2.1038,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2016,2.1454,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2017,2.1858,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2018,2.2251,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2019,2.2635,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2020,2.301,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2021,2.3378,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2022,2.3739,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2023,2.4094,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2024,2.4444,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2025,2.4789,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2026,2.5129,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2027,2.5388,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2028,2.5591,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2029,2.575,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2030,2.5876,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2031,2.5975,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2032,2.605,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2033,2.6106,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2034,2.6142,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2035,2.616,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2036,2.6161,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2037,2.6145,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2038,2.6112,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2039,2.6062,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2040,2.5995,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2041,2.5913,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2042,2.5816,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2043,2.5704,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2044,2.5577,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2045,2.5437,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2046,2.5282,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2047,2.5114,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2048,2.4931,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2049,2.4734,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2050,2.4523,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2051,2.4299,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2052,2.4063,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2053,2.3814,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2054,2.3554,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2055,2.3281,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2056,2.2997,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2057,2.2701,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2058,2.2394,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2059,2.2075,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2060,2.1744,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2061,2.1403,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2062,2.105,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2063,2.0687,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2064,2.0313,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2065,1.9929,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2066,1.9534,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2067,1.9129,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2068,1.8714,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2069,1.8288,mm,carbonation_depth,ridge
+concrete,PileC,Hotter & Drier,2070,1.7852,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2001,1.142,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2002,1.2823,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2003,1.3927,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2004,1.4855,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2005,1.5663,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2006,1.6384,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2007,1.704,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2008,1.7642,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2009,1.8203,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2010,1.8728,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2011,1.9226,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2012,1.97,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2013,2.0154,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2014,2.059,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2015,2.101,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2016,2.1416,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2017,2.181,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2018,2.2191,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2019,2.2563,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2020,2.2924,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2021,2.3278,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2022,2.3625,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2023,2.3965,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2024,2.4299,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2025,2.4627,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2026,2.495,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2027,2.5187,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2028,2.5363,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2029,2.5492,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2030,2.5586,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2031,2.565,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2032,2.5689,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2033,2.5706,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2034,2.5701,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2035,2.5676,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2036,2.5632,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2037,2.5569,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2038,2.5487,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2039,2.5386,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2040,2.5267,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2041,2.513,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2042,2.4976,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2043,2.4805,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2044,2.4618,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2045,2.4415,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2046,2.4196,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2047,2.396,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2048,2.3709,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2049,2.3442,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2050,2.3158,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2051,2.286,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2052,2.2547,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2053,2.2219,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2054,2.1877,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2055,2.1522,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2056,2.1152,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2057,2.0768,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2058,2.037,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2059,1.9959,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2060,1.9533,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2061,1.9094,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2062,1.8642,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2063,1.8177,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2064,1.77,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2065,1.7209,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2066,1.6706,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2067,1.619,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2068,1.5662,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2069,1.5121,mm,carbonation_depth,ridge
+concrete,PileC,Most Likely,2070,1.4567,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2001,1.6637,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2002,1.8629,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2003,2.0195,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2004,2.1507,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2005,2.2649,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2006,2.3667,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2007,2.459,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2008,2.544,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2009,2.6228,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2010,2.6967,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2011,2.767,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2012,2.8342,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2013,2.8987,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2014,2.9608,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2015,3.0209,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2016,3.079,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2017,3.1355,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2018,3.1905,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2019,3.2441,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2020,3.2965,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2021,3.3478,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2022,3.3982,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2023,3.4478,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2024,3.4966,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2025,3.5446,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2026,3.592,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2027,3.6353,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2028,3.6754,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2029,3.7127,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2030,3.7476,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2031,3.7804,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2032,3.8112,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2033,3.8402,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2034,3.8674,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2035,3.8928,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2036,3.9166,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2037,3.9387,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2038,3.959,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2039,3.9778,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2040,3.9948,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2041,4.0103,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2042,4.0243,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2043,4.0368,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2044,4.0478,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2045,4.0575,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2046,4.0657,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2047,4.0725,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2048,4.0779,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2049,4.0818,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2050,4.0844,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2051,4.0857,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2052,4.0856,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2053,4.0844,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2054,4.082,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2055,4.0783,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2056,4.0735,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2057,4.0676,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2058,4.0604,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2059,4.0521,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2060,4.0426,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2061,4.032,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2062,4.0203,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2063,4.0075,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2064,3.9937,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2065,3.9788,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2066,3.9629,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2067,3.9459,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2068,3.9279,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2069,3.9088,mm,carbonation_depth,ridge
+concrete,PileD,Colder & Wetter,2070,3.8887,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2001,1.6637,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2002,1.8629,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2003,2.0195,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2004,2.1507,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2005,2.2649,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2006,2.3667,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2007,2.459,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2008,2.544,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2009,2.6228,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2010,2.6967,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2011,2.7669,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2012,2.8341,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2013,2.8986,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2014,2.9607,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2015,3.0207,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2016,3.0788,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2017,3.1352,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2018,3.1901,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2019,3.2436,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2020,3.2958,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2021,3.3471,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2022,3.3974,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2023,3.4468,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2024,3.4955,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2025,3.5434,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2026,3.5906,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2027,3.6339,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2028,3.6741,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2029,3.7115,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2030,3.7465,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2031,3.7794,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2032,3.8103,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2033,3.8394,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2034,3.8668,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2035,3.8924,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2036,3.9163,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2037,3.9386,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2038,3.9591,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2039,3.978,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2040,3.9953,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2041,4.011,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2042,4.0252,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2043,4.0379,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2044,4.0492,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2045,4.0591,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2046,4.0675,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2047,4.0746,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2048,4.0802,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2049,4.0845,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2050,4.0873,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2051,4.0888,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2052,4.0891,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2053,4.0882,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2054,4.0861,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2055,4.0827,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2056,4.0783,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2057,4.0726,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2058,4.0658,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2059,4.0578,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2060,4.0487,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2061,4.0384,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2062,4.0271,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2063,4.0147,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2064,4.0012,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2065,3.9867,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2066,3.9712,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2067,3.9546,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2068,3.937,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2069,3.9184,mm,carbonation_depth,ridge
+concrete,PileD,Hotter & Drier,2070,3.8987,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2001,1.6637,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2002,1.8629,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2003,2.0195,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2004,2.1507,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2005,2.2649,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2006,2.3667,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2007,2.459,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2008,2.544,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2009,2.6228,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2010,2.6967,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2011,2.7667,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2012,2.8333,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2013,2.897,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2014,2.9582,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2015,3.0171,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2016,3.074,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2017,3.1291,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2018,3.1825,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2019,3.2345,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2020,3.2851,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2021,3.3346,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2022,3.383,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2023,3.4306,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2024,3.4772,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2025,3.5231,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2026,3.5681,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2027,3.6089,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2028,3.6462,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2029,3.6806,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2030,3.7123,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2031,3.7417,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2032,3.7689,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2033,3.7942,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2034,3.8174,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2035,3.8387,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2036,3.8581,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2037,3.8757,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2038,3.8914,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2039,3.9052,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2040,3.9172,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2041,3.9274,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2042,3.9359,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2043,3.9428,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2044,3.948,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2045,3.9516,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2046,3.9536,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2047,3.954,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2048,3.9528,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2049,3.95,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2050,3.9456,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2051,3.9396,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2052,3.9322,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2053,3.9234,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2054,3.9132,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2055,3.9015,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2056,3.8884,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2057,3.874,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2058,3.8582,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2059,3.8409,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2060,3.8223,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2061,3.8023,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2062,3.781,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2063,3.7585,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2064,3.7346,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2065,3.7095,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2066,3.6831,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2067,3.6555,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2068,3.6265,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2069,3.5964,mm,carbonation_depth,ridge
+concrete,PileD,Most Likely,2070,3.5649,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2001,5.307,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2002,5.8901,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2003,6.345,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2004,6.7242,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2005,7.0526,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2006,7.3445,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2007,7.6086,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2008,7.8508,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2009,8.0753,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2010,8.2849,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2011,8.484,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2012,8.6739,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2013,8.8558,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2014,9.0306,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2015,9.1993,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2016,9.3624,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2017,9.5205,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2018,9.6742,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2019,9.8237,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2020,9.9695,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2021,10.1124,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2022,10.2525,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2023,10.3901,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2024,10.5253,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2025,10.6584,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2026,10.7894,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2027,10.9242,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2028,11.0605,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2029,11.197,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2030,11.3329,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2031,11.4677,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2032,11.6012,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2033,11.7333,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2034,11.8639,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2035,11.9929,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2036,12.1203,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2037,12.246,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2038,12.3701,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2039,12.4926,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2040,12.6134,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2041,12.7326,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2042,12.8504,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2043,12.9667,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2044,13.0815,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2045,13.1949,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2046,13.3069,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2047,13.4175,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2048,13.5266,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2049,13.6344,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2050,13.7407,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2051,13.8457,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2052,13.9495,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2053,14.052,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2054,14.1533,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2055,14.2535,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2056,14.3525,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2057,14.4503,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2058,14.5469,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2059,14.6423,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2060,14.7366,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2061,14.8298,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2062,14.9218,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2063,15.0128,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2064,15.1028,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2065,15.1917,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2066,15.2795,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2067,15.3663,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2068,15.4521,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2069,15.5368,mm,carbonation_depth,ridge
+concrete,PileE,Colder & Wetter,2070,15.6205,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2001,5.307,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2002,5.8901,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2003,6.345,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2004,6.7242,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2005,7.0526,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2006,7.3445,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2007,7.6086,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2008,7.8508,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2009,8.0753,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2010,8.2849,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2011,8.4839,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2012,8.6738,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2013,8.8556,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2014,9.0303,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2015,9.1988,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2016,9.3618,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2017,9.5197,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2018,9.6731,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2019,9.8225,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2020,9.9681,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2021,10.1107,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2022,10.2505,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2023,10.3879,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2024,10.5228,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2025,10.6556,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2026,10.7863,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2027,10.921,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2028,11.0573,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2029,11.1939,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2030,11.3298,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2031,11.4647,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2032,11.5984,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2033,11.7306,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2034,11.8613,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2035,11.9905,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2036,12.118,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2037,12.244,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2038,12.3682,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2039,12.4909,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2040,12.6119,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2041,12.7313,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2042,12.8493,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2043,12.9658,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2044,13.0809,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2045,13.1945,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2046,13.3067,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2047,13.4176,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2048,13.527,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2049,13.635,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2050,13.7416,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2051,13.8469,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2052,13.951,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2053,14.0538,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2054,14.1555,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2055,14.2559,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2056,14.3552,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2057,14.4533,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2058,14.5503,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2059,14.6461,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2060,14.7407,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2061,14.8342,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2062,14.9267,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2063,15.018,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2064,15.1084,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2065,15.1976,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2066,15.2859,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2067,15.3731,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2068,15.4592,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2069,15.5444,mm,carbonation_depth,ridge
+concrete,PileE,Hotter & Drier,2070,15.6285,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2001,5.307,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2002,5.8901,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2003,6.345,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2004,6.7242,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2005,7.0526,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2006,7.3445,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2007,7.6086,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2008,7.8508,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2009,8.0753,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2010,8.2849,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2011,8.4833,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2012,8.6718,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2013,8.8519,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2014,9.0245,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2015,9.1906,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2016,9.3507,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2017,9.5056,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2018,9.6556,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2019,9.8014,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2020,9.9431,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2021,10.0817,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2022,10.2174,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2023,10.3503,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2024,10.4807,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2025,10.6087,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2026,10.7346,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2027,10.865,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2028,10.9975,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2029,11.1304,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2030,11.2626,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2031,11.3938,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2032,11.5236,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2033,11.6519,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2034,11.7784,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2035,11.9033,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2036,12.0263,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2037,12.1475,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2038,12.2669,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2039,12.3845,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2040,12.5002,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2041,12.6142,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2042,12.7264,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2043,12.8371,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2044,12.9461,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2045,13.0534,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2046,13.1592,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2047,13.2634,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2048,13.3659,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2049,13.4669,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2050,13.5663,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2051,13.6641,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2052,13.7605,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2053,13.8554,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2054,13.949,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2055,14.0411,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2056,14.1318,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2057,14.2211,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2058,14.3091,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2059,14.3956,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2060,14.4807,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2061,14.5645,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2062,14.647,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2063,14.7282,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2064,14.8082,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2065,14.8868,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2066,14.9642,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2067,15.0403,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2068,15.1152,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2069,15.1888,mm,carbonation_depth,ridge
+concrete,PileE,Most Likely,2070,15.2611,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2001,1.9686,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2002,2.2029,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2003,2.3869,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2004,2.5411,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2005,2.6752,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2006,2.7947,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2007,2.9032,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2008,3.0029,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2009,3.0955,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2010,3.1821,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2011,3.2646,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2012,3.3435,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2013,3.4192,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2014,3.4921,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2015,3.5626,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2016,3.6309,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2017,3.6972,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2018,3.7618,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2019,3.8247,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2020,3.8862,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2021,3.9464,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2022,4.0056,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2023,4.0638,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2024,4.1211,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2025,4.1775,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2026,4.2331,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2027,4.2865,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2028,4.3377,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2029,4.3869,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2030,4.434,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2031,4.4793,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2032,4.5228,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2033,4.5645,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2034,4.6045,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2035,4.6428,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2036,4.6794,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2037,4.7143,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2038,4.7476,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2039,4.7792,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2040,4.8091,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2041,4.8375,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2042,4.8643,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2043,4.8897,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2044,4.9137,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2045,4.9362,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2046,4.9573,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2047,4.977,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2048,4.9953,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2049,5.0121,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2050,5.0276,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2051,5.0417,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2052,5.0546,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2053,5.0662,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2054,5.0767,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2055,5.0859,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2056,5.094,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2057,5.1009,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2058,5.1067,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2059,5.1112,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2060,5.1146,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2061,5.1169,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2062,5.1181,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2063,5.1182,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2064,5.1173,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2065,5.1153,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2066,5.1122,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2067,5.1082,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2068,5.103,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2069,5.0969,mm,carbonation_depth,ridge
+concrete,PileF,Colder & Wetter,2070,5.0897,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2001,1.9686,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2002,2.2029,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2003,2.3869,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2004,2.5411,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2005,2.6752,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2006,2.7947,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2007,2.9032,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2008,3.0029,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2009,3.0955,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2010,3.1821,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2011,3.2646,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2012,3.3434,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2013,3.4191,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2014,3.492,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2015,3.5624,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2016,3.6306,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2017,3.6968,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2018,3.7613,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2019,3.8241,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2020,3.8854,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2021,3.9456,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2022,4.0046,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2023,4.0627,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2024,4.1198,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2025,4.1761,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2026,4.2315,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2027,4.2849,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2028,4.3361,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2029,4.3854,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2030,4.4326,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2031,4.478,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2032,4.5216,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2033,4.5634,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2034,4.6036,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2035,4.642,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2036,4.6788,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2037,4.7139,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2038,4.7474,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2039,4.7792,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2040,4.8093,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2041,4.8379,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2042,4.8649,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2043,4.8906,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2044,4.9147,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2045,4.9375,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2046,4.9589,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2047,4.9788,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2048,4.9973,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2049,5.0145,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2050,5.0302,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2051,5.0446,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2052,5.0578,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2053,5.0697,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2054,5.0805,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2055,5.0901,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2056,5.0985,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2057,5.1057,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2058,5.1118,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2059,5.1167,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2060,5.1204,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2061,5.123,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2062,5.1246,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2063,5.1251,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2064,5.1245,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2065,5.1229,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2066,5.1203,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2067,5.1166,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2068,5.1119,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2069,5.1061,mm,carbonation_depth,ridge
+concrete,PileF,Hotter & Drier,2070,5.0993,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2001,1.9686,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2002,2.2029,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2003,2.3869,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2004,2.5411,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2005,2.6752,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2006,2.7947,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2007,2.9032,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2008,3.0029,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2009,3.0955,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2010,3.1821,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2011,3.2643,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2012,3.3424,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2013,3.4172,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2014,3.489,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2015,3.5582,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2016,3.6249,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2017,3.6895,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2018,3.7522,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2019,3.8132,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2020,3.8726,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2021,3.9306,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2022,3.9875,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2023,4.0433,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2024,4.098,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2025,4.1518,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2026,4.2047,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2027,4.2552,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2028,4.3035,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2029,4.3496,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2030,4.3935,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2031,4.4354,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2032,4.4752,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2033,4.5132,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2034,4.5492,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2035,4.5833,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2036,4.6156,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2037,4.646,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2038,4.6746,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2039,4.7013,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2040,4.7262,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2041,4.7492,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2042,4.7706,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2043,4.7904,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2044,4.8085,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2045,4.825,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2046,4.8399,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2047,4.8532,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2048,4.8648,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2049,4.8749,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2050,4.8834,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2051,4.8904,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2052,4.8959,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2053,4.8999,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2054,4.9026,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2055,4.9038,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2056,4.9036,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2057,4.9021,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2058,4.8991,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2059,4.8948,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2060,4.889,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2061,4.8819,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2062,4.8735,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2063,4.8639,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2064,4.8529,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2065,4.8407,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2066,4.8272,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2067,4.8124,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2068,4.7964,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2069,4.7791,mm,carbonation_depth,ridge
+concrete,PileF,Most Likely,2070,4.7605,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2001,3.104,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2002,3.4583,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2003,3.7356,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2004,3.9673,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2005,4.1685,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2006,4.3475,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2007,4.5098,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2008,4.6588,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2009,4.797,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2010,4.9263,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2011,5.0493,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2012,5.167,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2013,5.2799,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2014,5.3887,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2015,5.4939,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2016,5.5957,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2017,5.6947,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2018,5.7909,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2019,5.8848,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2020,5.9765,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2021,6.0664,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2022,6.1548,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2023,6.2416,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2024,6.3271,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2025,6.4113,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2026,6.4944,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2027,6.5768,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2028,6.6581,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2029,6.7379,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2030,6.8161,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2031,6.8927,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2032,6.9675,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2033,7.0407,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2034,7.1122,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2035,7.1821,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2036,7.2503,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2037,7.3169,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2038,7.3818,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2039,7.445,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2040,7.5065,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2041,7.5665,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2042,7.625,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2043,7.682,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2044,7.7376,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2045,7.7918,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2046,7.8445,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2047,7.8958,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2048,7.9457,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2049,7.9942,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2050,8.0413,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2051,8.087,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2052,8.1315,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2053,8.1748,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2054,8.2169,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2055,8.2578,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2056,8.2975,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2057,8.336,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2058,8.3734,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2059,8.4096,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2060,8.4446,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2061,8.4785,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2062,8.5113,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2063,8.5431,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2064,8.5737,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2065,8.6034,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2066,8.632,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2067,8.6595,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2068,8.686,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2069,8.7115,mm,carbonation_depth,ridge
+concrete,PileG,Colder & Wetter,2070,8.7359,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2001,3.104,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2002,3.4583,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2003,3.7356,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2004,3.9673,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2005,4.1685,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2006,4.3475,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2007,4.5098,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2008,4.6588,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2009,4.797,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2010,4.9263,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2011,5.0493,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2012,5.1669,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2013,5.2797,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2014,5.3884,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2015,5.4934,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2016,5.5952,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2017,5.694,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2018,5.7901,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2019,5.8838,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2020,5.9753,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2021,6.065,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2022,6.1531,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2023,6.2398,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2024,6.325,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2025,6.409,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2026,6.4918,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2027,6.5742,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2028,6.6554,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2029,6.7353,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2030,6.8136,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2031,6.8902,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2032,6.9652,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2033,7.0386,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2034,7.1102,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2035,7.1803,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2036,7.2486,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2037,7.3154,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2038,7.3804,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2039,7.4438,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2040,7.5056,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2041,7.5658,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2042,7.6245,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2043,7.6817,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2044,7.7376,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2045,7.7919,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2046,7.8449,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2047,7.8965,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2048,7.9466,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2049,7.9954,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2050,8.0428,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2051,8.0888,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2052,8.1336,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2053,8.1772,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2054,8.2196,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2055,8.2608,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2056,8.3008,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2057,8.3397,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2058,8.3774,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2059,8.4139,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2060,8.4493,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2061,8.4835,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2062,8.5167,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2063,8.5488,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2064,8.5799,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2065,8.6099,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2066,8.6389,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2067,8.6668,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2068,8.6937,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2069,8.7196,mm,carbonation_depth,ridge
+concrete,PileG,Hotter & Drier,2070,8.7444,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2001,3.104,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2002,3.4583,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2003,3.7356,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2004,3.9673,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2005,4.1685,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2006,4.3475,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2007,4.5098,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2008,4.6588,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2009,4.797,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2010,4.9263,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2011,5.0487,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2012,5.1653,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2013,5.2767,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2014,5.3836,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2015,5.4866,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2016,5.586,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2017,5.6822,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2018,5.7755,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2019,5.8662,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2020,5.9545,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2021,6.0408,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2022,6.1254,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2023,6.2084,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2024,6.2898,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2025,6.3698,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2026,6.4485,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2027,6.5271,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2028,6.6048,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2029,6.6812,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2030,6.7559,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2031,6.8288,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2032,6.9,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2033,6.9694,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2034,7.0369,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2035,7.1026,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2036,7.1665,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2037,7.2285,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2038,7.2887,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2039,7.347,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2040,7.4035,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2041,7.4582,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2042,7.5112,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2043,7.5626,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2044,7.6123,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2045,7.6605,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2046,7.707,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2047,7.7519,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2048,7.7952,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2049,7.8369,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2050,7.877,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2051,7.9156,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2052,7.9527,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2053,7.9884,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2054,8.0227,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2055,8.0555,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2056,8.087,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2057,8.117,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2058,8.1457,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2059,8.173,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2060,8.1989,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2061,8.2234,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2062,8.2467,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2063,8.2686,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2064,8.2893,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2065,8.3087,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2066,8.3268,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2067,8.3437,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2068,8.3593,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2069,8.3736,mm,carbonation_depth,ridge
+concrete,PileG,Most Likely,2070,8.3867,mm,carbonation_depth,ridge

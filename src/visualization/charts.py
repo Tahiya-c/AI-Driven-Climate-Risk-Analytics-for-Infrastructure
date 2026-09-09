@@ -111,6 +111,44 @@ def dashboard_timber_model_data() -> dict[str, dict[str, dict[str, pd.DataFrame]
     }
 
 
+def concrete_asset_ids() -> list[str]:
+    """Pile ids available in the concrete dashboard export."""
+    path = ROOT_DIR / "data" / "dashboard" / "dashboard_data_concrete_rnn.csv"
+    return sorted(pd.read_csv(path)["asset_id"].unique())
+
+
+def dashboard_concrete_model_data(
+    asset_id: str | None = None,
+) -> dict[str, dict[str, pd.DataFrame]]:
+    """Load the RNN and Ridge concrete forecasts, optionally for one pile."""
+    return {
+        "RNN": _load_concrete_csv("concrete_rnn", asset_id),
+        "Ridge": _load_concrete_csv("concrete_ridge", asset_id),
+    }
+
+
+def _load_concrete_csv(name: str, asset_id: str | None) -> dict[str, pd.DataFrame]:
+    """Concrete export -> chart-ready history and projections (same shape as the timber loader)."""
+    path = ROOT_DIR / "data" / "dashboard" / f"dashboard_data_{name}.csv"
+    if not path.exists():
+        raise FileNotFoundError(f"Dashboard data file not found: {path}")
+
+    frame = pd.read_csv(path)
+    if asset_id is not None:
+        frame = frame.loc[frame["asset_id"] == asset_id]
+    frame = frame.rename(columns={"scenario": "condition"})
+
+    current_year = date.today().year
+    historical = frame.loc[frame["year"] <= current_year]
+    projection = frame.loc[frame["year"] > current_year]
+    if historical.empty or projection.empty:
+        raise ValueError(f"Concrete CSV {name} needs rows on both sides of {current_year}.")
+
+    historical = historical.groupby("year", as_index=False)["value"].mean()
+    projection = projection.groupby(["year", "condition"], as_index=False)["value"].mean()
+    return {"historical": historical, "projection": projection}
+
+
 def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
     """Convert one shared dashboard CSV into chart-ready history and projections."""
     path = ROOT_DIR / "data" / "dashboard" / f"dashboard_data_{material}.csv"

@@ -7,6 +7,8 @@ import streamlit as st
 
 from src.visualization.charts import (
     comparison_data_from_payload,
+    concrete_asset_ids,
+    dashboard_concrete_model_data,
     dashboard_timber_model_data,
     material_forecast_chart,
 )
@@ -154,8 +156,53 @@ def _render_timber_page(
 
 
 def _render_concrete_page() -> None:
-    """Render the reserved Concrete page shell."""
+    """Render RNN and Ridge concrete carbonation forecasts side by side."""
     st.title("Concrete outlook")
-    st.caption("Concrete model results will be displayed here.")
-    st.columns(2, gap="small")
+    st.caption(
+        "Compare carbonation depth projections from the RNN and Ridge models."
+    )
+
+    try:
+        piles = concrete_asset_ids()
+    except (FileNotFoundError, OSError) as exc:
+        st.error(f"Could not load concrete data: {exc}")
+        return
+
+    pile = st.selectbox("Pile", piles, index=0)
+
+    try:
+        data = dashboard_concrete_model_data(pile)
+    except (FileNotFoundError, ValueError, OSError) as exc:
+        st.error(f"Could not load concrete data: {exc}")
+        return
+
+    rnn_col, ridge_col = st.columns(2, gap="small")
+    for container, model_name in ((rnn_col, "RNN"), (ridge_col, "Ridge")):
+        model_data = data[model_name]
+        with container:
+            figure = material_forecast_chart(
+                f"Concrete - {model_name}",
+                model_data["historical"],
+                model_data["projection"],
+            )
+            figure.update_layout(yaxis_title="Carbonation depth (mm)")
+            st.plotly_chart(
+                figure,
+                use_container_width=True,
+                config={
+                    "displayModeBar": False,
+                    "responsive": True,
+                },
+            )
+            if st.button(
+                "Open larger view",
+                key=f"expand_concrete_{model_name.lower()}",
+                icon=":material/open_in_full:",
+                use_container_width=True,
+            ):
+                _show_expanded_chart(
+                    f"Concrete - {model_name}",
+                    model_data["historical"],
+                    model_data["projection"],
+                )
 
