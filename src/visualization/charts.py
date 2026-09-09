@@ -1,6 +1,7 @@
 """Plotly chart builders for historical condition and forecasts."""
 
 from collections.abc import Mapping
+from datetime import date
 from typing import Any
 
 import numpy as np
@@ -105,8 +106,8 @@ def dashboard_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
 def dashboard_timber_model_data() -> dict[str, dict[str, dict[str, pd.DataFrame]]]:
     """Load the separate GBM and MLP Timber dashboard exports."""
     return {
-        "GBM": _load_dashboard_csv("timber_gbm"),
-        "MLP": _load_dashboard_csv("timber_mlp"),
+        "GBM": _load_dashboard_csv("timber_pileB_from_pileA_gbm"),
+        "MLP": _load_dashboard_csv("timber_pileB_from_pileA_mlp"),
     }
 
 
@@ -128,13 +129,20 @@ def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
         "MIROC-Medres": "Colder & Wetter",
     }
     frame["condition"] = frame["scenario"].map(
-        lambda value: next(
+        lambda value: value
+        if value in SCENARIO_LABELS
+        else next(
             (label for model, label in scenario_map.items() if model in value),
             "Most Likely",
         )
     )
-    historical = frame.loc[frame["method"] == "observed"]
-    projection = frame.loc[frame["method"] != "observed"]
+    current_year = date.today().year
+    if (frame["method"] == "observed").any():
+        historical = frame.loc[frame["method"] == "observed"]
+        projection = frame.loc[frame["method"] != "observed"]
+    else:
+        historical = frame.loc[frame["year"] <= current_year]
+        projection = frame.loc[frame["year"] > current_year]
     if historical.empty or projection.empty:
         raise ValueError(f"Dashboard CSV for {material} needs observed and projected rows.")
 
