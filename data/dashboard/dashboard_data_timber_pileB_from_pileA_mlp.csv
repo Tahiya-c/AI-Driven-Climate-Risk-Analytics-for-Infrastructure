@@ -1,0 +1,214 @@
+material,asset_id,scenario,year,value,unit,metric,method
+timber,PileB,Colder & Wetter,2000,44.336,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2001,46.7029,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2002,49.0698,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2003,51.4367,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2004,53.8035,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2005,56.1704,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2006,58.5373,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2007,60.9042,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2008,63.271,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2009,65.6379,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2010,68.0048,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2011,70.3717,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2012,72.7386,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2013,75.1054,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2014,77.4723,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2015,79.8392,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2016,82.2061,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2017,84.573,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2018,86.9398,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2019,89.3067,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2020,91.6736,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2021,94.0405,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2022,96.4065,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2023,98.7698,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2024,101.131,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2025,103.4922,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2026,105.8535,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2027,115.4399,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2028,118.0555,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2029,120.6734,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2030,123.2935,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2031,126.0106,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2032,128.7319,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2033,131.4574,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2034,134.1872,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2035,136.9214,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2036,139.3966,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2037,141.4808,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2038,143.2024,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2039,146.8793,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2040,150.7876,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2041,154.5364,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2042,157.894,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2043,161.7721,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2044,166.6296,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2045,170.8831,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2046,175.0133,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2047,178.775,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2048,182.1161,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2049,185.4325,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2050,188.7557,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2051,192.0552,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2052,195.1902,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2053,198.2889,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2054,201.3551,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2055,204.4291,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2056,207.5108,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2057,210.6002,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2058,213.6976,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2059,216.8028,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2060,219.9159,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2061,223.0371,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2062,226.1663,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2063,229.3037,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2064,232.4492,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2065,235.603,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2066,238.7651,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2067,241.9355,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2068,245.1143,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2069,248.3016,mm,deterioration_depth,mlp
+timber,PileB,Colder & Wetter,2070,250.0,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2000,44.336,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2001,46.7029,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2002,49.0698,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2003,51.4367,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2004,53.8035,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2005,56.1704,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2006,58.5373,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2007,60.9042,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2008,63.271,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2009,65.6379,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2010,68.0048,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2011,70.3717,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2012,72.7386,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2013,75.1054,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2014,77.4723,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2015,79.8392,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2016,82.2061,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2017,84.573,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2018,86.9398,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2019,89.3067,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2020,91.6736,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2021,94.0405,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2022,96.4065,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2023,98.7698,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2024,101.131,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2025,103.4922,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2026,105.8535,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2027,115.09,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2028,117.6877,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2029,120.2873,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2030,122.8888,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2031,125.597,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2032,128.3087,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2033,131.0239,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2034,133.7428,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2035,136.4653,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2036,139.1913,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2037,141.7284,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2038,143.8909,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2039,145.493,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2040,148.548,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2041,152.4144,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2042,156.0794,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2043,159.3861,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2044,162.9754,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2045,167.6171,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2046,171.957,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2047,175.904,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2048,179.3232,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2049,182.6409,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2050,185.9083,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2051,189.3503,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2052,192.6436,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2053,195.742,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2054,198.7872,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2055,201.8388,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2056,204.897,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2057,207.9617,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2058,211.033,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2059,214.111,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2060,217.1956,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2061,220.287,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2062,223.3851,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2063,226.4901,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2064,229.6019,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2065,232.7206,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2066,235.8463,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2067,238.9789,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2068,242.1186,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2069,245.1903,mm,deterioration_depth,mlp
+timber,PileB,Hotter & Drier,2070,248.1297,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2000,44.336,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2001,46.7029,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2002,49.0698,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2003,51.4367,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2004,53.8035,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2005,56.1704,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2006,58.5373,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2007,60.9042,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2008,63.271,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2009,65.6379,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2010,68.0048,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2011,70.3717,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2012,72.7386,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2013,75.1054,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2014,77.4723,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2015,79.8392,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2016,82.2061,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2017,84.573,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2018,86.9398,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2019,89.3067,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2020,91.6736,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2021,94.0405,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2022,96.4065,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2023,98.7698,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2024,101.131,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2025,103.4922,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2026,105.8535,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2027,113.9715,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2028,116.5143,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2029,119.0579,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2030,121.6024,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2031,124.2302,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2032,126.8596,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2033,129.4905,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2034,132.123,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2035,134.7571,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2036,137.3927,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2037,140.03,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2038,142.6688,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2039,145.3092,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2040,147.9513,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2041,150.5949,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2042,153.1436,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2043,155.0697,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2044,156.7117,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2045,158.6087,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2046,160.5831,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2047,163.8716,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2048,166.9097,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2049,169.455,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2050,172.3027,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2051,176.2581,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2052,180.0808,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2053,183.4154,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2054,186.6405,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2055,189.7955,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2056,192.9006,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2057,195.8809,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2058,198.8322,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2059,201.6999,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2060,204.2799,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2061,206.8629,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2062,209.4489,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2063,212.0378,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2064,214.6298,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2065,217.2248,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2066,219.8228,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2067,222.4239,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2068,225.028,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2069,227.6353,mm,deterioration_depth,mlp
+timber,PileB,Most Likely,2070,230.2456,mm,deterioration_depth,mlp
