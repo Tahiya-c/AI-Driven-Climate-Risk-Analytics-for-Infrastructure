@@ -5,6 +5,7 @@ from typing import Any
 
 import streamlit as st
 
+from src.ui.ai_summary import render_ai_summary
 from src.visualization.charts import (
     comparison_data_from_payload,
     concrete_asset_ids,
@@ -142,6 +143,8 @@ def _render_timber_page(
                     model_data["projection"],
                 )
 
+    render_ai_summary("Timber", data)
+
     with st.expander("Backend response contract"):
         st.code(
             '''{
@@ -218,4 +221,6 @@ def _render_concrete_page() -> None:
                     model_data["historical"],
                     model_data["projection"],
                 )
+
+    render_ai_summary("Concrete", data, pile)
 
