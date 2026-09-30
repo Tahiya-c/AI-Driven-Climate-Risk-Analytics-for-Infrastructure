@@ -1,4 +1,4 @@
-"""Tests for the multi-model comparison pipeline (src/timber/compare.py and friends)."""
+"""Tests for the multi-model comparison pipeline (src/models/timber_compare.py and friends)."""
 
 from __future__ import annotations
 
@@ -6,18 +6,18 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.timber import model_gbm
-from src.timber.baselines import naive_diameter_baseline
-from src.timber.data_prep import DATA_PATH, load_timber_data
-from src.timber.features import (
+from src.models import timber_model_gbm as model_gbm
+from src.models.timber_baselines import naive_diameter_baseline
+from src.data.timber_data_prep import DATA_PATH, load_timber_data
+from src.features.timber_features import (
     DECAY_DOSE_COLUMN,
     DECAY_DOSE_FEATURE_COLUMNS,
     FEATURE_COLUMNS,
     add_decay_dose,
     constant_within_pile_features,
 )
-from src.timber.quantile import pinball_loss
-from src.timber.targets import (
+from src.models.timber_quantile import pinball_loss
+from src.features.timber_targets import (
     CLIPPED_DIAMETER_COLUMN,
     DISTANCE_TARGET,
     RESIDUAL_TARGET,
@@ -137,7 +137,7 @@ def test_pinball_loss_penalizes_underprediction_more_at_high_quantiles() -> None
 @requires_data_file
 @requires_gbm
 def test_gbm_trains_and_reports_finite_metrics() -> None:
-    from src.timber.model import train
+    from src.models.timber_model import train
 
     frame = load_timber_data(DATA_PATH)
     result = train(frame, split_strategy="time", model_kind="gbm")
@@ -152,7 +152,7 @@ def test_gbm_trains_and_reports_finite_metrics() -> None:
 @requires_data_file
 @requires_gbm
 def test_compare_all_models_beats_the_naive_baseline() -> None:
-    from src.timber.compare import compare_all_models
+    from src.models.timber_compare import compare_all_models
 
     frame = load_timber_data(DATA_PATH)
     table = compare_all_models(frame, split_strategy="time")
@@ -168,7 +168,7 @@ def test_compare_all_models_beats_the_naive_baseline() -> None:
 @requires_data_file
 @requires_gbm
 def test_residual_correction_reconstructs_predictions_on_valid_rows_only() -> None:
-    from src.timber.residual import train_residual_vs_direct
+    from src.models.timber_residual import train_residual_vs_direct
 
     frame = load_timber_data(DATA_PATH)
     result = train_residual_vs_direct(frame, model_kind="gbm", split_strategy="time")
@@ -181,7 +181,7 @@ def test_residual_correction_reconstructs_predictions_on_valid_rows_only() -> No
 @requires_data_file
 @requires_gbm
 def test_quantile_models_produce_an_ordered_replacement_year_band_table() -> None:
-    from src.timber.quantile import replacement_year_bands, train_quantile_models
+    from src.models.timber_quantile import replacement_year_bands, train_quantile_models
 
     frame = load_timber_data(DATA_PATH)
     quantile_models = train_quantile_models(frame, split_strategy="time")
@@ -197,9 +197,9 @@ def test_quantile_models_produce_an_ordered_replacement_year_band_table() -> Non
 @requires_data_file
 @requires_gbm
 def test_shap_importance_covers_every_feature_column_once() -> None:
-    from src.timber.features import build_feature_matrix
-    from src.timber.model import build_pipeline, time_based_split
-    from src.timber.shap_importance import compute_shap_importance
+    from src.features.timber_features import build_feature_matrix
+    from src.models.timber_model import build_pipeline, time_based_split
+    from src.models.timber_shap_importance import compute_shap_importance
 
     frame = load_timber_data(DATA_PATH)
     train_idx, test_idx = time_based_split(frame)

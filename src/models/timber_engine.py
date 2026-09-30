@@ -31,7 +31,7 @@ from dataclasses import dataclass, field
 
 import pandas as pd
 
-from src.timber.coefficients import (
+from src.models.timber_coefficients import (
     K_CONTACT,
     K_KNOT,
     K_PROTECT,

@@ -3,7 +3,7 @@
 **Prepared for:** team review of surrogate-model architecture choice
 **Models compared:** `MLPRegressor` (scikit-learn, existing baseline) vs. `LightGBM` (new)
 **Also tested:** a residual-correction variant of each, quantile (uncertainty-band) regression, an engineered `decay_dose` feature, and a distance-to-threshold target
-**Reproduce with:** `python -m src.timber.compare --model gbm` (and see [How to reproduce](#how-to-reproduce) for every command used below)
+**Reproduce with:** `python -m src.models.timber_compare --model gbm` (and see [How to reproduce](#how-to-reproduce) for every command used below)
 
 > **TL;DR — recommendation:** keep the **MLP** as the primary model for forecasting a pile's own future trajectory (`--target diameter`, default settings). It beats GBM on every headline metric on the split that matters for this app. GBM's one clear win is as a **residual-correction layer** on top of a raw prediction (see [§4](#4-residual-correction-does-it-help)) — that's a different job, not a drop-in replacement. Full reasoning below.
 
@@ -219,23 +219,23 @@ All numbers in this report were generated with `random_state=42` (fixed) against
 
 ```bash
 # §1 head-to-head tables (time split and pile split)
-python -c "from src.timber.data_prep import load_timber_data, DATA_PATH; from src.timber.compare import compare_all_models; f=load_timber_data(DATA_PATH); print(compare_all_models(f, split_strategy='time').to_string(index=False)); print(compare_all_models(f, split_strategy='pile').to_string(index=False))"
+python -c "from src.data.timber_data_prep import load_timber_data, DATA_PATH; from src.models.timber_compare import compare_all_models; f=load_timber_data(DATA_PATH); print(compare_all_models(f, split_strategy='time').to_string(index=False)); print(compare_all_models(f, split_strategy='pile').to_string(index=False))"
 
 # §2 / §3 individual deep dives (headline metrics, error breakdowns, SHAP)
-python -m src.timber.compare --model mlp --shap-sample 30
-python -m src.timber.compare --model gbm
+python -m src.models.timber_compare --model mlp --shap-sample 30
+python -m src.models.timber_compare --model gbm
 
 # §4 residual-correction comparison
-python -m src.timber.compare --model residual --residual-base gbm
-python -m src.timber.compare --model residual --residual-base mlp
+python -m src.models.timber_compare --model residual --residual-base gbm
+python -m src.models.timber_compare --model residual --residual-base mlp
 
 # §5 quantile uncertainty bands
-python -m src.timber.compare --model gbm --no-shap --quantile
+python -m src.models.timber_compare --model gbm --no-shap --quantile
 
 # §6 decay_dose / distance-to-threshold variants
-python -c "from src.timber.data_prep import load_timber_data, DATA_PATH; from src.timber.compare import compare_all_models; f=load_timber_data(DATA_PATH); print(compare_all_models(f, feature_set='decay_dose').to_string(index=False)); print(compare_all_models(f, target='distance').to_string(index=False)); print(compare_all_models(f, target='distance', feature_set='decay_dose').to_string(index=False))"
+python -c "from src.data.timber_data_prep import load_timber_data, DATA_PATH; from src.models.timber_compare import compare_all_models; f=load_timber_data(DATA_PATH); print(compare_all_models(f, feature_set='decay_dose').to_string(index=False)); print(compare_all_models(f, target='distance').to_string(index=False)); print(compare_all_models(f, target='distance', feature_set='decay_dose').to_string(index=False))"
 ```
 
 ### Split strategy reminder
 
-Both `--split time` (default) and `--split pile` reuse `time_based_split`/`pile_based_split` from `src/timber/model.py` unchanged. Time-based (chronological, per pile+scenario) is the default because it tests forecasting a *known* pile forward in time — the app's actual job. Leave-one-pile-out is a harder diagnostic (train on one pile, test on the structurally different other) included above for completeness, not the primary comparison.
+Both `--split time` (default) and `--split pile` reuse `time_based_split`/`pile_based_split` from `src/models/timber_model.py` unchanged. Time-based (chronological, per pile+scenario) is the default because it tests forecasting a *known* pile forward in time — the app's actual job. Leave-one-pile-out is a harder diagnostic (train on one pile, test on the structurally different other) included above for completeness, not the primary comparison.

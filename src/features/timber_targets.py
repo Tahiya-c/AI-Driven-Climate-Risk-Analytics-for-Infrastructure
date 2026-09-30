@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from src.timber.features import TARGET_COLUMN as DIAMETER_TARGET
+from src.features.timber_features import TARGET_COLUMN as DIAMETER_TARGET
 
 DISTANCE_TARGET = "distance_to_threshold_mm"
 CLIPPED_DIAMETER_COLUMN = "remaining_diameter_clipped_mm"

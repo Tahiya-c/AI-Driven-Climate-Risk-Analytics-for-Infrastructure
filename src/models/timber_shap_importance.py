@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 import shap
 
-from src.timber.features import constant_within_pile_features
+from src.features.timber_features import constant_within_pile_features
 
 
 def compute_shap_importance(

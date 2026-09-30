@@ -13,10 +13,10 @@ from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 
-from src.timber.features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
-from src.timber.model import pile_based_split, time_based_split
-from src.timber.model_gbm import build_gbm_quantile_regressor
-from src.timber.scenarios import build_pile_trajectories
+from src.features.timber_features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
+from src.models.timber_model import pile_based_split, time_based_split
+from src.models.timber_model_gbm import build_gbm_quantile_regressor
+from src.models.timber_scenarios import build_pile_trajectories
 
 QUANTILES: tuple[float, ...] = (0.1, 0.5, 0.9)
 

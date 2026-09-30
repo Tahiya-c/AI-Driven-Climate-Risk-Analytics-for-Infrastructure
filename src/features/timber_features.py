@@ -88,6 +88,37 @@ def build_feature_matrix(
 
 
 # ---------------------------------------------------------------------------
+# thermal_dose: the one engineered feature the tuned MLP/GBM surrogates add on
+# top of FEATURE_COLUMNS (see DeteriorationRateRegressor in
+# src/models/timber_model.py, which calls add_thermal_dose itself so callers
+# keep passing the plain FEATURE_COLUMNS matrix).
+# ---------------------------------------------------------------------------
+
+THERMAL_DOSE_COLUMN = "thermal_dose"
+
+
+def add_thermal_dose(features: pd.DataFrame) -> pd.DataFrame:
+    """Append ``thermal_dose = max(age_years, 0) * water_factor``.
+
+    ``water_factor`` is the temperature-driven decay-rate multiplier
+    (``0.1 * exp(0.13 * summer_sea_temp_c)`` in the AS 5604-style engine), so
+    this product is "years in service x how hot those years were" -- a
+    degree-days style exposure term. It is built only from two columns already
+    in FEATURE_COLUMNS, so it adds no information a model couldn't in
+    principle learn; it just hands the age x temperature interaction to the
+    model directly instead of making a tree ensemble or a small MLP discover a
+    multiplicative interaction from 800 rows. Operates on a feature matrix
+    (not the full frame) and works per row, so it is safe on any subset.
+    """
+    missing = sorted({"age_years", "water_factor"} - set(features.columns))
+    if missing:
+        raise ValueError(f"Missing columns required for thermal_dose: {', '.join(missing)}")
+    features = features.copy()
+    features[THERMAL_DOSE_COLUMN] = features["age_years"].clip(lower=0) * features["water_factor"]
+    return features
+
+
+# ---------------------------------------------------------------------------
 # decay_dose: an engineered alternative to feeding age_years and the rate
 # factors in as separate linear inputs.
 # ---------------------------------------------------------------------------
@@ -96,7 +127,7 @@ DECAY_DOSE_COLUMN = "decay_dose"
 DECAY_DOSE_SOURCE_COLUMNS = ["salinity_factor", "summer_sea_temp_c", "timber_exposure_factor"]
 
 # A "trajectory" here means one continuous timeline for one pile under one
-# climate/emissions combination -- the same grain scenarios.py already
+# climate/emissions combination -- the same grain timber_scenarios.py already
 # treats as a single line. Grouping by asset_code alone (ignoring
 # scenario_label/emissions_pathway) would sum dose across unrelated
 # parallel climate futures for the same calendar year, which has no

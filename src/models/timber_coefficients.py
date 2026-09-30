@@ -78,7 +78,7 @@ def lookup_approx(code: str, table: dict[str, float], table_name: str) -> float:
     An unknown code approximate-matches to the LAST entry of the table instead of
     raising. `InputData` assigns PileB the undefined codes MTN3/CNT3/KNT4, which
     all fall back this way; this port keeps that behaviour verbatim in
-    `engine.py` and only fixes it in `engine_corrected.py`.
+    `timber_engine.py` and only fixes it in `engine_corrected.py`.
     """
     if code in table:
         return table[code]

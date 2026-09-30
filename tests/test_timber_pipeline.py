@@ -5,10 +5,10 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from src.timber.data_prep import DATA_PATH, EXPECTED_SCENARIO_LABELS, load_timber_data
-from src.timber.features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
-from src.timber.model import train
-from src.timber.scenarios import build_pile_trajectories, find_replacement_year
+from src.data.timber_data_prep import DATA_PATH, EXPECTED_SCENARIO_LABELS, load_timber_data
+from src.features.timber_features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
+from src.models.timber_model import train
+from src.models.timber_scenarios import build_pile_trajectories, find_replacement_year
 
 requires_data_file = pytest.mark.skipif(
     not DATA_PATH.exists(), reason="timber CSV not present on disk"

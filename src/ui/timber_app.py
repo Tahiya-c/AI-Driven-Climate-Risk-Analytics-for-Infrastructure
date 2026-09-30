@@ -1,15 +1,13 @@
 """Standalone Streamlit app: timber pile replacement forecasting.
 
-Run with: streamlit run src/timber/streamlit/app.py
+Run with: streamlit run src/ui/timber_app.py
 
 This is a separate entry point from app.py (the concrete-pile dashboard).
-It uses the data/feature/model/scenario modules under src/timber/ to
-avoid name collisions with the existing src/data, src/features, and
-src/models packages, and because the concrete and timber datasets have
-unrelated schemas. The Streamlit UI itself lives under src/timber/streamlit/
-so the rest of src/timber/ (data_prep, features, model, scenarios) stays
-free of the streamlit import and can be run or analysed without it --
-see src/timber/model.py and docs/timber_model_results.md.
+It uses the timber data/feature/model/scenario modules (src/data/timber_data_prep.py,
+src/features/timber_features.py, src/models/timber_model.py, src/models/timber_scenarios.py). The
+Streamlit UI itself lives under src/ui/ so those pipeline modules stay free
+of the streamlit import and can be run or analysed without it -- see
+src/models/timber_model.py and docs/timber_model_results.md.
 """
 
 from __future__ import annotations
@@ -18,9 +16,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.timber.data_prep import DATA_PATH, load_timber_data
-from src.timber.model import MODEL_PATH, TrainResult, load_model, save_model, train
-from src.timber.scenarios import SCENARIOS, build_pile_trajectories, summarize_pile
+from src.data.timber_data_prep import DATA_PATH, load_timber_data
+from src.models.timber_model import MODEL_PATH, TrainResult, load_model, save_model, train
+from src.models.timber_scenarios import SCENARIOS, build_pile_trajectories, summarize_pile
 
 SCENARIO_COLORS = {
     "Hotter & Drier": "#DC2626",

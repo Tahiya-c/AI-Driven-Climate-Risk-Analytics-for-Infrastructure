@@ -1,12 +1,12 @@
 """Compare surrogate model architectures for the timber deterioration target.
 
-    python -m src.timber.compare --model gbm
-    python -m src.timber.compare --model mlp --target distance --features decay_dose
-    python -m src.timber.compare --model residual
-    python -m src.timber.compare --model gbm --quantile
+    python -m src.models.timber_compare --model gbm
+    python -m src.models.timber_compare --model mlp --target distance --features decay_dose
+    python -m src.models.timber_compare --model residual
+    python -m src.models.timber_compare --model gbm --quantile
 
 Every mode reuses ``time_based_split``/``pile_based_split`` from
-``src/timber/model.py`` unchanged, so results here are directly
+``src/models/timber_model.py`` unchanged, so results here are directly
 comparable to the MLP baseline documented in
 ``docs/timber_model_results.md``.
 """
@@ -19,21 +19,21 @@ from dataclasses import dataclass
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-from src.timber.baselines import naive_diameter_baseline
-from src.timber.data_prep import DATA_PATH, load_timber_data
-from src.timber.features import (
+from src.models.timber_baselines import naive_diameter_baseline
+from src.data.timber_data_prep import DATA_PATH, load_timber_data
+from src.features.timber_features import (
     DECAY_DOSE_FEATURE_COLUMNS,
     FEATURE_COLUMNS,
     TARGET_COLUMN,
     add_decay_dose,
     build_feature_matrix,
 )
-from src.timber.model import pile_based_split, time_based_split, train
-from src.timber.quantile import pinball_loss, replacement_year_bands, train_quantile_models
-from src.timber.reporting import add_predictions, error_by_age, error_by_pile, error_by_scenario
-from src.timber.residual import train_residual_vs_direct
-from src.timber.shap_importance import compute_shap_importance
-from src.timber.targets import DISTANCE_TARGET, add_distance_to_threshold
+from src.models.timber_model import pile_based_split, time_based_split, train
+from src.models.timber_quantile import pinball_loss, replacement_year_bands, train_quantile_models
+from src.models.timber_reporting import add_predictions, error_by_age, error_by_pile, error_by_scenario
+from src.models.timber_residual import train_residual_vs_direct
+from src.models.timber_shap_importance import compute_shap_importance
+from src.features.timber_targets import DISTANCE_TARGET, add_distance_to_threshold
 
 FEATURE_SETS = {"standard": FEATURE_COLUMNS, "decay_dose": DECAY_DOSE_FEATURE_COLUMNS}
 

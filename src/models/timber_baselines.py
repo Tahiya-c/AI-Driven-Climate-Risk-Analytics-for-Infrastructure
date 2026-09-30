@@ -10,7 +10,7 @@ def naive_diameter_baseline(frame: pd.DataFrame) -> pd.Series:
 
     This deliberately uses ``mean_deterioration_mm``, one of the
     deterministic model's own OUTPUT columns (see ``LEAKY_COLUMNS`` in
-    ``src/timber/features.py``). That is fine here specifically because
+    ``src/features/timber_features.py``). That is fine here specifically because
     this is a fixed arithmetic reference point, not a trained-on feature:
     it exists to answer "is the trained model beating simple arithmetic
     on the deterministic model's own numbers, at all?" It must never be

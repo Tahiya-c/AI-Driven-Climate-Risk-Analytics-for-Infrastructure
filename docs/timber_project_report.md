@@ -1,8 +1,8 @@
 # Timber Pile Deterioration Forecasting — Project Report
 
 **Dataset:** `data/processed/timber_kembla_v6_3_consolidated.csv`
-**Pipeline:** `src/timber/` (`data_prep.py`, `features.py`, `targets.py`, `model.py`, `model_gbm.py`, `residual.py`, `quantile.py`, `compare.py`)
-**Reproduce:** `python -m src.timber.model` (MLP baseline) · `python -m src.timber.compare --model gbm` (full comparison)
+**Pipeline:** `src/data/timber_data_prep.py`, `src/features/` (`timber_features.py`, `timber_targets.py`), `src/models/` (`timber_model.py`, `timber_model_gbm.py`, `timber_residual.py`, `timber_quantile.py`, `timber_compare.py`)
+**Reproduce:** `python -m src.models.timber_model` (MLP baseline) · `python -m src.models.timber_compare --model gbm` (full comparison)
 
 This report summarises the timber pile replacement-forecasting work: how the dataset was prepared, what the model is trained to predict, which model architectures were built and how they were evaluated, their measured accuracy, and the limitations that should qualify every number below.
 
@@ -156,7 +156,7 @@ Two surrogate architectures were built and compared, plus two derived variants:
 - **The MIROC-Medres → "Colder & Wetter" relabeling is an inferred assumption** (§1), not yet confirmed against the original workbook. If wrong, every "Colder & Wetter" figure in this report belongs to a different scenario name.
 - **Monotonicity in the scenario/replacement-year logic is enforced, not learned.** Neither model guarantees non-increasing diameter predictions over time on its own; a running-minimum is applied afterward, since deterioration cannot physically reverse.
 - **Quantile bands can cross** for the harder-to-fit pile (§5.6), and should be treated as directional rather than as calibrated statistical bounds until a monotonic quantile method is adopted.
-- **Results are reproducible but not bit-identical across environments.** All figures use a fixed `random_state=42`, but different library versions or BLAS backends can shift results slightly. Re-run `python -m src.timber.compare` before quoting exact numbers elsewhere.
+- **Results are reproducible but not bit-identical across environments.** All figures use a fixed `random_state=42`, but different library versions or BLAS backends can shift results slightly. Re-run `python -m src.models.timber_compare` before quoting exact numbers elsewhere.
 
 ---
 

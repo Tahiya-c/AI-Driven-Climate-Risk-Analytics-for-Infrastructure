@@ -23,7 +23,7 @@ Notes
   projecting further needs the climate-futures workbook wired into the pipeline.
   For timber specifically, the "observed" 2000-2049 rows are the deterministic
   AS 5604-style workbook's own output, not real field inspection data (see
-  ``src/timber/data_prep.py``) -- reported accuracy for the projected rows is
+  ``src/data/timber_data_prep.py``) -- reported accuracy for the projected rows is
   surrogate-vs-simulator fidelity, not validated predictive accuracy.
 * ``--with-history`` also emits the observed depths (method="observed") so the
   frontend can draw the history/forecast split from a single file.
@@ -54,7 +54,7 @@ except ImportError:
         # (see build_concrete). Deferred so `--material timber` still works without it.
         inference = None
 
-from src.timber import inference as timber_inference
+from src.models import timber_inference
 
 SCHEMA = ["material", "asset_id", "scenario", "year", "value", "unit", "metric", "method"]
 DEFAULT_OUT = (
@@ -103,7 +103,7 @@ def build_concrete(horizon: int, method: str, with_history: bool) -> pd.DataFram
 
 
 def build_timber(horizon: int, method: str, with_history: bool) -> pd.DataFrame:
-    """Same shape as ``build_concrete``, against ``src/timber/inference.py`` instead.
+    """Same shape as ``build_concrete``, against ``src/models/timber_inference.py`` instead.
 
     Timber's "observed" years and projection anchor are fixed by
     ``timber_inference.ANCHOR_YEAR`` (2050) rather than derived from the

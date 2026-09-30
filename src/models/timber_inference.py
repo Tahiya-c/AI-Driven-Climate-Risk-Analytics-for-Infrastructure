@@ -10,9 +10,9 @@ material, asset_id, scenario, year, value, unit, metric, method).
 There is no live inference API -- like the concrete side, this produces a
 static CSV the frontend reads with ``pd.read_csv`` + filter. "Projected" rows
 (``method="mlp"``/``"gbm"``) come from the trained surrogate in
-``src/timber/model.py``; "observed" rows are the deterministic AS 5604-style
+``src/models/timber_model.py``; "observed" rows are the deterministic AS 5604-style
 workbook's own output for years before the anchor year, not real field
-inspection data -- see the module docstring in ``src/timber/data_prep.py``.
+inspection data -- see the module docstring in ``src/data/timber_data_prep.py``.
 Reported accuracy for the projected rows is therefore surrogate-vs-simulator
 fidelity, not validated predictive accuracy against reality.
 """
@@ -22,9 +22,9 @@ from __future__ import annotations
 import pandas as pd
 
 from src.config import ROOT_DIR
-from src.timber.data_prep import DATA_PATH, load_timber_data
-from src.timber.features import build_feature_matrix
-from src.timber.model import train
+from src.data.timber_data_prep import DATA_PATH, load_timber_data
+from src.features.timber_features import build_feature_matrix
+from src.models.timber_model import train
 
 MATERIAL = "timber"
 UNIT = "mm"

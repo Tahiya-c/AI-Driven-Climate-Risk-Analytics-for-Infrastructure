@@ -16,8 +16,8 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from src.timber.data_prep import remaining_diameter_floor
-from src.timber.features import FEATURE_COLUMNS
+from src.data.timber_data_prep import remaining_diameter_floor
+from src.features.timber_features import FEATURE_COLUMNS
 
 SCENARIOS = ["Hotter & Drier", "Most Likely", "Colder & Wetter"]
 BASELINE_LABEL = "Baseline"

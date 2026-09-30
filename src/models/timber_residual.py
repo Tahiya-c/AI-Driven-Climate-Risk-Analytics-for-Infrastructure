@@ -3,7 +3,7 @@
 Instead of predicting the deterministic model's raw remaining_diameter_mm
 directly, this trains a model to predict *the correction needed* to bring
 that raw output into a physically valid range (see
-``add_residual_correction_target`` in ``src/timber/targets.py``), then
+``add_residual_correction_target`` in ``src/features/timber_targets.py``), then
 reconstructs a prediction as ``raw_value + predicted_correction``.
 
 Both approaches are compared only on test rows where the deterministic
@@ -19,9 +19,9 @@ from dataclasses import dataclass
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-from src.timber.features import FEATURE_COLUMNS, build_feature_matrix
-from src.timber.model import build_pipeline, pile_based_split, time_based_split
-from src.timber.targets import (
+from src.features.timber_features import FEATURE_COLUMNS, build_feature_matrix
+from src.models.timber_model import build_pipeline, pile_based_split, time_based_split
+from src.features.timber_targets import (
     CLIPPED_DIAMETER_COLUMN,
     DIAMETER_TARGET,
     RESIDUAL_TARGET,
