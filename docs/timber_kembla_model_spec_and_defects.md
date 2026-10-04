@@ -196,12 +196,48 @@ All 284 MIROC-Medres rows have a blank `scenario_label`. Correct value: **Cooler
 
 **Fix:** regenerate the export from the workbook with corrected headers.
 
+**Status: fixed (2026-10-04).** The table above understated the problem: every label from
+column AQ to AY was one column out of step with the workbook's own row-7 headers. Verified
+against those headers and against `src/models/timber_engine.py`'s recomputed k factors
+(all values match). `src/data/build_timber_kembla_csv.py` now writes the workbook's names,
+`data/processed/timber_kembla_v6_3_consolidated.csv` was regenerated (identical values, only
+headers changed), and `src/data/timber_data_prep.py::fix_d9_column_names` renames any
+pre-fix export (e.g. the Sydney CSV) on load.
+
+| Col | Workbook header | Old CSV header | Fixed CSV header |
+|---|---|---|---|
+| AP | ktimber HW | `timber_exposure_factor` | `heartwood_factor` |
+| AQ | ktimber SW | `model_hazard_wood` | `sapwood_factor` |
+| AR | ksal | `model_service_water` | `salinity_factor` |
+| AS | kshelter | `salinity_factor` | `shelter_factor` |
+| AT | kprotect | `shelter_factor` | `protection_factor` |
+| AU | kcontact | `protection_factor` | `contact_factor` |
+| AV | kknot | `model_contact_factor` | `knot_factor` |
+| AW | kenv | `model_knot_factor` | `environment_factor` |
+| AX | kconst | `environment_factor` | `construction_factor` |
+| AY | k0 | `construction_factor` | `combined_factor` |
+| BJ | treplacement | `replacement_time_years` | `design_life_years` |
+
 ### D10 — Climate scenarios are of superseded vintage (**Medium, methodological**)
 A1B and A1FI are IPCC **SRES** pathways (2000), superseded by RCPs (AR5, 2013) and SSPs
 (AR6, 2021). GCMs used (CSIRO Mk3.5, MIROC-Medres, MRI-CGCM2.3.2) are CMIP3-era.
 
 **Fix / opportunity:** substitute CMIP6 SSP1-2.6 / SSP2-4.5 / SSP5-8.5 sea surface
 temperature projections for the Port Kembla grid cell.
+
+### D11: Salinity is borrowed from MIROC's annual series for every scenario (**Low**)
+
+*Found 2026-10-04 while building the import template (`src/data/timber_import.py`).*
+
+Only the Cooler&Wetter (MIROC) sheet has salinity projections. The pile sheets' yearly salinity (column E), which is the `salinity` column in the CSV and a model input, does not use each scenario's own summer SSS change.
+
+Instead, every scenario and pathway takes MIROC's **annual** SSS change:
+- the A1FI values (+0.05 / +0.10 / +0.17 ppt at 2030 / 2050 / 2070) everywhere except Cooler&Wetter A1B
+- the A1B values (+0.05 / +0.09 / +0.12) for Cooler&Wetter A1B
+
+Hotter & Drier and Most Likely therefore show rising salinity with no projection of their own, and their A1B series carry A1FI salinity. `src/models/timber_engine.py` uses the summer SSS columns instead (zero for the other two scenarios). The engine's fidelity tests don't catch the difference, because k_sal = 1.0 in zone E either way.
+
+**Fix:** decide which salinity series is intended, then make the workbook and the engine port consistent. Until then, the import template reproduces column E so that imports match what the models were trained on.
 
 ---
 

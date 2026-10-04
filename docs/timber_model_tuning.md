@@ -15,6 +15,17 @@
 
 Both models beat the 0.80 R² target. Both use the same features and the same target. Read [§6 Caveats](#6-caveats-read-before-quoting-these-numbers) before quoting these numbers anywhere.
 
+> **Update (2026-10-04): Defect D9 fix.** `FEATURE_COLUMNS` now names all 11 k factors correctly, going from 13 to 15 columns (see `docs/timber_pileA_to_pileB_report.md` §1). This changes the MLP on this split:
+>
+> | Time-split test R² | This report | After D9 fix |
+> |---|---:|---:|
+> | MLP baseline | 0.625 | 0.877 |
+> | MLP tuned | 0.968 | 0.953 |
+> | GBM baseline | 0.644 | 0.644 |
+> | GBM tuned | 1.000 | 1.000 |
+>
+> The tables below are the pre-fix numbers.
+
 ---
 
 ## 1. Starting point

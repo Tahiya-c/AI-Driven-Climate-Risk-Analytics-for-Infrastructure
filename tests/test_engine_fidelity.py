@@ -34,7 +34,7 @@ _FIDELITY_COLUMNS = {
     "heartwood_rate_mm_year": "r_heart",
     "failure_probability": "prob",
     "design_deterioration_mm": "d_design",
-    "replacement_time_years": "t_replace",
+    "design_life_years": "t_replace",
 }
 
 

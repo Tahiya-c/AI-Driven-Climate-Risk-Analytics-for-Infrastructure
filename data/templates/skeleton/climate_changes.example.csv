@@ -1,0 +1,31 @@
+site,scenario_label,climate_model,emissions_pathway,anchor_year,summer_sst_change_c,salinity_change_ppt
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1FI,1990,0.0,0.0
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1FI,2010,0.1978128,0.0166667
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1FI,2030,0.5934385,0.05
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1FI,2050,1.2327421,0.1
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1FI,2070,1.9907689,0.17
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1B,1990,0.0,0.0
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1B,2010,0.208821,0.0166667
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1B,2030,0.6264631,0.05
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1B,2050,1.0540588,0.1
+Port Kembla,Most Likely,MRI-CGCM2.3.2,A1B,2070,1.4705744,0.17
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1FI,1990,0.0,0.0
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1FI,2010,0.29,0.0166667
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1FI,2030,0.87,0.05
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1FI,2050,1.82,0.1
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1FI,2070,2.93,0.17
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1B,1990,0.0,0.0
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1B,2010,0.3,0.0166667
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1B,2030,0.9,0.05
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1B,2050,1.53,0.1
+Port Kembla,Hotter & Drier,CSIRO Mk3.5,A1B,2070,2.15,0.17
+Port Kembla,Colder & Wetter,MIROC-Medres,A1FI,1990,0.0,0.0
+Port Kembla,Colder & Wetter,MIROC-Medres,A1FI,2010,0.3166667,0.0166667
+Port Kembla,Colder & Wetter,MIROC-Medres,A1FI,2030,0.95,0.05
+Port Kembla,Colder & Wetter,MIROC-Medres,A1FI,2050,1.98,0.1
+Port Kembla,Colder & Wetter,MIROC-Medres,A1FI,2070,3.18,0.17
+Port Kembla,Colder & Wetter,MIROC-Medres,A1B,1990,0.0,0.0
+Port Kembla,Colder & Wetter,MIROC-Medres,A1B,2010,0.3266667,0.0166667
+Port Kembla,Colder & Wetter,MIROC-Medres,A1B,2030,0.98,0.05
+Port Kembla,Colder & Wetter,MIROC-Medres,A1B,2050,1.67,0.09
+Port Kembla,Colder & Wetter,MIROC-Medres,A1B,2070,2.33,0.12

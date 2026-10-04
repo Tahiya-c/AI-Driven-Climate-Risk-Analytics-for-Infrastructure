@@ -90,9 +90,12 @@ src/models/
 ├── timber_scenarios.py           # per-pile scenario trajectories and replacement-year detection
 ├── timber_engine.py              # verbatim port of the Timber_kembla_v6.3 workbook calculation
 ├── timber_coefficients.py        # workbook Coefficients-sheet lookup tables used by timber_engine.py
-└── timber_inference.py           # batch inference for the timber dashboard CSV export
+├── timber_inference.py           # batch inference for the timber dashboard CSV export
+├── timber_tuning.py              # Optuna tuning on the time-based split (docs/timber_model_tuning.md)
+└── timber_transfer.py            # train PileA -> test PileB, MC CV tuning (docs/timber_pileA_to_pileB_report.md)
 src/ui/
-└── timber_app.py                 # Streamlit entry point: pile selector, scenario chart, summary
+├── timber_app.py                 # Streamlit entry point: pile selector, scenario chart, summary
+└── timber_results_app.py         # PileB material-loss forecast from the PileA-trained models
 tests/test_timber_pipeline.py
 tests/test_timber_compare.py
 ```

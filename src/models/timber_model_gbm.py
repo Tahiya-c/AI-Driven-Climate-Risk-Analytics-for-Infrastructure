@@ -25,11 +25,44 @@ except ImportError:  # pragma: no cover - exercised only when lightgbm is absent
         GBM_BACKEND = None
 
 
-# Best hyperparameters found by ``python -m src.models.timber_tuning --model gbm``
-# (Optuna TPE, blocked time-series CV on the training years only -- see
-# docs/timber_model_tuning.md). Used by build_pipeline(..., tuned=True) in
-# src/models/timber_model.py. Re-run the tuner and paste its output here
-# after any change to the data or FEATURE_COLUMNS.
+# FINAL GBM (model of record): hyperparameters for the PileA -> PileB material-loss model
+# in src/models/timber_transfer.py. Same pipeline, features and target as the MLP
+# (HazardNormalisedRegressor, thermal_dose, material_loss_mm) -- only this estimator's
+# capacity is reduced, by request, so PileB R2 (all years) lands near 0.8 instead of the
+# Optuna-tuned ~0.95. The Optuna-selected config (hold-out RMSE 0.06mm, PileB R2 0.952)
+# is preserved as ARCHIVED_TRANSFER_GBM_PARAMS below. Re-derive with the small sweep in
+# that archive's comment if the data or FEATURE_COLUMNS change. See docs/timber_model_updated.md.
+# History: first set to a 21-tree, linear_tree=False config for R2~0.7 (PileB R2 0.708,
+# history/forecast jump +60.8mm at 2026->2027); replaced with this one (linear_tree=True,
+# slightly more trees) for the R2~0.8 target, which also keeps the jump a bit smaller
+# (+53.1mm vs +60.8mm) since linear-leaf extrapolation is smoother than constant-leaf.
+TRANSFER_GBM_PARAMS: dict[str, Any] = {
+    "n_estimators": 25,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "num_leaves": 4,
+    "linear_tree": True,
+}
+
+# Optuna-tuned config this replaced (PileA chronological hold-out, 50 trials): PileB R2
+# (all years) 0.952, R2 (2027-2070 A1FI forecast) 0.828. Kept for reference / rollback.
+ARCHIVED_TRANSFER_GBM_PARAMS: dict[str, Any] = {
+    "n_estimators": 945,
+    "learning_rate": 0.02002186883378298,
+    "max_depth": 3,
+    "min_child_samples": 15,
+    "subsample": 0.5653949435751839,
+    "colsample_bytree": 0.9074836754361391,
+    "reg_alpha": 1.1653963602851417e-05,
+    "reg_lambda": 0.00027264074739711733,
+    "num_leaves": 7,
+    "subsample_freq": 1,
+    "linear_tree": True,
+}
+
+# Earlier time-split stage (Strategy B in docs/timber_model_updated.md): used by
+# build_pipeline(..., tuned=True) in src/models/timber_model.py. Not used by the
+# final models.
 TUNED_GBM_PARAMS: dict[str, Any] = {
     "n_estimators": 1414,
     "learning_rate": 0.06940770580816218,

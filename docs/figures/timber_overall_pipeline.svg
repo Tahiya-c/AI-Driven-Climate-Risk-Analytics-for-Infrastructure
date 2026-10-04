@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F2933"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="800.0" y="62" text-anchor="middle" font-family="Oswald, Impact, 'Arial Narrow', sans-serif" font-size="48" font-weight="bold" fill="#0B6BA8" letter-spacing="2">OVERALL PIPELINE: TIMBER</text>
+<rect x="35.0" y="210.0" width="150" height="70" rx="35.0" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.8"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="110" y="235.5">Timber Excel</tspan><tspan x="110" y="254.5">Workbook</tspan></text>
+<rect x="225" y="140" width="600" height="210" rx="6" fill="#CFE2FF" stroke="#1F2933" stroke-width="2"/>
+<text x="227" y="128" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#1F2933">1. Data Preparation</text>
+<rect x="245.0" y="213.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="330" y="235.5">Fix Column</tspan><tspan x="330" y="254.5">Names (D9)</tspan></text>
+<rect x="440.0" y="213.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="525" y="235.5">Fill Missing</tspan><tspan x="525" y="254.5">Scenario Label</tspan></text>
+<rect x="635.0" y="213.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="720" y="235.5">Target: Material</tspan><tspan x="720" y="254.5">Loss (mm)</tspan></text>
+<rect x="875" y="140" width="670" height="210" rx="6" fill="#CFE2FF" stroke="#1F2933" stroke-width="2"/>
+<text x="877" y="128" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#1F2933">2. Feature Engineering</text>
+<rect x="895.0" y="213.0" width="190" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="990" y="235.5">Add Thermal Dose</tspan><tspan x="990" y="254.5">(Age × Water Factor)</tspan></text>
+<rect x="1125.0" y="213.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="1210" y="235.5">Drop Constant</tspan><tspan x="1210" y="254.5">Features</tspan></text>
+<rect x="1335.0" y="213.0" width="180" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="1425" y="235.5">Divide Target by</tspan><tspan x="1425" y="254.5">Hazard Factor (k0)</tspan></text>
+<polyline points="185.0,245.0 245.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="415.0,245.0 440.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="610.0,245.0 635.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="805.0,245.0 895.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1085.0,245.0 1125.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1295.0,245.0 1335.0,245.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="875" y="470" width="670" height="340" rx="6" fill="#FAD4D4" stroke="#1F2933" stroke-width="2"/>
+<text x="877" y="458" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#1F2933">3. Train on PileA and Tune with Optuna</text>
+<rect x="1335.0" y="608.0" width="180" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="1425" y="630.5">Train on PileA</tspan><tspan x="1425" y="649.5">(Training Pile)</tspan></text>
+<rect x="1120.0" y="523.0" width="180" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="1210" y="545.5">Gradient Boosting</tspan><tspan x="1210" y="564.5">(LightGBM)</tspan></text>
+<rect x="1120.0" y="693.0" width="180" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="1210" y="715.5">Multilayer</tspan><tspan x="1210" y="734.5">Perceptron (MLP)</tspan></text>
+<rect x="915.0" y="608.0" width="150" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="990" y="630.5">Save Best</tspan><tspan x="990" y="649.5">Models</tspan></text>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#52606D"><tspan x="1210" y="500.0">Hyperparameters tuned on PileA hold-out years 2057–2070</tspan></text>
+<rect x="225" y="470" width="600" height="340" rx="6" fill="#D6F0DC" stroke="#1F2933" stroke-width="2"/>
+<text x="227" y="458" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#1F2933">4. Test on PileB and Forecast</text>
+<rect x="635.0" y="608.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="720" y="630.5">Predict PileB</tspan><tspan x="720" y="649.5">(Unseen Pile)</tspan></text>
+<rect x="440.0" y="608.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="525" y="630.5">Rescale by k0,</tspan><tspan x="525" y="649.5">Cap at Radius</tspan></text>
+<rect x="245.0" y="523.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="330" y="545.5">Evaluate</tspan><tspan x="330" y="564.5">R², RMSE, MAE</tspan></text>
+<rect x="245.0" y="693.0" width="170" height="64" rx="3" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.6"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="330" y="715.5">Forecast 3 Climate</tspan><tspan x="330" y="734.5">Scenarios to 2070</tspan></text>
+<rect x="35.0" y="690.0" width="150" height="70" rx="35.0" fill="#FFFFFF" stroke="#1F2933" stroke-width="1.8"/>
+<text text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#1F2933"><tspan x="110" y="715.5">Dashboard</tspan><tspan x="110" y="734.5">Charts</tspan></text>
+<polyline points="1425.0,277.0 1425.0,608.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1335.0,640.0 1318.0,640.0 1318.0,555.0 1300.0,555.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1335.0,640.0 1318.0,640.0 1318.0,725.0 1300.0,725.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1120.0,555.0 1080.0,555.0 1080.0,640.0 1065.0,640.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1120.0,725.0 1080.0,725.0 1080.0,640.0 1065.0,640.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="915.0,640.0 805.0,640.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="635.0,640.0 610.0,640.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="440.0,640.0 428.0,640.0 428.0,555.0 415.0,555.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="440.0,640.0 428.0,640.0 428.0,725.0 415.0,725.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="245.0,725.0 185.0,725.0" fill="none" stroke="#1F2933" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

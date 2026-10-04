@@ -1,0 +1,5 @@
+asset_id,inspection_year,remaining_diameter_mm,notes
+EXAMPLE_01,2010,402.0,example - replace with real inspections
+EXAMPLE_01,2014,385.0,example - replace with real inspections
+EXAMPLE_01,2018,367.0,example - replace with real inspections
+EXAMPLE_01,2022,348.0,example - replace with real inspections

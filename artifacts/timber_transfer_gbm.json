@@ -1,0 +1,105 @@
+{
+  "model_version": "timber_transfer_gbm_20261004_143534",
+  "saved_at_utc": "2026-10-04T14:35:34+00:00",
+  "library_versions": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.2",
+    "joblib": "1.5.3"
+  },
+  "model_kind": "gbm",
+  "trained_on": "PileA",
+  "n_train_rows": 497,
+  "target": "material_loss_mm (radial material loss, mm, capped at pile radius)",
+  "input_columns": [
+    "age_years",
+    "summer_sea_temp_c",
+    "salinity",
+    "water_factor",
+    "heartwood_factor",
+    "sapwood_factor",
+    "salinity_factor",
+    "shelter_factor",
+    "protection_factor",
+    "contact_factor",
+    "knot_factor",
+    "environment_factor",
+    "construction_factor",
+    "combined_factor",
+    "initial_diameter_mm",
+    "layer_of_sapwood_mm"
+  ],
+  "sapwood_column": "layer_of_sapwood_mm",
+  "used_columns": [
+    "age_years",
+    "summer_sea_temp_c",
+    "salinity",
+    "water_factor",
+    "thermal_dose"
+  ],
+  "feature_set": "thermal_dose",
+  "hazard_column": "combined_factor",
+  "params": "{'n_estimators': 25, 'learning_rate': 0.05, 'max_depth': 2, 'num_leaves': 4, 'linear_tree': True}",
+  "PileB_all_years": {
+    "r2": 0.9258894423900483,
+    "rmse": 25.182738186598215,
+    "mae": 17.523481088479777
+  },
+  "PileB_forecast_2027_on": {
+    "r2": 0.968605095085938,
+    "rmse": 7.199896685202989,
+    "mae": 4.334184367283008
+  },
+  "PileB_forecast_2027_on_shifted": {
+    "r2": 0.7934530304571902,
+    "rmse": 18.467414297401273,
+    "mae": 12.975517065205757
+  },
+  "shift": {
+    "window": [
+      2022,
+      2026
+    ],
+    "threshold_mm": 15.0,
+    "offsets_mm": {
+      "Baseline | Base": -25.04841073270844,
+      "Colder & Wetter | A1B": -23.17377380625357,
+      "Colder & Wetter | A1FI": -23.26664926288081,
+      "Hotter & Drier | A1B": -23.422380936360536,
+      "Hotter & Drier | A1FI": -23.504538718272762,
+      "Most Likely | A1B": -24.255764652629065,
+      "Most Likely | A1FI": -24.355871430639006
+    },
+    "large_offsets": [
+      {
+        "series": "Baseline | Base",
+        "offset_mm": -25.04841073270844
+      },
+      {
+        "series": "Colder & Wetter | A1B",
+        "offset_mm": -23.17377380625357
+      },
+      {
+        "series": "Colder & Wetter | A1FI",
+        "offset_mm": -23.26664926288081
+      },
+      {
+        "series": "Hotter & Drier | A1B",
+        "offset_mm": -23.422380936360536
+      },
+      {
+        "series": "Hotter & Drier | A1FI",
+        "offset_mm": -23.504538718272762
+      },
+      {
+        "series": "Most Likely | A1B",
+        "offset_mm": -24.255764652629065
+      },
+      {
+        "series": "Most Likely | A1FI",
+        "offset_mm": -24.355871430639006
+      }
+    ]
+  }
+}

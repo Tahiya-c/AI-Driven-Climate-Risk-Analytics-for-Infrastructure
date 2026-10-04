@@ -16,11 +16,11 @@ legacy-vs-corrected delta can be reported as a result in its own right. In parti
   `D_replace`.
 - D7: nothing is floored -- `D_t` can go negative.
 
-Column names in `data/processed/timber_kembla_v6_3_consolidated.csv` do not match the
-workbook (Defect D9): `timber_exposure_factor` actually holds `k_HW`, `model_knot_factor`
-holds `k_shelter`, and `construction_factor` holds `k_HW * k_shelter`. This module uses
-the workbook's own semantics throughout; the CSV's (mislabelled) names are only used for
-comparison, in `tests/test_engine_fidelity.py`.
+Defect D9 (CSV column names out of step with the workbook) is fixed in the export:
+`data/processed/timber_kembla_v6_3_consolidated.csv` now uses the workbook's own k-factor
+names (`heartwood_factor` = `k_HW`, `shelter_factor` = `k_shelter`, `combined_factor` =
+`k0`, ...; see `D9_COLUMN_RENAMES` in src/data/timber_data_prep.py for the pre-fix
+mapping). This module and the CSV now share the same semantics.
 """
 
 from __future__ import annotations

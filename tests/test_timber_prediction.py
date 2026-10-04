@@ -41,7 +41,7 @@ def _training_frame() -> pd.DataFrame:
                             "year": year,
                             "year_installed": 1990,
                             "age_years": year - 1990,
-                            "replacement_time_years": (
+                            "design_life_years": (
                                 10 + year - 2000 + asset_index + pathway_index + scenario_index
                             ),
                         }
@@ -60,17 +60,17 @@ def test_prediction_accepts_user_end_year_and_ignores_target(tmp_path: Path) -> 
     saved_predictions = pd.DataFrame(artifact["test_scenario_predictions"])
     actuals = (
         frame.loc[frame["year"] >= artifact["first_test_year"]]
-        .groupby(["year", "scenario_label"], as_index=False)["replacement_time_years"]
+        .groupby(["year", "scenario_label"], as_index=False)["design_life_years"]
         .mean()
     )
     evaluation = actuals.merge(saved_predictions, on=["year", "scenario_label"])
     expected_r2 = r2_score(
-        evaluation["replacement_time_years"],
-        evaluation["predicted_replacement_time_years"],
+        evaluation["design_life_years"],
+        evaluation["predicted_design_life_years"],
     )
     assert artifact["metrics"]["r2"] == pytest.approx(expected_r2)
 
-    frame["replacement_time_years"] = "not a prediction input"
+    frame["design_life_years"] = "not a prediction input"
     frame.to_csv(data_path, index=False)
     predictions = predict_timber_until_year(
         artifact_path, data_path, start_year=2002, end_year=2004

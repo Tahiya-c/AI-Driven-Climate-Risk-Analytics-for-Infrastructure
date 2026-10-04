@@ -15,19 +15,27 @@ TARGET_COLUMN = "remaining_diameter_mm"
 # see docs/timber_kembla_to_sydney_eval.md, section 2). They are the deterministic
 # engine's own internal rate variables, not upstream inputs, so they belong in
 # LEAKY_COLUMNS alongside mean_deterioration_mm et al., not in the feature set.
+#
+# The k-factor names follow the workbook's own headers (Defect D9 fix, see
+# D9_COLUMN_RENAMES in src/data/timber_data_prep.py). Before the fix this list
+# held 8 of the 11 k-factor columns under shifted labels; it now holds all 11
+# under their real names. sapwood_factor (k_SW) and salinity_factor (k_sal) are
+# the two additions -- both are constant (25 and 1.0) for both piles today.
 FEATURE_COLUMNS = [
     "age_years",
     "summer_sea_temp_c",
     "salinity",
-    "water_factor",
-    "timber_exposure_factor",
-    "salinity_factor",
-    "shelter_factor",
-    "protection_factor",
-    "model_contact_factor",
-    "model_knot_factor",
-    "environment_factor",
-    "construction_factor",
+    "water_factor",  # kwater = 0.1 * exp(0.13 * summer_sea_temp_c)
+    "heartwood_factor",  # k_HW
+    "sapwood_factor",  # k_SW
+    "salinity_factor",  # k_sal
+    "shelter_factor",  # k_shelter
+    "protection_factor",  # k_protect
+    "contact_factor",  # k_contact
+    "knot_factor",  # k_knot
+    "environment_factor",  # k_env = k_sal * k_shelter
+    "construction_factor",  # k_const = k_protect * k_contact * k_knot
+    "combined_factor",  # k0 = k_HW * k_env * k_const
     "initial_diameter_mm",
 ]
 
@@ -49,7 +57,7 @@ CATEGORICAL_COLUMNS = [
 # almost exactly -- see the note above FEATURE_COLUMNS.
 LEAKY_COLUMNS = [
     "failure_probability",
-    "replacement_time_years",
+    "design_life_years",
     "mean_deterioration_mm",
     "design_deterioration_mm",
     "design_diameter_mm",
@@ -124,7 +132,9 @@ def add_thermal_dose(features: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 DECAY_DOSE_COLUMN = "decay_dose"
-DECAY_DOSE_SOURCE_COLUMNS = ["salinity_factor", "summer_sea_temp_c", "timber_exposure_factor"]
+# Before the D9 fix "salinity_factor" here silently read k_shelter; it now reads the
+# real salinity coefficient k_sal, matching what this feature was meant to use.
+DECAY_DOSE_SOURCE_COLUMNS = ["salinity_factor", "summer_sea_temp_c", "heartwood_factor"]
 
 # A "trajectory" here means one continuous timeline for one pile under one
 # climate/emissions combination -- the same grain timber_scenarios.py already
@@ -137,7 +147,7 @@ DECAY_DOSE_TRAJECTORY_KEY = ["asset_code", "scenario_label", "emissions_pathway"
 DECAY_DOSE_FEATURE_COLUMNS = [
     column
     for column in FEATURE_COLUMNS
-    if column not in {"age_years", "summer_sea_temp_c", "salinity_factor", "timber_exposure_factor"}
+    if column not in {"age_years", "summer_sea_temp_c", "salinity_factor", "heartwood_factor"}
 ] + [DECAY_DOSE_COLUMN]
 
 
@@ -146,7 +156,7 @@ def add_decay_dose(frame: pd.DataFrame) -> pd.DataFrame:
 
     ``decay_dose`` is the cumulative sum, ordered by ``age_years`` within
     each ``(asset_code, scenario_label, emissions_pathway)`` trajectory,
-    of ``salinity_factor * summer_sea_temp_c * timber_exposure_factor``.
+    of ``salinity_factor * summer_sea_temp_c * heartwood_factor``.
     It bundles age, salinity, sea temperature, and exposure into a single
     non-linear "cumulative dose" term, as an alternative to
     ``DECAY_DOSE_FEATURE_COLUMNS`` feeding those in as separate linear
@@ -159,7 +169,7 @@ def add_decay_dose(frame: pd.DataFrame) -> pd.DataFrame:
 
     frame = frame.copy()
     dose_term = (
-        frame["salinity_factor"] * frame["summer_sea_temp_c"] * frame["timber_exposure_factor"]
+        frame["salinity_factor"] * frame["summer_sea_temp_c"] * frame["heartwood_factor"]
     )
     sort_columns = [*DECAY_DOSE_TRAJECTORY_KEY, "age_years"]
     frame = frame.assign(_dose_term=dose_term).sort_values(sort_columns)

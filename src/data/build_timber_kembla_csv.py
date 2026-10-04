@@ -40,17 +40,19 @@ COLMAP = {
     # Timber deterioration model inputs and factors
     39: "design_time_years",  # AM: t_design
     40: "model_salinity_ppt",  # AN: Salinity
-    41: "water_factor",  # AO: k_water
-    42: "timber_exposure_factor",  # AP: zeta_timber
-    43: "model_hazard_wood",  # AQ: HW_timber
-    44: "model_service_water",  # AR: SW
-    45: "salinity_factor",  # AS: k_sal
-    46: "shelter_factor",  # AT: k_shelter
-    47: "protection_factor",  # AU: k_protect
-    48: "model_contact_factor",  # AV: k_contact
-    49: "model_knot_factor",  # AW: k_knot
-    50: "environment_factor",  # AX: k_env
-    51: "construction_factor",  # AY: k_const
+    # Names follow the workbook's own row-7 headers (Defect D9: earlier exports
+    # labelled AP-AY one column out of step, e.g. k_shelter as "salinity_factor").
+    41: "water_factor",  # AO: kwater
+    42: "heartwood_factor",  # AP: ktimber HW
+    43: "sapwood_factor",  # AQ: ktimber SW
+    44: "salinity_factor",  # AR: ksal
+    45: "shelter_factor",  # AS: kshelter
+    46: "protection_factor",  # AT: kprotect
+    47: "contact_factor",  # AU: kcontact
+    48: "knot_factor",  # AV: kknot
+    49: "environment_factor",  # AW: kenv = ksal * kshelter
+    50: "construction_factor",  # AX: kconst = kprotect * kcontact * kknot
+    51: "combined_factor",  # AY: k0 = product of all k factors except kwater/kSW
     # Calculated deterioration outputs
     52: "sapwood_rate_mm_year",  # AZ: r_sap
     53: "sapwood_lag_years",  # BA: t_lag,sap
@@ -62,7 +64,7 @@ COLMAP = {
     59: "failure_probability",  # BG: Prob
     60: "design_deterioration_mm",  # BH: d_design
     61: "design_diameter_mm",  # BI: D_design
-    62: "replacement_time_years",  # BJ: t_replacement
+    62: "design_life_years",  # BJ: t_replacement (re-estimated design life, D9)
 }
 
 SCENARIO_LABEL = {
@@ -131,16 +133,16 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "design_time_years",
         "model_salinity_ppt",
         "water_factor",
-        "timber_exposure_factor",
-        "model_hazard_wood",
-        "model_service_water",
+        "heartwood_factor",
+        "sapwood_factor",
         "salinity_factor",
         "shelter_factor",
         "protection_factor",
-        "model_contact_factor",
-        "model_knot_factor",
+        "contact_factor",
+        "knot_factor",
         "environment_factor",
         "construction_factor",
+        "combined_factor",
         "sapwood_rate_mm_year",
         "sapwood_lag_years",
         "heartwood_rate_mm_year",
@@ -151,7 +153,7 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "failure_probability",
         "design_deterioration_mm",
         "design_diameter_mm",
-        "replacement_time_years",
+        "design_life_years",
     ]
     for column in numeric_columns:
         frame[column] = pd.to_numeric(frame[column], errors="coerce")
@@ -195,16 +197,16 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "design_time_years",
         "model_salinity_ppt",
         "water_factor",
-        "timber_exposure_factor",
-        "model_hazard_wood",
-        "model_service_water",
+        "heartwood_factor",
+        "sapwood_factor",
         "salinity_factor",
         "shelter_factor",
         "protection_factor",
-        "model_contact_factor",
-        "model_knot_factor",
+        "contact_factor",
+        "knot_factor",
         "environment_factor",
         "construction_factor",
+        "combined_factor",
         "sapwood_rate_mm_year",
         "sapwood_lag_years",
         "heartwood_rate_mm_year",
@@ -215,7 +217,7 @@ def main(src: Path, out: Path) -> pd.DataFrame:
         "failure_probability",
         "design_deterioration_mm",
         "design_diameter_mm",
-        "replacement_time_years",
+        "design_life_years",
         "source_row",
     ]
     frame = (

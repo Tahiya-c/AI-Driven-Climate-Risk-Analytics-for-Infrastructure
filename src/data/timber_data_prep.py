@@ -1,8 +1,10 @@
 """Load and clean the timber pile deterioration dataset.
 
 The CSV is the OUTPUT of an existing deterministic AS 5604-style timber
-durability model, not raw sensor data. This module fixes one known gap in
-that export (see ``MIROC_LABEL`` below) and normalises column dtypes.
+durability model, not raw sensor data. This module fixes two known problems
+in that export -- mislabelled k-factor headers (Defect D9, see
+``D9_COLUMN_RENAMES``) and a blank MIROC-Medres scenario label (see
+``MIROC_LABEL``) -- and normalises column dtypes.
 """
 
 from __future__ import annotations
@@ -27,6 +29,27 @@ DATA_PATH = ROOT_DIR / "data" / "processed" / "timber_kembla_v6_3_consolidated.c
 MIROC_LABEL = "Colder & Wetter"
 EXPECTED_SCENARIO_LABELS = {"Baseline", "Hotter & Drier", "Most Likely", MIROC_LABEL}
 
+# Defect D9 (docs/timber_kembla_model_spec_and_defects.md): exports built before
+# the fix labelled workbook columns AP-AY one column out of step with the
+# workbook's own headers, so e.g. "salinity_factor" actually held k_shelter and
+# "construction_factor" held k0. Verified against the workbook's row-7 headers
+# and against src/models/timber_engine.py's recomputed k factors (every value
+# matches). Old header -> correct name; applied as one simultaneous rename
+# because several old names reappear as correct names for different columns.
+D9_COLUMN_RENAMES = {
+    "timber_exposure_factor": "heartwood_factor",  # AP: ktimber HW
+    "model_hazard_wood": "sapwood_factor",  # AQ: ktimber SW
+    "model_service_water": "salinity_factor",  # AR: ksal
+    "salinity_factor": "shelter_factor",  # AS: kshelter
+    "shelter_factor": "protection_factor",  # AT: kprotect
+    "protection_factor": "contact_factor",  # AU: kcontact
+    "model_contact_factor": "knot_factor",  # AV: kknot
+    "model_knot_factor": "environment_factor",  # AW: kenv
+    "environment_factor": "construction_factor",  # AX: kconst
+    "construction_factor": "combined_factor",  # AY: k0
+    "replacement_time_years": "design_life_years",  # BJ: re-estimated design life
+}
+
 NUMERIC_COLUMNS = [
     "year_installed",
     "initial_diameter_mm",
@@ -39,16 +62,16 @@ NUMERIC_COLUMNS = [
     "design_time_years",
     "model_salinity_ppt",
     "water_factor",
-    "timber_exposure_factor",
-    "model_hazard_wood",
-    "model_service_water",
+    "heartwood_factor",
+    "sapwood_factor",
     "salinity_factor",
     "shelter_factor",
     "protection_factor",
-    "model_contact_factor",
-    "model_knot_factor",
+    "contact_factor",
+    "knot_factor",
     "environment_factor",
     "construction_factor",
+    "combined_factor",
     "sapwood_rate_mm_year",
     "sapwood_lag_years",
     "heartwood_rate_mm_year",
@@ -59,16 +82,28 @@ NUMERIC_COLUMNS = [
     "failure_probability",
     "design_deterioration_mm",
     "design_diameter_mm",
+    "design_life_years",
 ]
 
 
 def load_timber_data(path: str | Path = DATA_PATH) -> pd.DataFrame:
-    """Load the timber CSV, fix the MIROC-Medres label gap, and clean dtypes."""
-    frame = pd.read_csv(path)
+    """Load the timber CSV, fix D9 headers and the MIROC-Medres label gap, clean dtypes."""
+    frame = fix_d9_column_names(pd.read_csv(path))
     frame = _relabel_miroc_scenario(frame)
     frame = _clean_dtypes(frame)
     _validate_scenario_labels(frame)
     return frame
+
+
+def fix_d9_column_names(frame: pd.DataFrame) -> pd.DataFrame:
+    """Rename pre-fix export headers to their real meaning (no-op on fixed exports).
+
+    A pre-fix export is recognised by ``timber_exposure_factor``, a header that
+    only ever existed in the mislabelled layout.
+    """
+    if "timber_exposure_factor" not in frame.columns:
+        return frame
+    return frame.rename(columns=D9_COLUMN_RENAMES)
 
 
 def _relabel_miroc_scenario(frame: pd.DataFrame) -> pd.DataFrame:

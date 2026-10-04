@@ -1,0 +1,76 @@
+{
+  "model_version": "timber_transfer_mlp_20261004_143534",
+  "saved_at_utc": "2026-10-04T14:35:34+00:00",
+  "library_versions": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.2",
+    "joblib": "1.5.3"
+  },
+  "model_kind": "mlp",
+  "trained_on": "PileA",
+  "n_train_rows": 497,
+  "target": "material_loss_mm (radial material loss, mm, capped at pile radius)",
+  "input_columns": [
+    "age_years",
+    "summer_sea_temp_c",
+    "salinity",
+    "water_factor",
+    "heartwood_factor",
+    "sapwood_factor",
+    "salinity_factor",
+    "shelter_factor",
+    "protection_factor",
+    "contact_factor",
+    "knot_factor",
+    "environment_factor",
+    "construction_factor",
+    "combined_factor",
+    "initial_diameter_mm",
+    "layer_of_sapwood_mm"
+  ],
+  "sapwood_column": "layer_of_sapwood_mm",
+  "used_columns": [
+    "age_years",
+    "summer_sea_temp_c",
+    "salinity",
+    "water_factor",
+    "thermal_dose"
+  ],
+  "feature_set": "thermal_dose",
+  "hazard_column": "combined_factor",
+  "params": "{'hidden_layer_sizes': (136, 136, 136), 'activation': 'relu', 'alpha': 0.000976112544311046, 'learning_rate_init': 0.0069782812651260325, 'batch_size': 128}",
+  "PileB_all_years": {
+    "r2": 0.9998107642981584,
+    "rmse": 1.272519503944764,
+    "mae": 0.7417826642208599
+  },
+  "PileB_forecast_2027_on": {
+    "r2": 0.9995880657854959,
+    "rmse": 0.8247277564832436,
+    "mae": 0.4797062015915682
+  },
+  "PileB_forecast_2027_on_shifted": {
+    "r2": 0.9998562099136117,
+    "rmse": 0.48726043755748605,
+    "mae": 0.26635218828197316
+  },
+  "shift": {
+    "window": [
+      2022,
+      2026
+    ],
+    "threshold_mm": 15.0,
+    "offsets_mm": {
+      "Baseline | Base": -0.8566271428307886,
+      "Colder & Wetter | A1B": -1.5608085066233315,
+      "Colder & Wetter | A1FI": -1.572621584982332,
+      "Hotter & Drier | A1B": -1.5981167890869301,
+      "Hotter & Drier | A1FI": -1.5937439823906914,
+      "Most Likely | A1B": -1.3477681520431986,
+      "Most Likely | A1FI": -1.336784700406625
+    },
+    "large_offsets": []
+  }
+}

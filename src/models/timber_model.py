@@ -35,10 +35,21 @@ from src.features.timber_features import TARGET_COLUMN, add_thermal_dose, build_
 MODEL_PATH = MODEL_DIR / "timber_condition_model.joblib"
 MODEL_KINDS = ("mlp", "gbm")
 
-# Best hyperparameters found by ``python -m src.models.timber_tuning --model mlp``
-# (Optuna TPE, blocked time-series CV on the training years only -- see
-# docs/timber_model_tuning.md). Re-run the tuner and paste its output here
-# after any change to the data or FEATURE_COLUMNS.
+# FINAL MLP (model of record): hyperparameters for the PileA -> PileB material-loss model
+# in src/models/timber_transfer.py, found by Optuna on PileA's chronological hold-out
+# (``python -m src.models.timber_transfer --tune mlp``). Re-run and paste after any
+# change to the data or FEATURE_COLUMNS. See docs/timber_model_updated.md.
+TRANSFER_MLP_PARAMS: dict[str, Any] = {
+    "hidden_layer_sizes": (136, 136, 136),
+    "activation": "relu",
+    "alpha": 0.000976112544311046,
+    "learning_rate_init": 0.0069782812651260325,
+    "batch_size": 128,
+}
+
+# Earlier time-split stage (Strategy B in docs/timber_model_updated.md): the
+# rate-target model behind ``train(..., tuned=True)``, tuned by the now-retired
+# src/models/timber_tuning.py. Not used by the final models.
 TUNED_MLP_PARAMS: dict[str, Any] = {
     "hidden_layer_sizes": (136, 136, 136),
     "activation": "relu",
@@ -160,9 +171,7 @@ class TrainResult:
     test_rmse: float = float("nan")
 
 
-def time_based_split(
-    frame: pd.DataFrame, test_fraction: float = 0.2
-) -> tuple[pd.Index, pd.Index]:
+def time_based_split(frame: pd.DataFrame, test_fraction: float = 0.2) -> tuple[pd.Index, pd.Index]:
     """Split rows chronologically within each pile/scenario series.
 
     This is the default split. Only two piles exist in this dataset, so a
@@ -183,9 +192,7 @@ def time_based_split(
     return pd.concat(train_parts).index, pd.concat(test_parts).index
 
 
-def pile_based_split(
-    frame: pd.DataFrame, test_pile: str = "PileB"
-) -> tuple[pd.Index, pd.Index]:
+def pile_based_split(frame: pd.DataFrame, test_pile: str = "PileB") -> tuple[pd.Index, pd.Index]:
     """Leave-one-pile-out split, offered as an alternate/diagnostic strategy.
 
     With only two piles this trains on a single asset and evaluates on a
