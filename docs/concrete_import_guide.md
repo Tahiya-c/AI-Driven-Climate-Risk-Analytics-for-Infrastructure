@@ -7,12 +7,14 @@ much smaller feature set. Both import formats share one validation engine
 
 ## 1. What you provide, and what the model works out
 
-You give three things per pile: its **static properties** (exposure zone, water/cement
-ratio, concrete grade), **climate** for however many years/scenarios you want forecast
-(temperature, CO₂ — humidity is optional, see §3), and **optionally, measured
-carbonation depths** so the forecast anchors to the pile's real history instead of
-starting from zero. The model (the same RNN the live dashboard uses, never retrained on
-your import) works out the carbonation trajectory.
+You give two things per pile, really: its **static properties** (exposure zone,
+water/cement ratio, concrete grade) and, strongly recommended, **measured carbonation
+depths** so the forecast anchors to the pile's real history instead of starting from
+zero. **Climate you usually don't need to supply at all** — every known pile sits at
+Port Kembla, and the reference climate data already runs to 2070 for all 7 standard
+scenarios, so leaving the climate sheet out gets you a full-length forecast across all
+of them for free (see §3). The model (the same RNN the live dashboard uses, never
+retrained on your import) works out the carbonation trajectory.
 
 ## 2. The three sheets
 
@@ -29,15 +31,15 @@ both into `data/templates/`).
 | `wc_ratio` | float | yes | Water/cement ratio (reference range 0.33–0.60) |
 | `fc_mpa` | float | yes | Concrete grade, MPa (reference range 40–120) |
 
-### 2.2 `concrete_climate`: one row per scenario/year (required)
+### 2.2 `concrete_climate`: one row per scenario/year (**optional** — see §3)
 
-| Column | Type | Required | Notes |
+| Column | Type | Required if the sheet is used | Notes |
 |---|---|---|---|
 | `site`, `scenario_label`, `climate_model`, `emissions_pathway` | text/code | yes | Identify the scenario; `emissions_pathway` must be `A1FI`, `A1B`, or `Base` |
 | `year` | int | yes | |
-| `mean_temp_c` | float | yes | Required, never guessed — this is the dashboard's actual climate driver |
-| `co2_ppm` | float | yes | Required, never guessed |
-| `mean_rh_pct` | float | **no** | The one column this format will fill in for you — see §3 |
+| `mean_temp_c` | float | yes | Never guessed for a *custom* scenario — see §3 for when it's filled anyway |
+| `co2_ppm` | float | yes | Same as `mean_temp_c` |
+| `mean_rh_pct` | float | **no** | The one column that's always optional even for a custom scenario — see §3 |
 
 ### 2.3 `concrete_observations`: inspections (optional, recommended)
 
@@ -50,21 +52,32 @@ both into `data/templates/`).
 Without this sheet, the forecast starts from 0mm at the pile's earliest climate year —
 a theoretical "brand new pile" trajectory, not anchored to anything measured.
 
-## 3. The fill policy: why `mean_rh_pct` is special
+## 3. The fill policy: climate is reused, not retyped
 
-Every other required column either comes from you or blocks validation if it's missing
-— concrete grade, exposure zone and climate drivers are never guessed, because getting
-them wrong changes the physics, not just the presentation. `mean_rh_pct` is the one
-exception: if you have temperature and CO₂ records but not humidity for some years,
-those rows get filled with **that calendar year's typical humidity** across the
-reference Port Kembla series (median, computed fresh from
-`data/processed/concrete_kembla_v6_consolidated.csv` each run) instead of being
-blocked or defaulted to a constant. Every filled row shows up as a `warning` `Issue`
-naming the value used, so you can see exactly which numbers were guessed.
+Concrete grade, exposure zone, and (for a scenario of your own invention) climate
+drivers are never guessed — getting those wrong changes the physics, not just the
+presentation. But **climate for a *recognised* scenario is a different case**: the
+reference data already has it, computed once from Dr. Daniel's climate workbook, so
+retyping 71 years of it per scenario would just be busywork. Three cases:
 
-This is deliberately the *only* field with this treatment right now — see
-`src/data/import_schema.py`'s `Field.fill` options (`year_mean`/`year_mode` are built
-and ready; nothing else currently opts in) if the team decides more columns should.
+1. **Omit `concrete_climate` entirely** → every one of the 7 standard scenarios
+   (`CSIRO Mk3.5`/`MIROC(hires)`/`MRI-CGCM2.3.2` × `A1FI`/`A1B`, plus the `Base`
+   reference) is generated for you, in full, through 2070.
+2. **Name a recognised scenario but stop partway** (e.g. you have real local readings
+   through 2030) → your years are kept exactly as given; 2031–2070 is filled from the
+   reference series for that same `(climate_model, emissions_pathway)` pair.
+3. **Name a scenario the reference data has no match for** (a genuinely new GCM/pathway
+   combination) → nothing to extend it with, so it's used exactly as supplied, and a
+   forecast can only go as far as your own years reach.
+
+Every added/filled value is recorded as a `warning` `Issue` naming what happened and
+how many years, so nothing is silently substituted. `mean_rh_pct` additionally keeps
+its own, narrower fallback (that calendar year's median humidity across the reference)
+for the rare case where a *custom* scenario has temperature/CO₂ but not humidity.
+
+The mechanics live in `concrete_import._augment_climate_with_reference` (climate reuse)
+and `src/data/import_schema.py`'s `Field.fill` options (`year_mean`/`year_mode`, the
+humidity fallback specifically).
 
 ## 4. Validation rules
 

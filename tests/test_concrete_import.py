@@ -82,7 +82,10 @@ def test_to_model_series_matches_the_trained_feature_width() -> None:
     series = to_model_series(result)
     assert len(series) == 1
     s = series[0]
-    assert s["X"].shape == (7, 9)
+    # 71 rows, not 7: the example names a known reference scenario (A1FI|MRI-CGCM2.3.2)
+    # with only 7 years of climate, so validate_import auto-extends it to 2070 -- see
+    # test_climate_auto_fill_extends_a_known_scenario_to_2070 below.
+    assert s["X"].shape == (71, 9)
     assert s["asset"] == "EXAMPLE_01"
     assert s["last_observed_year"] == 2026
 
@@ -117,8 +120,11 @@ def _richer_tables(n_history_years: int = 27, n_future_years: int = 4) -> dict[s
 
 
 def test_forecast_series_raises_a_clear_error_when_history_is_too_short() -> None:
-    """The tiny example (7 yrs, no climate beyond the last inspection) can't be forecast."""
-    series = to_model_series(validate_import(_example_tables()))
+    """A genuinely custom scenario (not in the reference data) has nothing to auto-extend
+    from, so one that stops at the last inspection year still can't be forecast."""
+    tables = _example_tables()
+    tables["concrete_climate"]["climate_model"] = "MyCustomGCM"  # no longer a known reference pair
+    series = to_model_series(validate_import(tables))
     with pytest.raises(ValueError, match="no climate years after last_observed_year"):
         forecast_series(series, method="rnn")
 
@@ -132,12 +138,63 @@ def test_forecast_series_with_enough_history_continues_smoothly_from_observed() 
     observed = out[out["method"] == "observed"]
     forecast = out[out["method"] == "rnn"]
     assert len(observed) == 27
-    assert len(forecast) == 4
+    # 44, not 4: this names a known reference scenario, so climate auto-extends to 2070
+    # regardless of how many years _richer_tables itself supplied -- see §"climate auto-fill".
+    assert len(forecast) == 44
+    assert forecast["year"].max() == 2070
     assert forecast["year"].min() == observed["year"].max() + 1
     # continuity: the forecast's first value should be close to the last observed one
     # (one year's plausible carbonation growth, not a jump)
     gap = forecast.iloc[0]["value"] - observed.iloc[-1]["value"]
     assert 0 <= gap < 1.0
+
+
+def test_climate_sheet_omitted_gives_all_7_reference_scenarios_to_2070() -> None:
+    tables = _richer_tables()
+    del tables["concrete_climate"]
+    result = validate_import(tables)
+    assert result.ok
+    climate = result.tables["concrete_climate"]
+    combos = set(zip(climate["emissions_pathway"], climate["climate_model"]))
+    assert len(combos) == 7
+    assert climate["year"].max() == 2070
+    series = to_model_series(result)
+    assert len(series) == 7
+    assert all(s["years"].max() == 2070 for s in series)
+
+
+def test_climate_auto_fill_extends_a_known_scenario_to_2070() -> None:
+    """A known (climate_model, emissions_pathway) pair with partial years gets the rest
+    from the reference; the user's own years are kept, not overwritten."""
+    tables = _richer_tables(n_history_years=27, n_future_years=0)  # climate stops at 2026
+    result = validate_import(tables)
+    assert result.ok
+    assert any(
+        "added" in i.message and "from the reference series" in i.message
+        for i in result.issues
+        if i.level == "warning"
+    )
+    climate = result.tables["concrete_climate"]
+    assert climate["year"].max() == 2070
+    # the user's own 2026 value must survive unchanged, not be overwritten by the reference
+    mine = tables["concrete_climate"]
+    assert climate.loc[climate["year"] == 2026, "mean_temp_c"].iloc[0] == pytest.approx(
+        mine.loc[mine["year"] == 2026, "mean_temp_c"].iloc[0]
+    )
+
+
+def test_custom_scenario_with_no_reference_match_is_left_as_supplied() -> None:
+    tables = _richer_tables(n_history_years=27, n_future_years=0)
+    tables["concrete_climate"]["climate_model"] = "MyCustomGCM"
+    result = validate_import(tables)
+    assert result.ok
+    climate = result.tables["concrete_climate"]
+    assert climate["year"].max() == 2026  # nothing to extend it with
+    assert not any(
+        "added" in i.message and "from the reference series" in i.message
+        for i in result.issues
+        if i.level == "warning"
+    )
 
 
 def test_forecast_series_wc_regress_needs_no_lookback_window() -> None:

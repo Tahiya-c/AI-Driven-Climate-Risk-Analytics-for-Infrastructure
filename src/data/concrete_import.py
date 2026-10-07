@@ -10,8 +10,19 @@ for where these columns come from. Three sheets (one .xlsx with these sheet name
 folder of same-named .csv files):
 
     concrete_assets        <- one row per pile: zone, w/c ratio, concrete grade  (required)
-    concrete_climate        <- one row per scenario/year: temperature, humidity, CO2 (required)
+    concrete_climate        <- one row per scenario/year: temperature, humidity, CO2 (optional)
     concrete_observations   <- inspections: measured carbonation depth per year  (optional)
+
+concrete_climate is optional because every known pile sits at Port Kembla, and the
+reference climate data (data/processed/concrete_kembla_v6_consolidated.csv) already
+runs to 2070 for all 7 standard scenarios -- a forecast otherwise stops wherever the
+user's own climate rows stop, which is the whole reason this exists. Leave the sheet
+out entirely to get all 7 scenarios through 2070 for free; name a subset of
+(climate_model, emissions_pathway) to forecast only those; or supply your own years for
+a scenario and any gap through 2070 is still filled from the reference for a recognised
+(climate_model, emissions_pathway) pair. A genuinely new scenario (one the reference
+data has no matching pair for) has nothing to fall back to and must be supplied in full
+-- see ``_augment_climate_with_reference``.
 
 ``to_model_tables`` turns a valid import into the series-shaped records
 ``src.models.concrete_forecast.forecast_pile`` expects (the same per-series dict shape
@@ -42,6 +53,15 @@ ZONES = ("atmospheric", "splash", "tidal")
 PATHWAYS = ("A1FI", "A1B", "Base")
 SERIES_START = 2000  # must match rnn_model.SERIES_START -- t_exposure's zero point
 FIRST_YEAR, LAST_YEAR = 2000, 2070
+DEFAULT_SITE = "Port Kembla"
+# climate_model -> the friendly label the dashboard already uses for it
+# (src/visualization/charts.py's SCENARIO_LABELS / make_concrete_preview.py's GCM_LABEL).
+CLIMATE_MODEL_LABELS = {
+    "MRI-CGCM2.3.2": "Most Likely",
+    "CSIRO Mk3.5": "Hotter & Drier",
+    "MIROC(hires)": "Colder & Wetter",
+    "(Reference)": "Baseline",
+}
 
 ASSET_FIELDS = (
     Field("asset_id", "text", True, description="Unique pile ID, e.g. PileH"),
@@ -131,7 +151,7 @@ SHEETS: dict[str, tuple[Field, ...]] = {
     "concrete_climate": CLIMATE_FIELDS,
     "concrete_observations": OBSERVATION_FIELDS,
 }
-OPTIONAL_SHEETS = {"concrete_observations"}
+OPTIONAL_SHEETS = {"concrete_climate", "concrete_observations"}
 KEYS = {
     "concrete_assets": ["asset_id"],
     "concrete_climate": ["site", "scenario_label", "emissions_pathway", "year"],
@@ -145,6 +165,69 @@ KEYS = {
 def read_import(source: str | Path) -> dict[str, pd.DataFrame]:
     """Read an .xlsx (path or file-like, e.g. a Streamlit upload) or a folder of CSVs."""
     return _read_import(source, SHEETS)
+
+
+# --------------------------------------------------------------- climate auto-fill
+
+
+def _load_reference_climate() -> pd.DataFrame:
+    """One row per (emissions_pathway, climate_model, year) -- climate doesn't vary by
+    pile, so this dedupes the training CSV's 49-series-wide table down to the 7
+    distinct scenario series actually modelled for Port Kembla, through 2070."""
+    cols = ["emissions_pathway", "climate_model", "year", "mean_temp_c", "mean_rh_pct", "co2_ppm"]
+    reference = pd.read_csv(REFERENCE_CSV, usecols=cols)
+    return reference.drop_duplicates(subset=["emissions_pathway", "climate_model", "year"]).reset_index(
+        drop=True
+    )
+
+
+def _augment_climate_with_reference(climate: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+    """Fill in climate years from the reference Port Kembla series (see the module
+    docstring): every known (emissions_pathway, climate_model) pair gets extended
+    through 2070 for any year the import doesn't already supply. An empty/missing
+    sheet gets all 7 reference scenarios in full. A pair the reference data has no
+    match for (a genuinely custom scenario) is returned exactly as given -- nothing to
+    extend it with. Returns (augmented_frame, messages) -- one message per scenario
+    that got years added, for the caller to surface as warnings.
+    """
+    reference = _load_reference_climate()
+    known_combos = set(zip(reference["emissions_pathway"], reference["climate_model"], strict=True))
+    out_cols = ["site", "scenario_label", "climate_model", "emissions_pathway", "year",
+                "mean_temp_c", "co2_ppm", "mean_rh_pct"]
+    messages: list[str] = []
+
+    def _labelled(rows: pd.DataFrame, site: str, label: str | None = None) -> pd.DataFrame:
+        rows = rows.assign(site=site)
+        rows["scenario_label"] = (
+            label if label is not None else rows["climate_model"].map(CLIMATE_MODEL_LABELS).fillna(rows["climate_model"])
+        )
+        return rows[out_cols]
+
+    if climate.empty or "climate_model" not in climate.columns:
+        messages.append(
+            "no concrete_climate rows supplied; using all 7 reference Port Kembla "
+            f"scenarios through {LAST_YEAR}"
+        )
+        return _labelled(reference, DEFAULT_SITE), messages
+
+    pieces = [climate]
+    group_cols = ["site", "scenario_label", "climate_model", "emissions_pathway"]
+    for (site, label, model, pathway), group in climate.groupby(group_cols, dropna=False):
+        if (pathway, model) not in known_combos:
+            continue  # custom scenario: nothing in the reference to extend it with
+        have_years = set(group["year"].dropna().astype(int))
+        ref_rows = reference[(reference["emissions_pathway"] == pathway) & (reference["climate_model"] == model)]
+        missing = ref_rows[~ref_rows["year"].isin(have_years)]
+        if missing.empty:
+            continue
+        added_years = sorted(set(missing["year"]))
+        messages.append(
+            f"{label} ({pathway}|{model}): added {len(added_years)} year(s) "
+            f"({min(added_years)}-{max(added_years)}) from the reference series"
+        )
+        pieces.append(_labelled(missing, site, label))
+    augmented = pd.concat(pieces, ignore_index=True)
+    return augmented.sort_values(group_cols + ["year"]).reset_index(drop=True), messages
 
 
 # --------------------------------------------------------------------------- validation
@@ -169,12 +252,20 @@ def validate_import(tables: dict[str, pd.DataFrame]) -> ImportResult:
     climate = checked.get("concrete_climate", pd.DataFrame())
     observations = checked.get("concrete_observations")
 
+    # Extend climate to 2070 from the reference Port Kembla series wherever the import
+    # doesn't already cover it -- see the module docstring and _augment_climate_with_reference.
+    if REFERENCE_CSV.exists():
+        climate, fill_messages = _augment_climate_with_reference(climate)
+        for message in fill_messages:
+            issues.append(Issue("warning", "concrete_climate", message))
+        checked["concrete_climate"] = climate
+
     # mean_rh_pct: the one column this import format allows to be filled rather than
-    # supplied -- see CLIMATE_FIELDS. Reference lookup built from the training CSV.
+    # supplied -- see CLIMATE_FIELDS. Only touches rows the reference fill above didn't
+    # already supply a real value for (e.g. a genuinely custom scenario missing it).
     rh_field = next(f for f in CLIMATE_FIELDS if f.name == "mean_rh_pct")
     if "year" in climate.columns and REFERENCE_CSV.exists():
-        reference = pd.read_csv(REFERENCE_CSV)
-        lookup = build_year_lookup(reference, "mean_rh_pct", "year")
+        lookup = build_year_lookup(pd.read_csv(REFERENCE_CSV), "mean_rh_pct", "year")
         climate = apply_fill(climate, rh_field, "year", lookup, issues, "concrete_climate")
         checked["concrete_climate"] = climate
 
