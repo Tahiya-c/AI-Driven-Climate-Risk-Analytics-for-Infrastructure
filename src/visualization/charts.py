@@ -220,6 +220,7 @@ def material_forecast_chart(
     material: str,
     historical: pd.DataFrame,
     projection: pd.DataFrame,
+    flags: list[dict[str, Any]] | None = None,
 ) -> go.Figure:
     """Build one material's historical series and three projection conditions."""
     figure = go.Figure()
@@ -249,6 +250,16 @@ def material_forecast_chart(
         )
     boundary_year = int(historical["year"].max())
     figure.add_vline(x=boundary_year, line_dash="dash", line_color="#94A3B8")
+    for flag in flags or []:
+        purpose = flag["purpose"]
+        value = float(flag["value"])
+        figure.add_hline(
+            y=value,
+            line_dash="dash",
+            line_color="#D97706" if purpose == "Maintenance" else "#7C3AED",
+            annotation_text=f"{purpose}: {value:g} mm",
+            annotation_position="top left",
+        )
     figure.update_layout(
         title=material,
         height=520,
