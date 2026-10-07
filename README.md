@@ -58,8 +58,19 @@ ruff check .
 1. Add a data dictionary to `docs/` describing units, missing values, pile identifiers, inspection dates, coordinates, and the deterioration target.
 2. Add schema validation for processed uploads in `src/data/`.
 3. Move repeatable transformations from notebooks to `src/features/`.
-4. Save the produced model under `artifacts/` and connect it through `src/models/predict.py`.
+4. Save the produced model under `artifacts/` and connect it through `src/models/inference.py` for concrete or `src/models/timber_inference.py` for timber.
 5. Replace the demonstration series in `src/visualization/charts.py` with model output and add map layers under the Geospatial Mapping page.
+
+## Timber Linear Regression and SVR depth forecasts
+
+`src/models/linear_model.py` and `svr_model.py` are the per-model training
+entry points, following the `rnn_model.py` naming convention.
+Model selection lives in `timber_eval.py`. `timber_eval.py`, `timber_benchmark_all.py`,
+`train_final_timber_model.py`, and `timber_inference.py` mirror concrete's
+model, evaluation, benchmark, final-training, and inference responsibilities.
+Benchmark training ends in 2026; final training fits all available history.
+See [the training and testing guide](docs/timber_linear_svr_pipeline.md) for
+commands, output files, benchmark results, and migration from replacement time.
 
 ## Timber pile replacement forecast (separate app)
 
