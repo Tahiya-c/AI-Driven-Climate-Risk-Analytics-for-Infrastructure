@@ -24,15 +24,16 @@ yearly climate is interpolated between the anchor years exactly as the workbook 
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
-from typing import Any
 
 import numpy as np
 import pandas as pd
 
 from src.config import ROOT_DIR
+from src.data.import_schema import Field, Issue, ImportResult
+from src.data.import_schema import check_sheet as _check_sheet
+from src.data.import_schema import read_import as _read_import
 from src.data.timber_template import TEMPLATE_DIR, scenario_id
 from src.models.timber_coefficients import K_CONTACT, K_HW_SW, K_KNOT, K_PROTECT, K_SHELTER
 
@@ -46,19 +47,9 @@ MIN_HISTORY_YEARS = 15  # below this an anchored forecast still runs, with a war
 
 ZONES = list("ABCDEFG")
 
-
-@dataclass(frozen=True)
-class Field:
-    name: str
-    dtype: str  # "text" | "int" | "float" | "code"
-    required: bool
-    unit: str = ""
-    source: str = ""
-    description: str = ""
-    allowed: tuple[str, ...] = ()
-    minimum: float | None = None
-    maximum: float | None = None
-
+# Field/Issue/ImportResult/check_sheet/read_import now live in src.data.import_schema,
+# shared with concrete_import.py -- see that module's docstring. Nothing below here is
+# material-agnostic: it's timber's own field lists and cross-field checks.
 
 ASSET_FIELDS = (
     Field(
@@ -318,124 +309,15 @@ KEYS = {
 }
 
 
-@dataclass
-class Issue:
-    level: str  # "error" blocks forecasting; "warning" does not
-    sheet: str
-    message: str
-    row: int | None = None  # 1-based data row (row 1 = first row under the header)
-    column: str | None = None
-
-
-@dataclass
-class ImportResult:
-    tables: dict[str, pd.DataFrame]
-    issues: list[Issue] = field(default_factory=list)
-
-    @property
-    def errors(self) -> list[Issue]:
-        return [issue for issue in self.issues if issue.level == "error"]
-
-    @property
-    def ok(self) -> bool:
-        return not self.errors
-
-    def issues_frame(self) -> pd.DataFrame:
-        frame = pd.DataFrame(
-            [vars(issue) for issue in self.issues],
-            columns=["level", "sheet", "row", "column", "message"],
-        )
-        frame["row"] = frame["row"].astype("Int64")
-        return frame
-
-
 # --------------------------------------------------------------------------- reading
 
 
-def read_import(source: str | Path | Any) -> dict[str, pd.DataFrame]:
+def read_import(source: str | Path) -> dict[str, pd.DataFrame]:
     """Read an .xlsx (path or file-like, e.g. a Streamlit upload) or a folder of CSVs."""
-    if isinstance(source, (str, Path)) and Path(source).is_dir():
-        directory = Path(source)
-        return {
-            sheet: pd.read_csv(directory / f"{sheet}.csv")
-            for sheet in SHEETS
-            if (directory / f"{sheet}.csv").exists()
-        }
-    workbook = pd.read_excel(source, sheet_name=None)
-    return {sheet: frame for sheet, frame in workbook.items() if sheet in SHEETS}
+    return _read_import(source, SHEETS)
 
 
 # --------------------------------------------------------------------------- validation
-
-
-def _check_sheet(sheet: str, frame: pd.DataFrame, issues: list[Issue]) -> pd.DataFrame:
-    """Column presence, types, ranges and codes. Returns the frame with coerced dtypes."""
-    fields = SHEETS[sheet]
-    frame = frame.copy()
-    frame.columns = [str(column).strip() for column in frame.columns]
-    frame = frame.dropna(how="all")
-    missing = [f.name for f in fields if f.required and f.name not in frame.columns]
-    for name in missing:
-        issues.append(Issue("error", sheet, f"Missing required column '{name}'", column=name))
-    unknown = sorted(set(frame.columns) - {f.name for f in fields})
-    if unknown:
-        issues.append(Issue("warning", sheet, f"Ignoring unknown columns: {unknown}"))
-    if frame.empty:
-        issues.append(Issue("error", sheet, "Sheet has no data rows"))
-        return frame
-
-    for f in fields:
-        if f.name not in frame.columns:
-            continue
-        column = frame[f.name]
-        blank = column.isna() | (column.astype(str).str.strip() == "")
-        if f.required:
-            for row in np.flatnonzero(blank.to_numpy()):
-                issues.append(Issue("error", sheet, "Required value is blank", row + 1, f.name))
-        if f.dtype in ("int", "float"):
-            numeric = pd.to_numeric(column, errors="coerce")
-            for row in np.flatnonzero((numeric.isna() & ~blank).to_numpy()):
-                issues.append(
-                    Issue("error", sheet, f"Not a number: {column.iloc[row]!r}", row + 1, f.name)
-                )
-            if f.dtype == "int":
-                fractional = numeric.notna() & (numeric % 1 != 0)
-                for row in np.flatnonzero(fractional.to_numpy()):
-                    issues.append(Issue("error", sheet, "Must be a whole number", row + 1, f.name))
-            unit = f" {f.unit}" if f.unit else ""
-            for bound, outside, limit in (
-                (f.minimum, lambda b: numeric < b, "minimum"),
-                (f.maximum, lambda b: numeric > b, "maximum"),
-            ):
-                if bound is None:
-                    continue
-                for row in np.flatnonzero(outside(bound).fillna(False).to_numpy()):
-                    message = f"{numeric.iloc[row]} is outside the allowed {limit} {bound}{unit}"
-                    issues.append(Issue("error", sheet, message, row + 1, f.name))
-            frame[f.name] = numeric
-        else:
-            frame[f.name] = column.where(blank, column.astype(str).str.strip())
-        if f.allowed:
-            values = frame[f.name].astype("string")
-            if f.dtype == "int":
-                values = frame[f.name].map(lambda v: None if pd.isna(v) else str(int(v)))
-            bad = values.notna() & ~values.isin(f.allowed)
-            for row in np.flatnonzero(bad.fillna(False).to_numpy()):
-                issues.append(
-                    Issue(
-                        "error",
-                        sheet,
-                        f"{values.iloc[row]!r} is not an allowed value {list(f.allowed)}",
-                        row + 1,
-                        f.name,
-                    )
-                )
-    key = [column for column in KEYS[sheet] if column in frame.columns]
-    if key and len(key) == len(KEYS[sheet]):
-        duplicated = frame.duplicated(key, keep=False)
-        for row in np.flatnonzero(duplicated.to_numpy()):
-            issues.append(Issue("error", sheet, f"Duplicate key {key}", row + 1))
-    return frame
 
 
 def validate_import(tables: dict[str, pd.DataFrame]) -> ImportResult:
@@ -447,7 +329,7 @@ def validate_import(tables: dict[str, pd.DataFrame]) -> ImportResult:
             if sheet not in OPTIONAL_SHEETS:
                 issues.append(Issue("error", sheet, "Required sheet is missing"))
             continue
-        checked[sheet] = _check_sheet(sheet, tables[sheet], issues)
+        checked[sheet] = _check_sheet(sheet, tables[sheet], SHEETS[sheet], KEYS[sheet], issues)
     if any(
         i.level == "error" and i.column is None and "missing" in i.message.lower() for i in issues
     ):
