@@ -9,6 +9,12 @@ venv/
 .streamlit/secrets.toml
 artifacts/*
 !artifacts/.gitkeep
+# Timber models of record: committed so every machine/import uses the same model
+# (src/models/timber_forecast.py). Replace only via `timber_transfer --save --force`.
+!artifacts/timber_transfer_gbm.joblib
+!artifacts/timber_transfer_gbm.json
+!artifacts/timber_transfer_mlp.joblib
+!artifacts/timber_transfer_mlp.json
 catboost_info/
 
 

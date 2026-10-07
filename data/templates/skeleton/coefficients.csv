@@ -1,0 +1,29 @@
+column,code,meaning,value_zones_A_C,value_zones_D_G
+k_heartwood,HW1,Heartwood class 1,1.1,1.3
+k_heartwood,HW2,Heartwood class 2,1.7,5.2
+k_heartwood,HW3,Heartwood class 3,3.4,8.8
+k_heartwood,HW4,Heartwood class 4,17.0,25.0
+k_sapwood,SPSU,"Softwood sapwood, untreated",40.0,40.0
+k_sapwood,SPSCR1,"Softwood sapwood, creosote-treated 24%kg/kg",1.7,1.7
+k_sapwood,SPSCR2,"Softwood sapwood, creosote-treated 40%kg/kg",1.0,1.0
+k_sapwood,SPSCC1,"Softwood sapwood, CCA-treated 0.6%kg/kg",4.7,4.7
+k_sapwood,SPSCC2,"Softwood sapwood, CCA-treated 1%kg/kg",3.0,3.0
+k_sapwood,SPSCC3,"Softwood sapwood, CCA-treated 2%kg/kg",1.8,1.8
+k_sapwood,SPSCC4,"Softwood sapwood, CCA-treated 5%kg/kg",1.0,1.0
+k_sapwood,SPSDBT,"Softwood sapwood, double-treated CC2+CR2",0.9,0.9
+k_sapwood,SPHU,"Hardwood sapwood, untreated",25.0,25.0
+k_sapwood,SPHCR1,"Hardwood sapwood, creosote-treated 13%kg/kg",0.8,0.8
+k_sapwood,SPHCR2,"Hardwood sapwood, creosote-treated 22%kg/kg",0.6,0.6
+k_sapwood,SPHCC1,"Hardwood sapwood, CCA-treated 0.7%kg/kg",3.2,3.2
+k_sapwood,SPHCC2,"Hardwood sapwood, CCA-treated 1.2%kg/kg",1.8,1.8
+k_sapwood,SPHCC3,"Hardwood sapwood, CCA-treated 2.4%kg/kg",1.1,1.1
+k_sapwood,SPHDBT,"Hardwood sapwood, double-treated CC2+CR2",0.5,0.5
+k_shelter,EXP1,Calm or sheltered from wave,1.0,1.0
+k_shelter,EXP2,Exposed to strong wave or surf,0.6,0.6
+k_protect,MTN1,Floating collar,0.5,0.5
+k_protect,MTN2,None,1.0,1.0
+k_contact,CNT1,Contact with other timber member,2.0,2.0
+k_contact,CNT2,None,1.0,1.0
+k_knot,KNT1,Knots without protective plate,2.0,2.0
+k_knot,KNT2,Knots with protective plate,1.0,1.0
+k_knot,KNT3,None,1.0,1.0

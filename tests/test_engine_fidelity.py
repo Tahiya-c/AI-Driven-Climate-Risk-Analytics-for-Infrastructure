@@ -1,4 +1,4 @@
-"""Fidelity tests: does `src/timber/engine.py` reproduce the workbook's own CSV export?
+"""Fidelity tests: does `src/models/timber_engine.py` reproduce the workbook's own CSV export?
 
 Phase 1 of the rebuild (docs/timber_kembla_model_spec_and_defects.md) requires the port
 to be verbatim, defects included. If the port disagrees with the CSV anywhere, the port
@@ -10,8 +10,8 @@ from __future__ import annotations
 import pandas as pd
 import pytest
 
-from src.timber.data_prep import DATA_PATH
-from src.timber.engine import ASSETS, SCENARIOS, simulate
+from src.data.timber_data_prep import DATA_PATH
+from src.models.timber_engine import ASSETS, SCENARIOS, simulate
 
 requires_data_file = pytest.mark.skipif(
     not DATA_PATH.exists(), reason="timber CSV not present on disk"
@@ -34,7 +34,7 @@ _FIDELITY_COLUMNS = {
     "heartwood_rate_mm_year": "r_heart",
     "failure_probability": "prob",
     "design_deterioration_mm": "d_design",
-    "replacement_time_years": "t_replace",
+    "design_life_years": "t_replace",
 }
 
 

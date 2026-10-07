@@ -42,9 +42,9 @@ import torch
 import torch.nn as nn
 
 try:  # imported as a package (src.models.inference) ...
-    from .rnn_model import SERIES_START, WINDOW, build_step, load_series
+    from .rnn_model import SERIES_START, build_step, load_series
 except ImportError:  # ... or run as a script from src/models/
-    from rnn_model import SERIES_START, WINDOW, build_step, load_series
+    from rnn_model import SERIES_START, build_step, load_series
 
 # --------------------------------------------------------------------- paths
 ROOT = Path(__file__).resolve().parents[2]
@@ -77,7 +77,14 @@ class CarbonationRNN(nn.Module):
 # ------------------------------------------------------------------- loading
 @lru_cache(maxsize=1)
 def _rnn():
-    """Return (model, x_mean, x_std, y_mean, y_std) for the deployed RNN."""
+    """Return (model, x_mean, x_std, y_mean, y_std, window) for the deployed RNN.
+
+    ``window`` comes from the saved artifact's own metadata (``meta["window"]``),
+    not a module-level constant -- train_final_model.py may have trained with a
+    different window than rnn_model.py's default (e.g. after Optuna tuning changes
+    TUNED_RNN_PARAMS), and this way inference can never silently fall out of sync
+    with whatever was actually deployed.
+    """
     if not RNN_WEIGHTS.exists():
         raise FileNotFoundError(
             f"{RNN_WEIGHTS} not found. Run:\n"
@@ -89,7 +96,13 @@ def _rnn():
     model.eval()
     x_mean = np.asarray(meta["x_mean"], dtype=np.float32)
     x_std = np.asarray(meta["x_std"], dtype=np.float32)
-    return model, x_mean, x_std, float(meta["y_mean"]), float(meta["y_std"])
+    return model, x_mean, x_std, float(meta["y_mean"]), float(meta["y_std"]), int(meta["window"])
+
+
+def rnn_window() -> int:
+    """The deployed RNN's lookback window -- see ``_rnn``'s docstring for why this
+    is read from the artifact instead of being a static constant."""
+    return _rnn()[5]
 
 
 @lru_cache(maxsize=1)
@@ -140,10 +153,11 @@ def _series(asset: str, scenario: str) -> dict:
 def _check_horizon(series_len: int, horizon: int) -> None:
     if horizon < 1:
         raise ValueError("horizon must be >= 1")
-    if series_len - horizon < WINDOW:
+    window = rnn_window()
+    if series_len - horizon < window:
         raise ValueError(
             f"horizon={horizon} too long: series has {series_len} usable years and the "
-            f"RNN needs a {WINDOW}-year lookback, so horizon must be <= {series_len - WINDOW}"
+            f"RNN needs a {window}-year lookback, so horizon must be <= {series_len - window}"
         )
 
 
@@ -155,7 +169,7 @@ def _years_for_tail(series: dict, horizon: int) -> list[int]:
 # --------------------------------------------------------------- projection
 def _project_rnn(series: dict, horizon: int) -> np.ndarray:
     """Autoregressive rollout, identical in shape to carbonation_benchmark.roll_rnn."""
-    model, x_mean, x_std, y_mean, y_std = _rnn()
+    model, x_mean, x_std, y_mean, y_std, window = _rnn()
     X, y = series["X"], series["y"]
     cut = len(y) - horizon
     lag = y.copy()
@@ -163,7 +177,7 @@ def _project_rnn(series: dict, horizon: int) -> np.ndarray:
     out = []
     with torch.no_grad():
         for i in range(cut, len(y)):
-            step = ((build_step(X, lag, i, WINDOW) - x_mean) / x_std).astype(np.float32)
+            step = ((build_step(X, lag, i, window) - x_mean) / x_std).astype(np.float32)
             rate = float(model(torch.tensor(step[None]))) * y_std + y_mean
             lag[i] = rate
             depth += rate

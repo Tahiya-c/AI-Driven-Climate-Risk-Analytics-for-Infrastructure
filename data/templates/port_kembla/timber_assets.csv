@@ -1,0 +1,3 @@
+asset_id,site,description,timber_type,year_installed,zone,exposure,heartwood_class,sapwood_class,maintenance,contact,knot,initial_diameter_mm,sapwood_layer_mm,replacement_diameter_mm
+PileA,Port Kembla,Pile 32 @ Berth 201,Turpentine Gum,2005,E,EXP1,HW1,SPHU,MTN2,CNT2,KNT3,400,20,200
+PileB,Port Kembla,Pile 32 @ Berth 202,Gum,2006,E,EXP2,HW2,SPHU,MTN3,CNT3,KNT4,500,20,200

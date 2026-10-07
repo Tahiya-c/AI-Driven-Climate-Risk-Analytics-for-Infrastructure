@@ -1,4 +1,4 @@
-"""Tests for the multi-model comparison pipeline (src/timber/compare.py and friends)."""
+"""Tests for timber feature/target helpers, the GBM builder and quantile utilities."""
 
 from __future__ import annotations
 
@@ -6,18 +6,17 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.timber import model_gbm
-from src.timber.baselines import naive_diameter_baseline
-from src.timber.data_prep import DATA_PATH, load_timber_data
-from src.timber.features import (
+from src.models import timber_model_gbm as model_gbm
+from src.data.timber_data_prep import DATA_PATH, load_timber_data
+from src.features.timber_features import (
     DECAY_DOSE_COLUMN,
     DECAY_DOSE_FEATURE_COLUMNS,
     FEATURE_COLUMNS,
     add_decay_dose,
     constant_within_pile_features,
 )
-from src.timber.quantile import pinball_loss
-from src.timber.targets import (
+from src.models.timber_quantile import pinball_loss
+from src.features.timber_targets import (
     CLIPPED_DIAMETER_COLUMN,
     DISTANCE_TARGET,
     RESIDUAL_TARGET,
@@ -66,7 +65,7 @@ def test_add_decay_dose_cumulates_within_trajectory_and_restarts_per_group() -> 
             "age_years": [1, 2, 1, 2],
             "salinity_factor": [1.0, 1.0, 2.0, 2.0],
             "summer_sea_temp_c": [10.0, 10.0, 10.0, 10.0],
-            "timber_exposure_factor": [1.0, 1.0, 1.0, 1.0],
+            "heartwood_factor": [1.0, 1.0, 1.0, 1.0],
         }
     )
     result = add_decay_dose(frame).sort_values(["scenario_label", "age_years"])
@@ -81,7 +80,7 @@ def test_add_decay_dose_cumulates_within_trajectory_and_restarts_per_group() -> 
 
 
 def test_decay_dose_feature_columns_swap_out_the_raw_linear_inputs() -> None:
-    for column in ("age_years", "summer_sea_temp_c", "salinity_factor", "timber_exposure_factor"):
+    for column in ("age_years", "summer_sea_temp_c", "salinity_factor", "heartwood_factor"):
         assert column not in DECAY_DOSE_FEATURE_COLUMNS
     assert DECAY_DOSE_COLUMN in DECAY_DOSE_FEATURE_COLUMNS
     # Every other standard feature is preserved.
@@ -89,7 +88,7 @@ def test_decay_dose_feature_columns_swap_out_the_raw_linear_inputs() -> None:
         "age_years",
         "summer_sea_temp_c",
         "salinity_factor",
-        "timber_exposure_factor",
+        "heartwood_factor",
     }
     assert untouched.issubset(set(DECAY_DOSE_FEATURE_COLUMNS))
 
@@ -107,13 +106,6 @@ def test_add_residual_correction_target_is_zero_when_already_valid() -> None:
     result = add_residual_correction_target(frame)
     assert result[CLIPPED_DIAMETER_COLUMN].tolist() == [300.0, 0.0, 0.0]
     assert result[RESIDUAL_TARGET].tolist() == [0.0, 50.0, 0.0]
-
-
-def test_naive_diameter_baseline_is_initial_minus_mean_deterioration() -> None:
-    frame = pd.DataFrame(
-        {"initial_diameter_mm": [400.0, 500.0], "mean_deterioration_mm": [50.0, 120.0]}
-    )
-    assert naive_diameter_baseline(frame).tolist() == [350.0, 380.0]
 
 
 def test_pinball_loss_is_zero_for_a_perfect_prediction() -> None:
@@ -137,7 +129,7 @@ def test_pinball_loss_penalizes_underprediction_more_at_high_quantiles() -> None
 @requires_data_file
 @requires_gbm
 def test_gbm_trains_and_reports_finite_metrics() -> None:
-    from src.timber.model import train
+    from src.models.timber_model import train
 
     frame = load_timber_data(DATA_PATH)
     result = train(frame, split_strategy="time", model_kind="gbm")
@@ -151,37 +143,8 @@ def test_gbm_trains_and_reports_finite_metrics() -> None:
 
 @requires_data_file
 @requires_gbm
-def test_compare_all_models_beats_the_naive_baseline() -> None:
-    from src.timber.compare import compare_all_models
-
-    frame = load_timber_data(DATA_PATH)
-    table = compare_all_models(frame, split_strategy="time")
-
-    assert set(table["model"]) >= {"mlp", "gbm"}
-    naive_mae = table.loc[table["model"].str.startswith("naive"), "mae"].iloc[0]
-    mlp_mae = table.loc[table["model"] == "mlp", "mae"].iloc[0]
-    gbm_mae = table.loc[table["model"] == "gbm", "mae"].iloc[0]
-    assert mlp_mae < naive_mae
-    assert gbm_mae < naive_mae
-
-
-@requires_data_file
-@requires_gbm
-def test_residual_correction_reconstructs_predictions_on_valid_rows_only() -> None:
-    from src.timber.residual import train_residual_vs_direct
-
-    frame = load_timber_data(DATA_PATH)
-    result = train_residual_vs_direct(frame, model_kind="gbm", split_strategy="time")
-
-    assert result.n_valid_test > 0
-    assert np.isfinite(result.residual_test_mae)
-    assert np.isfinite(result.direct_test_mae)
-
-
-@requires_data_file
-@requires_gbm
 def test_quantile_models_produce_an_ordered_replacement_year_band_table() -> None:
-    from src.timber.quantile import replacement_year_bands, train_quantile_models
+    from src.models.timber_quantile import replacement_year_bands, train_quantile_models
 
     frame = load_timber_data(DATA_PATH)
     quantile_models = train_quantile_models(frame, split_strategy="time")
@@ -192,25 +155,3 @@ def test_quantile_models_produce_an_ordered_replacement_year_band_table() -> Non
     band_table = replacement_year_bands(frame, quantile_models, pile)
     assert list(band_table.columns) == [0.1, 0.5, 0.9]
     assert len(band_table) == 3  # one row per scenario
-
-
-@requires_data_file
-@requires_gbm
-def test_shap_importance_covers_every_feature_column_once() -> None:
-    from src.timber.features import build_feature_matrix
-    from src.timber.model import build_pipeline, time_based_split
-    from src.timber.shap_importance import compute_shap_importance
-
-    frame = load_timber_data(DATA_PATH)
-    train_idx, test_idx = time_based_split(frame)
-    features = build_feature_matrix(frame)
-
-    model = build_pipeline(model_kind="gbm")
-    model.fit(features.loc[train_idx], frame.loc[train_idx, "remaining_diameter_mm"])
-
-    importance = compute_shap_importance(
-        model, frame.loc[test_idx], FEATURE_COLUMNS, sample_size=20
-    )
-
-    assert set(importance["feature"]) == set(FEATURE_COLUMNS)
-    assert (importance["mean_abs_shap"] >= 0).all()

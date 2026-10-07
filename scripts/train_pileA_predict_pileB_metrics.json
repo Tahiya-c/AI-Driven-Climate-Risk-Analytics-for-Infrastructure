@@ -1,0 +1,40 @@
+{
+  "pileA_mc_cv_mlp": {
+    "mae_mean": 5.25550057990371,
+    "mae_std": 0.4547165008449055,
+    "rmse_mean": 7.106013471117092,
+    "rmse_std": 0.6436590675661029,
+    "r2_mean": 0.9961941343662905,
+    "r2_std": 0.0006574932553911534,
+    "n_splits": 30
+  },
+  "pileB_accuracy_mlp": {
+    "mae": 141.1149802865172,
+    "rmse": 179.62912245782954,
+    "r2": 0.544992599813076,
+    "n": 497
+  },
+  "pileA_mc_cv_gbm": {
+    "mae_mean": 2.3684666988944167,
+    "mae_std": 0.299611085545684,
+    "rmse_mean": 4.249854753963775,
+    "rmse_std": 0.562675444605989,
+    "r2_mean": 0.9986346104631053,
+    "r2_std": 0.0003199345114678585,
+    "n_splits": 30
+  },
+  "pileB_accuracy_gbm": {
+    "mae": 141.93096483022381,
+    "rmse": 179.32922316641682,
+    "r2": 0.5465106441573676,
+    "n": 497
+  },
+  "pileB_mlp_rows": 213,
+  "pileB_mlp_Hotter & Drier_replacement_year": 2040.3755434828745,
+  "pileB_mlp_Most Likely_replacement_year": 2040.7749764497062,
+  "pileB_mlp_Colder & Wetter_replacement_year": 2039.7984841571192,
+  "pileB_gbm_rows": 213,
+  "pileB_gbm_Hotter & Drier_replacement_year": 2039.8247414235134,
+  "pileB_gbm_Most Likely_replacement_year": 2041.2127062291063,
+  "pileB_gbm_Colder & Wetter_replacement_year": 2039.2742766193946
+}

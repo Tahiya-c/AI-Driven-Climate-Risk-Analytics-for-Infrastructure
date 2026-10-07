@@ -179,6 +179,17 @@ def _render_concrete_page() -> None:
         st.error(f"Could not load concrete data: {exc}")
         return
 
+    # Shared axis ranges so the two model charts are visually comparable.
+    values, years = [], []
+    for model_data in data.values():
+        values += model_data["historical"]["value"].tolist()
+        values += model_data["projection"]["value"].tolist()
+        years += model_data["historical"]["year"].tolist()
+        years += model_data["projection"]["year"].tolist()
+    pad = (max(values) - min(values)) * 0.05 or 0.1
+    y_range = [min(values) - pad, max(values) + pad]
+    x_range = [min(years), max(years)]
+
     rnn_col, ridge_col = st.columns(2, gap="small")
     for container, model_name in ((rnn_col, "RNN"), (ridge_col, "Ridge")):
         model_data = data[model_name]
@@ -189,6 +200,8 @@ def _render_concrete_page() -> None:
                 model_data["projection"],
             )
             figure.update_layout(yaxis_title="Carbonation depth (mm)")
+            figure.update_yaxes(range=y_range)
+            figure.update_xaxes(range=x_range)
             st.plotly_chart(
                 figure,
                 use_container_width=True,
