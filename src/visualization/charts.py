@@ -103,11 +103,23 @@ def dashboard_material_comparison_data() -> dict[str, dict[str, pd.DataFrame]]:
     return data
 
 
-def dashboard_timber_model_data() -> dict[str, dict[str, dict[str, pd.DataFrame]]]:
-    """Load the separate GBM and MLP Timber dashboard exports."""
+def timber_asset_ids() -> list[str]:
+    """Pile ids with forecasts available in both timber dashboard exports."""
+    asset_ids = []
+    for model in ("gbm", "mlp"):
+        filename = f"dashboard_data_timber_pileB_from_pileA_{model}.csv"
+        path = ROOT_DIR / "data" / "dashboard" / filename
+        asset_ids.append(set(pd.read_csv(path)["asset_id"].dropna().unique()))
+    return sorted(asset_ids[0] & asset_ids[1])
+
+
+def dashboard_timber_model_data(
+    asset_id: str | None = None,
+) -> dict[str, dict[str, pd.DataFrame]]:
+    """Load the GBM and MLP timber forecasts, optionally for one pile."""
     return {
-        "GBM": _load_dashboard_csv("timber_pileB_from_pileA_gbm"),
-        "MLP": _load_dashboard_csv("timber_pileB_from_pileA_mlp"),
+        "GBM": _load_dashboard_csv("timber_pileB_from_pileA_gbm", asset_id),
+        "MLP": _load_dashboard_csv("timber_pileB_from_pileA_mlp", asset_id),
     }
 
 
@@ -149,7 +161,9 @@ def _load_concrete_csv(name: str, asset_id: str | None) -> dict[str, pd.DataFram
     return {"historical": historical, "projection": projection}
 
 
-def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
+def _load_dashboard_csv(
+    material: str, asset_id: str | None = None,
+) -> dict[str, pd.DataFrame]:
     """Convert one shared dashboard CSV into chart-ready history and projections."""
     path = ROOT_DIR / "data" / "dashboard" / f"dashboard_data_{material}.csv"
     if not path.exists():
@@ -160,6 +174,9 @@ def _load_dashboard_csv(material: str) -> dict[str, pd.DataFrame]:
     missing = sorted(required - set(frame.columns))
     if missing:
         raise ValueError(f"Dashboard CSV is missing columns: {', '.join(missing)}")
+
+    if asset_id is not None:
+        frame = frame.loc[frame["asset_id"] == asset_id].copy()
 
     scenario_map = {
         "CSIRO Mk3.5": "Hotter & Drier",

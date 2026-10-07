@@ -12,6 +12,7 @@ from src.visualization.charts import (
     dashboard_concrete_model_data,
     dashboard_timber_model_data,
     material_forecast_chart,
+    timber_asset_ids,
 )
 
 
@@ -106,14 +107,25 @@ def _render_timber_page(
         "Compare material loss projections from the GBM and MLP models."
     )
 
-    if comparison_payload is None:
-        data = dashboard_timber_model_data()
-    else:
-        try:
+    try:
+        piles = timber_asset_ids()
+    except (FileNotFoundError, ValueError, OSError, KeyError) as exc:
+        st.error(f"Could not load timber data: {exc}")
+        return
+    if not piles:
+        st.info("No timber piles have forecasts available for both models.")
+        return
+
+    pile = st.selectbox("Pile", piles, index=0, key="timber_pile")
+
+    try:
+        if comparison_payload is None:
+            data = dashboard_timber_model_data(pile)
+        else:
             data = comparison_data_from_payload(comparison_payload)["Timber"]
-        except ValueError as exc:
-            st.error(f"Could not load comparison data: {exc}")
-            return
+    except (FileNotFoundError, ValueError, OSError) as exc:
+        st.error(f"Could not load timber data: {exc}")
+        return
 
     gbm, mlp = st.columns(2, gap="small")
     for container, model_name in ((gbm, "GBM"), (mlp, "MLP")):
@@ -143,7 +155,7 @@ def _render_timber_page(
                     model_data["projection"],
                 )
 
-    render_ai_summary("Timber", data)
+    render_ai_summary("Timber", data, pile)
 
     with st.expander("Backend response contract"):
         st.code(
