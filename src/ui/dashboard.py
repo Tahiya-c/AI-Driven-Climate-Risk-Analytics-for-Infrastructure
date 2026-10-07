@@ -1,6 +1,7 @@
 """Main Streamlit dashboard matching the supplied low-fidelity layout."""
 
 from collections.abc import Mapping
+from math import isfinite
 from typing import Any
 
 import streamlit as st
@@ -12,6 +13,7 @@ from src.visualization.charts import (
     dashboard_concrete_model_data,
     dashboard_timber_model_data,
     material_forecast_chart,
+    timber_asset_ids,
 )
 
 
@@ -64,9 +66,12 @@ def _show_expanded_chart(
     material: str,
     historical: Any,
     projection: Any,
+    flags: list[dict[str, Any]] | None = None,
 ) -> None:
     """Show a material chart in a larger modal dialog."""
-    figure = material_forecast_chart(material, historical, projection)
+    figure = material_forecast_chart(material, historical, projection, flags)
+    if material.startswith("Concrete"):
+        figure.update_layout(yaxis_title="Carbonation depth (mm)")
     figure.update_layout(height=680)
     st.plotly_chart(
         figure,
@@ -76,6 +81,47 @@ def _show_expanded_chart(
             "responsive": True,
         },
     )
+
+
+@st.dialog("Add flag")
+def _add_flag_dialog(material: str, pile: str) -> None:
+    """Collect a user-defined threshold for the selected material and pile."""
+    metric = "Material loss" if material == "Timber" else "Carbonation depth"
+    st.caption(f"{material} · {pile}")
+    with st.form(f"flag_form_{material}_{pile}"):
+        purpose = st.selectbox("Flag purpose", ["Maintenance", "Replacement"])
+        value = st.number_input(f"{metric} (mm)", min_value=0.0, value=None, step=1.0)
+        submitted = st.form_submit_button("Add flag", type="primary")
+    if submitted:
+        if value is None or not isfinite(value):
+            st.error("Enter a finite, non-negative value in mm.")
+            return
+        flags = st.session_state.setdefault("user_flags", {})
+        pile_flags = flags.setdefault((material, pile), [])
+        flag = {"purpose": purpose, "value": value}
+        if flag not in pile_flags:
+            pile_flags.append(flag)
+        st.rerun()
+
+
+def _pile_controls(material: str, piles: list[str]) -> tuple[str, list[dict[str, Any]]]:
+    """Separate pile selection from the chart threshold controls."""
+    pile = st.selectbox("Pile", piles, index=0, key=f"{material.lower()}_pile")
+    st.divider()
+    st.markdown("**Maintenance and replacement flags**")
+    st.caption("Add a threshold line to both charts for the selected pile.")
+    if st.button("Add flag", key=f"add_flag_{material}"):
+        _add_flag_dialog(material, pile)
+    flags = st.session_state.get("user_flags", {}).get((material, pile), [])
+    if flags:
+        st.caption("Flags are saved for this pile during the current session.")
+        for index, flag in enumerate(flags):
+            label, remove = st.columns([4, 1])
+            label.write(f"{flag['purpose']}: {flag['value']:g} mm")
+            if remove.button("Remove", key=f"remove_flag_{material}_{pile}_{index}"):
+                flags.pop(index)
+                st.rerun()
+    return pile, flags
 
 
 def render_dashboard(comparison_payload: Mapping[str, Any] | None = None) -> None:
@@ -106,14 +152,25 @@ def _render_timber_page(
         "Compare material loss projections from the GBM and MLP models."
     )
 
-    if comparison_payload is None:
-        data = dashboard_timber_model_data()
-    else:
-        try:
+    try:
+        piles = timber_asset_ids()
+    except (FileNotFoundError, ValueError, OSError, KeyError) as exc:
+        st.error(f"Could not load timber data: {exc}")
+        return
+    if not piles:
+        st.info("No timber piles have forecasts available for both models.")
+        return
+
+    pile, flags = _pile_controls("Timber", piles)
+
+    try:
+        if comparison_payload is None:
+            data = dashboard_timber_model_data(pile)
+        else:
             data = comparison_data_from_payload(comparison_payload)["Timber"]
-        except ValueError as exc:
-            st.error(f"Could not load comparison data: {exc}")
-            return
+    except (FileNotFoundError, ValueError, OSError) as exc:
+        st.error(f"Could not load timber data: {exc}")
+        return
 
     gbm, mlp = st.columns(2, gap="small")
     for container, model_name in ((gbm, "GBM"), (mlp, "MLP")):
@@ -124,6 +181,7 @@ def _render_timber_page(
                     f"Timber - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 ),
                 use_container_width=True,
                 config={
@@ -141,9 +199,10 @@ def _render_timber_page(
                     f"Timber - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 )
 
-    render_ai_summary("Timber", data)
+    render_ai_summary("Timber", data, pile)
 
     with st.expander("Backend response contract"):
         st.code(
@@ -171,7 +230,7 @@ def _render_concrete_page() -> None:
         st.error(f"Could not load concrete data: {exc}")
         return
 
-    pile = st.selectbox("Pile", piles, index=0)
+    pile, flags = _pile_controls("Concrete", piles)
 
     try:
         data = dashboard_concrete_model_data(pile)
@@ -198,6 +257,7 @@ def _render_concrete_page() -> None:
                 f"Concrete - {model_name}",
                 model_data["historical"],
                 model_data["projection"],
+                flags,
             )
             figure.update_layout(yaxis_title="Carbonation depth (mm)")
             figure.update_yaxes(range=y_range)
@@ -220,6 +280,7 @@ def _render_concrete_page() -> None:
                     f"Concrete - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 )
 
     render_ai_summary("Concrete", data, pile)
