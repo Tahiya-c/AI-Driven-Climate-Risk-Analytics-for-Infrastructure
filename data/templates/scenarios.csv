@@ -1,0 +1,8 @@
+scenario_id,emissions_pathway,scenario_label
+A1B-colder_wetter,A1B,Colder & Wetter
+A1B-hotter_drier,A1B,Hotter & Drier
+A1B-most_likely,A1B,Most Likely
+A1FI-colder_wetter,A1FI,Colder & Wetter
+A1FI-hotter_drier,A1FI,Hotter & Drier
+A1FI-most_likely,A1FI,Most Likely
+BASE-baseline,Base,Baseline

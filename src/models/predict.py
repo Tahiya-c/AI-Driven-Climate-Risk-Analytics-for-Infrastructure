@@ -35,7 +35,7 @@ def predict_timber_until_year(
     if missing_keys:
         raise ValueError(f"Model artifact is missing: {', '.join(missing_keys)}")
 
-    # replacement_time_years is intentionally never selected for prediction.
+    # design_life_years is intentionally never selected for prediction.
     frame = prepare_projection_rows(pd.read_csv(data_path))
     available_years = sorted(int(year) for year in frame["year"].dropna().unique())
     minimum_year, maximum_year = available_years[0], available_years[-1]

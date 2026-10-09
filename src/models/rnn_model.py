@@ -163,7 +163,11 @@ def make_windows(series_list, window=WINDOW):
     return np.stack(Xs), np.array(ys, dtype=np.float32)
 
 
-def train_rnn(Xtr, ytr, Xva, yva, seed):
+def train_rnn(Xtr, ytr, Xva, yva, seed, hidden=HIDDEN, lr=LR, weight_decay=0.0,
+              epochs=EPOCHS, patience=PATIENCE, batch_size=128):
+    """Hyperparameters default to the module constants above (the pre-Optuna
+    values) so every existing caller is unaffected; concrete_tuning.py and
+    concrete_eval.RnnModel pass tuned overrides explicitly."""
     torch, nn = _torch()
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -177,25 +181,25 @@ def train_rnn(Xtr, ytr, Xva, yva, seed):
     yva_t = torch.tensor((yva - ymu) / ysd)
 
     class Net(nn.Module):
-        def __init__(self, n):
+        def __init__(self, n, hidden):
             super().__init__()
-            self.rnn = nn.RNN(n, HIDDEN, 1, nonlinearity="tanh", batch_first=True)
-            self.head = nn.Linear(HIDDEN, 1)
+            self.rnn = nn.RNN(n, hidden, 1, nonlinearity="tanh", batch_first=True)
+            self.head = nn.Linear(hidden, 1)
 
         def forward(self, x):
             o, _ = self.rnn(x)
             return self.head(o[:, -1, :]).squeeze(-1)
 
-    model = Net(Xtr.shape[2])
-    opt = torch.optim.Adam(model.parameters(), lr=LR)
+    model = Net(Xtr.shape[2], hidden)
+    opt = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
     lossf = nn.MSELoss()
     best, state, bad = np.inf, None, 0
     n = len(Xtr_t)
-    for _ in range(EPOCHS):
+    for _ in range(epochs):
         model.train()
         perm = torch.randperm(n)
-        for i in range(0, n, 128):
-            idx = perm[i:i + 128]
+        for i in range(0, n, batch_size):
+            idx = perm[i:i + batch_size]
             opt.zero_grad()
             lossf(model(Xtr_t[idx]), ytr_t[idx]).backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -208,7 +212,7 @@ def train_rnn(Xtr, ytr, Xva, yva, seed):
             state = {k: t.clone() for k, t in model.state_dict().items()}
         else:
             bad += 1
-            if bad >= PATIENCE:
+            if bad >= patience:
                 break
     model.load_state_dict(state)
     return model, mu, sd, ymu, ysd

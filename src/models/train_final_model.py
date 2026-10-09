@@ -51,6 +51,7 @@ from rnn_model import (
     EPOCHS,
     HIDDEN,
     LR,
+    PATIENCE,
     SERIES_START,
     WINDOW,
     fit_wc_regression,
@@ -58,8 +59,24 @@ from rnn_model import (
     make_windows,
 )
 
+try:  # imported as a package (src.models.train_final_model) ...
+    from .concrete_eval import TUNED_RNN_PARAMS
+except ImportError:  # ... or run as a script from src/models/ (this file's own convention)
+    from concrete_eval import TUNED_RNN_PARAMS
+
 VAL_FRACTION = 0.15      # random windows held out purely for early stopping
 SEED = 0
+
+# Single source of truth: concrete_eval.TUNED_RNN_PARAMS (filled in by
+# concrete_tuning.py, validated against the real outer benchmark -- see
+# docs/concrete_rnn_tuning.md). {} there means "use rnn_model.py's module
+# constants", same fallback concrete_eval.RnnModel uses, so this script and
+# the benchmark harness can never silently train different models again.
+WINDOW = TUNED_RNN_PARAMS.get("window", WINDOW)
+HIDDEN = TUNED_RNN_PARAMS.get("hidden", HIDDEN)
+LR = TUNED_RNN_PARAMS.get("lr", LR)
+WEIGHT_DECAY = TUNED_RNN_PARAMS.get("weight_decay", 0.0)
+PATIENCE = TUNED_RNN_PARAMS.get("patience", PATIENCE)
 
 
 class CarbonationRNN(nn.Module):
@@ -99,7 +116,7 @@ def main(csv_path, out_dir):
     # ---- RNN on all series ----
     torch.manual_seed(SEED)
     np.random.seed(SEED)
-    X, y = make_windows(series)
+    X, y = make_windows(series, window=WINDOW)
     n = len(X)
     idx = np.random.permutation(n)
     n_val = int(n * VAL_FRACTION)
@@ -117,7 +134,7 @@ def main(csv_path, out_dir):
     yva_t = torch.tensor((yva - ymu) / ysd)
 
     model = CarbonationRNN(X.shape[2])
-    opt = torch.optim.Adam(model.parameters(), lr=LR)
+    opt = torch.optim.Adam(model.parameters(), lr=LR, weight_decay=WEIGHT_DECAY)
     lossf = nn.MSELoss()
     best, state, bad, best_ep = np.inf, None, 0, 0
 
@@ -138,7 +155,7 @@ def main(csv_path, out_dir):
             state = {k: t.clone() for k, t in model.state_dict().items()}
         else:
             bad += 1
-            if bad >= 30:
+            if bad >= PATIENCE:
                 break
 
     model.load_state_dict(state)
@@ -159,6 +176,7 @@ def main(csv_path, out_dir):
         "best_epoch": int(best_ep),
         "requires_future_climate": True,
         "warning": "no held-out data; do not quote accuracy from this fit",
+        "tuned_rnn_params_applied": TUNED_RNN_PARAMS,
     }
     js = out_dir / "rnn_carbonation.json"
     js.write_text(json.dumps(meta, indent=2))

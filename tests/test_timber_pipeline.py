@@ -5,10 +5,10 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from src.timber.data_prep import DATA_PATH, EXPECTED_SCENARIO_LABELS, load_timber_data
-from src.timber.features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
-from src.timber.model import train
-from src.timber.scenarios import build_pile_trajectories, find_replacement_year
+from src.data.timber_data_prep import DATA_PATH, EXPECTED_SCENARIO_LABELS, load_timber_data
+from src.features.timber_features import FEATURE_COLUMNS, TARGET_COLUMN, build_feature_matrix
+from src.models.timber_model import train
+from src.models.timber_scenarios import build_pile_trajectories, find_replacement_year
 
 requires_data_file = pytest.mark.skipif(
     not DATA_PATH.exists(), reason="timber CSV not present on disk"
@@ -37,7 +37,7 @@ def test_build_feature_matrix_matches_expected_columns_with_no_nans() -> None:
 def test_feature_columns_exclude_leaky_model_outputs() -> None:
     assert TARGET_COLUMN not in FEATURE_COLUMNS
     assert "failure_probability" not in FEATURE_COLUMNS
-    assert "replacement_time_years" not in FEATURE_COLUMNS
+    assert "design_life_years" not in FEATURE_COLUMNS
 
 
 @requires_data_file
@@ -87,3 +87,37 @@ def test_find_replacement_year_returns_first_year_when_already_below_threshold()
     values = np.array([150.0, 100.0])
 
     assert find_replacement_year(years, values, threshold=200.0) == 2000.0
+
+
+def test_sapwood_loss_is_zero_before_installation_and_the_full_layer_after() -> None:
+    import pandas as pd
+
+    from src.models.timber_transfer import SAPWOOD_COLUMN, sapwood_loss
+
+    rows = pd.DataFrame({"age_years": [-3, 0, 1, 10, 40], SAPWOOD_COLUMN: [20.0, 20.0, 20.0, 20.0, 35.0]})
+
+    np.testing.assert_allclose(sapwood_loss(rows), [0.0, 0.0, 20.0, 20.0, 35.0])
+
+
+def test_pileA_trained_model_needs_under_5mm_shift_on_pileB() -> None:
+    import warnings
+
+    from src.models.timber_transfer import (
+        LOSS_COLUMN,
+        MODEL_INPUT_COLUMNS,
+        build_transfer_model,
+        load_transfer_frame,
+        shift_forecast,
+    )
+
+    frame = load_transfer_frame()
+    pile_a = frame.loc[frame["asset_code"] == "PileA"]
+    pile_b = frame.loc[frame["asset_code"] == "PileB"]
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        model = build_transfer_model("mlp").fit(pile_a[MODEL_INPUT_COLUMNS], pile_a[LOSS_COLUMN])
+        _, record = shift_forecast(pile_b, model.predict_uncapped(pile_b[MODEL_INPUT_COLUMNS]))
+
+    offsets = np.array(list(record["offsets_mm"].values()))
+    assert abs(offsets.mean()) < 5.0
+    assert record["large_offsets"] == []

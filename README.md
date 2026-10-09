@@ -58,40 +58,55 @@ ruff check .
 1. Add a data dictionary to `docs/` describing units, missing values, pile identifiers, inspection dates, coordinates, and the deterioration target.
 2. Add schema validation for processed uploads in `src/data/`.
 3. Move repeatable transformations from notebooks to `src/features/`.
-4. Save the produced model under `artifacts/` and connect it through `src/models/predict.py`.
+4. Save the produced model under `artifacts/` and connect it through `src/models/inference.py` for concrete or `src/models/timber_inference.py` for timber.
 5. Replace the demonstration series in `src/visualization/charts.py` with model output and add map layers under the Geospatial Mapping page.
+
+## Timber Linear Regression and SVR depth forecasts
+
+`src/models/linear_model.py` and `svr_model.py` are the per-model training
+entry points, following the `rnn_model.py` naming convention.
+Model selection lives in `timber_eval.py`. `timber_eval.py`, `timber_benchmark_all.py`,
+`train_final_timber_model.py`, and `timber_inference.py` mirror concrete's
+model, evaluation, benchmark, final-training, and inference responsibilities.
+Benchmark training ends in 2026; final training fits all available history.
+See [the training and testing guide](docs/timber_linear_svr_pipeline.md) for
+commands, output files, benchmark results, and migration from replacement time.
 
 ## Timber pile replacement forecast (separate app)
 
-`src/timber/` is a second, standalone pipeline that forecasts when each
-timber pile will need replacing under three climate scenarios. It is kept
-separate from `src/data/`, `src/features/`, and `src/models/` (the
-concrete-pile dashboard's packages) to avoid module-name collisions
-(`src/features.py` cannot coexist with the existing `src/features/`
-package, for example) and because the two datasets have unrelated
-schemas.
+A second pipeline forecasts when each timber pile will need replacing
+under three climate scenarios. Its modules live alongside the concrete
+ones in `src/data/`, `src/features/`, `src/models/`, and `src/ui/`.
 
-The core pipeline (`data_prep.py`, `features.py`, `model.py`,
-`scenarios.py`) has no Streamlit dependency, so it can be trained,
+The core pipeline (`timber_data_prep.py`, `timber_features.py`, `timber_model.py`,
+`timber_scenarios.py`) has no Streamlit dependency, so it can be trained,
 retrained, and analysed entirely from the command line -- the Streamlit
-UI is isolated in its own `streamlit/` subfolder:
+UI is isolated in `src/ui/timber_app.py`:
 
 ```text
-src/timber/
-├── data_prep.py       # load the CSV, fix the MIROC-Medres scenario_label gap, clean dtypes
-├── features.py        # feature/target columns, decay_dose engineering, feature matrix builder
-├── targets.py           # alternate targets: distance-to-threshold, residual-correction
-├── model.py              # StandardScaler + MLPRegressor pipeline, train/save/load, splits
-├── model_gbm.py           # LightGBM (falls back to XGBoost) regressor + quantile builders
-├── residual.py             # residual-correction model vs. direct surrogate comparison
-├── quantile.py              # 10th/50th/90th percentile GBM models, replacement-year bands
-├── baselines.py              # trivial non-fitted comparison baseline
-├── reporting.py               # error-by-scenario/pile/age breakdown helpers
-├── shap_importance.py          # SHAP feature importance + constant-within-pile flagging
-├── compare.py                   # CLI tying the above together, see below
-├── scenarios.py                  # per-pile scenario trajectories and replacement-year detection
-└── streamlit/
-    └── app.py                     # Streamlit entry point: pile selector, scenario chart, summary
+src/data/
+└── timber_data_prep.py           # load the CSV, fix the MIROC-Medres scenario_label gap, clean dtypes
+src/features/
+├── timber_features.py            # feature/target columns, decay_dose engineering, feature matrix builder
+└── timber_targets.py             # alternate targets: distance-to-threshold, residual-correction
+src/models/
+├── timber_model.py               # StandardScaler + MLPRegressor pipeline, train/save/load, splits
+├── timber_model_gbm.py           # LightGBM (falls back to XGBoost) regressor + quantile builders
+├── timber_residual.py            # residual-correction model vs. direct surrogate comparison
+├── timber_quantile.py            # 10th/50th/90th percentile GBM models, replacement-year bands
+├── timber_baselines.py           # trivial non-fitted comparison baseline
+├── timber_reporting.py           # error-by-scenario/pile/age breakdown helpers
+├── timber_shap_importance.py     # SHAP feature importance + constant-within-pile flagging
+├── timber_compare.py             # CLI tying the above together, see below
+├── timber_scenarios.py           # per-pile scenario trajectories and replacement-year detection
+├── timber_engine.py              # verbatim port of the Timber_kembla_v6.3 workbook calculation
+├── timber_coefficients.py        # workbook Coefficients-sheet lookup tables used by timber_engine.py
+├── timber_inference.py           # batch inference for the timber dashboard CSV export
+├── timber_tuning.py              # Optuna tuning on the time-based split (docs/timber_model_tuning.md)
+└── timber_transfer.py            # train PileA -> test PileB, MC CV tuning (docs/timber_pileA_to_pileB_report.md)
+src/ui/
+├── timber_app.py                 # Streamlit entry point: pile selector, scenario chart, summary
+└── timber_results_app.py         # PileB material-loss forecast from the PileA-trained models
 tests/test_timber_pipeline.py
 tests/test_timber_compare.py
 ```
@@ -99,20 +114,20 @@ tests/test_timber_compare.py
 ### Run the model / do analysis (no Streamlit needed)
 
 ```bash
-python -m src.timber.model
+python -m src.models.timber_model
 ```
 
 Trains the pipeline, prints the split strategy, row counts, and train/test
 MAE/R² to the console, and saves the model to
 `artifacts/timber_condition_model.joblib`. For anything beyond the
 headline metrics -- error by scenario/pile/age, permutation feature
-importance, per-pile replacement-year predictions -- import directly from
-`src/timber/` in a script or notebook, e.g.:
+importance, per-pile replacement-year predictions -- import the modules
+directly in a script or notebook, e.g.:
 
 ```python
-from src.timber.data_prep import load_timber_data, DATA_PATH
-from src.timber.model import train
-from src.timber.scenarios import summarize_pile
+from src.data.timber_data_prep import load_timber_data, DATA_PATH
+from src.models.timber_model import train
+from src.models.timber_scenarios import summarize_pile
 
 frame = load_timber_data(DATA_PATH)
 result = train(frame, split_strategy="time")
@@ -127,14 +142,14 @@ including how each number there was produced.
 ### Compare model architectures
 
 ```bash
-python -m src.timber.compare --model gbm                                    # MLP vs GBM vs naive baseline, GBM deep-dive
-python -m src.timber.compare --model mlp --target distance --features decay_dose
-python -m src.timber.compare --model residual --residual-base gbm            # residual-correction vs. direct surrogate
-python -m src.timber.compare --model gbm --quantile                          # + 10/50/90th percentile replacement-year bands
+python -m src.models.timber_compare --model gbm                                    # MLP vs GBM vs naive baseline, GBM deep-dive
+python -m src.models.timber_compare --model mlp --target distance --features decay_dose
+python -m src.models.timber_compare --model residual --residual-base gbm            # residual-correction vs. direct surrogate
+python -m src.models.timber_compare --model gbm --quantile                          # + 10/50/90th percentile replacement-year bands
 ```
 
 Every mode reuses `time_based_split`/`pile_based_split` from
-`src/timber/model.py` unchanged, so results are directly comparable to
+`src/models/timber_model.py` unchanged, so results are directly comparable to
 the MLP baseline in `docs/timber_model_results.md`. See
 [`docs/timber_model_comparison.md`](docs/timber_model_comparison.md) for
 the full MLP-vs-GBM write-up (head-to-head tables, individual deep dives,
@@ -154,13 +169,13 @@ against `remaining_diameter_mm - replacement_diameter_mm` instead of raw
 diameter; `--features decay_dose` swaps `age_years`,
 `summer_sea_temp_c`, `salinity_factor`, and `timber_exposure_factor` for
 a single cumulative `decay_dose` feature (see `add_decay_dose` in
-`src/timber/features.py`). GBM is LightGBM by default, falling back to
-XGBoost if LightGBM isn't installed (`src/timber/model_gbm.py`).
+`src/features/timber_features.py`). GBM is LightGBM by default, falling back to
+XGBoost if LightGBM isn't installed (`src/models/timber_model_gbm.py`).
 
 ### Run the Streamlit app
 
 ```bash
-streamlit run src/timber/streamlit/app.py
+streamlit run src/ui/timber_app.py
 ```
 
 The first run trains the MLP automatically (there is no committed model
@@ -173,7 +188,7 @@ the sidebar whenever the model is (re)trained.
 
 - **MIROC-Medres relabeling.** The source spreadsheet exports
   `scenario_label` as blank for every `climate_model == "MIROC-Medres"`
-  row. `src/timber/data_prep.py` fills these with `"Colder & Wetter"`,
+  row. `src/data/timber_data_prep.py` fills these with `"Colder & Wetter"`,
   inferred from this project's three-GCM naming convention (CSIRO Mk3.5 =
   Hotter & Drier, MRI-CGCM2.3.2 = Most Likely) and the sibling concrete
   dataset's provenance notes in
@@ -185,14 +200,14 @@ the sidebar whenever the model is (re)trained.
   71 years × up to 2 emissions pathways × 4 scenarios for those two
   assets. The MLP's reported MAE/R² describe how well it fits *these two
   piles' own trajectories* (using a chronological train/test split, see
-  `time_based_split` in `src/timber/model.py`); they are not evidence the
+  `time_based_split` in `src/models/timber_model.py`); they are not evidence the
   model would generalize to a different timber species, exposure class,
   or port. A leave-one-pile-out split is also available
   (`train(df, split_strategy="pile")`) as a harder diagnostic check, and
   performs noticeably worse in practice — expected, since it trains on a
   single asset and tests on a structurally different one.
 - **Scenario trajectories are forced non-increasing.** The MLP is a
-  smooth regressor with no physical constraint, so `src/timber/scenarios.py`
+  smooth regressor with no physical constraint, so `src/models/timber_scenarios.py`
   applies a running minimum across each scenario's predicted years before
   looking for the replacement-threshold crossing, since a pile's diameter
   cannot physically recover once it starts deteriorating.
@@ -200,4 +215,4 @@ the sidebar whenever the model is (re)trained.
   future rows onto the shared `Baseline` scenario as "history" up to the
   current calendar year (clamped into the data's 2000–2070 range), then
   lets the three scenarios diverge from there — see
-  `default_split_year()` in `src/timber/scenarios.py`.
+  `default_split_year()` in `src/models/timber_scenarios.py`.

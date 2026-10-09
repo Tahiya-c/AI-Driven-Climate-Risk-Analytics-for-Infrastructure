@@ -3,8 +3,8 @@
 **Model:** `StandardScaler → MLPRegressor(hidden_layer_sizes=(64, 32))` (scikit-learn)
 **Target:** `remaining_diameter_mm`
 **Trained on:** `data/processed/timber_kembla_v6_3_consolidated.csv` (994 rows, 2 piles)
-**Reproduce with:** `python -m src.timber.model` (prints the same headline metrics; retrains and overwrites `artifacts/timber_condition_model.joblib`)
-**Generated:** run against the pipeline in `src/timber/` as of this branch; regenerate before quoting these numbers elsewhere, since retraining is stochastic (`random_state=42` is fixed, but re-running after any data or feature change will shift results).
+**Reproduce with:** `python -m src.models.timber_model` (prints the same headline metrics; retrains and overwrites `artifacts/timber_condition_model.joblib`)
+**Generated:** run against the timber pipeline (`src/data/`, `src/features/`, `src/models/`) as of this branch; regenerate before quoting these numbers elsewhere, since retraining is stochastic (`random_state=42` is fixed, but re-running after any data or feature change will shift results).
 
 > **Read the [Limitations](#limitations) section before citing any number below.** With 2 piles and a target that goes physically invalid (negative diameter) for over half the held-out rows, these metrics describe fit to two specific assets, not a validated general-purpose model.
 
@@ -19,7 +19,7 @@
 | Year range | 2000–2070 (71 years each) |
 | Scenarios | `Baseline` (142 rows — 71 × 2 piles), `Hotter & Drier`, `Most Likely`, `Colder & Wetter` (142 rows each — 71 years × 2 emissions pathways × 2 piles) |
 | Replacement threshold | 200 mm for both piles (`replacement_diameter_mm`) |
-| Features used | 15 numeric columns (see `src/timber/features.py::FEATURE_COLUMNS`) — age, sea temp, salinity, and the deterministic model's own engineered hazard/rate factors |
+| Features used | 15 numeric columns (see `src/features/timber_features.py::FEATURE_COLUMNS`) — age, sea temp, salinity, and the deterministic model's own engineered hazard/rate factors |
 | Target | `remaining_diameter_mm` (deterministic model output, **not** ground-truth field measurement — see caveat below) |
 
 Rows split by `(asset_code, scenario_label)`:
@@ -37,7 +37,7 @@ Rows split by `(asset_code, scenario_label)`:
 
 ## 2. Train/test split
 
-Default split is **chronological within each `(asset_code, scenario_label)` group**: the earliest 80% of years train, the latest 20% test (`time_based_split` in `src/timber/model.py`). This measures whether the model can extrapolate a *known* pile's trajectory into later years — the actual use case for the app — rather than measuring generalization to an unseen pile.
+Default split is **chronological within each `(asset_code, scenario_label)` group**: the earliest 80% of years train, the latest 20% test (`time_based_split` in `src/models/timber_model.py`). This measures whether the model can extrapolate a *known* pile's trajectory into later years — the actual use case for the app — rather than measuring generalization to an unseen pile.
 
 | Split | n_train | n_test |
 |---|---|---|
@@ -111,7 +111,7 @@ The deterioration-rate columns (`heartwood_rate_mm_year`, `sapwood_rate_mm_year`
 
 ## 5. Predicted replacement year, per pile per scenario
 
-Produced by `src/timber/scenarios.py`: Baseline history through the current year, then each scenario's own trajectory, model-predicted, forced non-increasing (deterioration cannot reverse), floored at 0 mm.
+Produced by `src/models/timber_scenarios.py`: Baseline history through the current year, then each scenario's own trajectory, model-predicted, forced non-increasing (deterioration cannot reverse), floored at 0 mm.
 
 ### PileA (Turpentine Gum, installed 2005, Ø400 mm, threshold 200 mm)
 
@@ -154,6 +154,6 @@ The deterministic model's own `replacement_time_years` (design-margin based, mea
 
 - **Two piles.** Every metric above describes fit to `PileA` and `PileB` specifically. There is no basis in this dataset for claiming the model generalizes to a different species, exposure class, or port — see [§6](#6-alternate-split-leave-one-pile-out) for how much accuracy drops under a genuine unseen-pile test.
 - **The target itself is a deterministic model's output, not measured field data.** Both the training labels and the "ground truth" used to compute test MAE/R² are `remaining_diameter_mm` values produced by the original AS 5604-style spreadsheet model, which is known to over-extrapolate past physical failure (negative diameters) for far-future rows — 55% of this report's test rows fall in that regime. The surrogate model is therefore validated against another model's extrapolation, not against reality.
-- **MIROC-Medres → "Colder & Wetter" is an inferred label**, not confirmed against the original workbook (see `README.md` and `src/timber/data_prep.py` for the reasoning). If that inference is wrong, the "Colder & Wetter" numbers throughout this report would actually belong to a different scenario name.
-- **Monotonicity is enforced, not learned.** The MLP's raw predictions are not guaranteed non-increasing over time; `src/timber/scenarios.py` applies a running minimum before reporting replacement years. Without that step, replacement-year detection would be ambiguous (a trajectory could cross the threshold, bounce back above it, and cross again).
-- **Retraining is not fully deterministic across environments.** `random_state=42` fixes scikit-learn's own RNG, but results can still shift slightly with different scikit-learn versions or BLAS backends. Treat the numbers in this report as indicative, and regenerate them (`python -m src.timber.model`, plus the analysis snippet referenced above) before relying on exact figures.
+- **MIROC-Medres → "Colder & Wetter" is an inferred label**, not confirmed against the original workbook (see `README.md` and `src/data/timber_data_prep.py` for the reasoning). If that inference is wrong, the "Colder & Wetter" numbers throughout this report would actually belong to a different scenario name.
+- **Monotonicity is enforced, not learned.** The MLP's raw predictions are not guaranteed non-increasing over time; `src/models/timber_scenarios.py` applies a running minimum before reporting replacement years. Without that step, replacement-year detection would be ambiguous (a trajectory could cross the threshold, bounce back above it, and cross again).
+- **Retraining is not fully deterministic across environments.** `random_state=42` fixes scikit-learn's own RNG, but results can still shift slightly with different scikit-learn versions or BLAS backends. Treat the numbers in this report as indicative, and regenerate them (`python -m src.models.timber_model`, plus the analysis snippet referenced above) before relying on exact figures.

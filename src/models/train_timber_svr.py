@@ -102,7 +102,7 @@ def train(
         on=[TIME_COLUMN, SCENARIO_COLUMN],
         validate="one_to_one",
     )
-    scenario_values = scenario_evaluation["predicted_replacement_time_years"]
+    scenario_values = scenario_evaluation["predicted_design_life_years"]
     metrics = {
         "mae_years": float(mean_absolute_error(scenario_evaluation[TARGET], scenario_values)),
         "rmse_years": float(

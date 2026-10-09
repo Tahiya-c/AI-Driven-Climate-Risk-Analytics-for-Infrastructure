@@ -1,7 +1,6 @@
 """Main Streamlit dashboard matching the supplied low-fidelity layout."""
 
 from collections.abc import Mapping
-from pathlib import Path
 from typing import Any
 
 import pandas as pd
@@ -15,6 +14,7 @@ from src.visualization.charts import (
     dashboard_concrete_model_data,
     dashboard_timber_model_data,
     material_forecast_chart,
+    timber_asset_ids,
 )
 
 
@@ -116,15 +116,10 @@ def _show_expanded_chart(
     material: str,
     historical: Any,
     projection: Any,
+    flags: list[dict[str, Any]] | None = None,
 ) -> None:
     """Show a material chart in a larger modal dialog."""
-
-    figure = material_forecast_chart(
-        material,
-        historical,
-        projection,
-    )
-
+    figure = material_forecast_chart(material, historical, projection)
     figure.update_layout(height=680)
 
     st.plotly_chart(
@@ -135,6 +130,47 @@ def _show_expanded_chart(
             "responsive": True,
         },
     )
+
+
+@st.dialog("Add flag")
+def _add_flag_dialog(material: str, pile: str) -> None:
+    """Collect a user-defined threshold for the selected material and pile."""
+    metric = "Material loss" if material == "Timber" else "Carbonation depth"
+    st.caption(f"{material} · {pile}")
+    with st.form(f"flag_form_{material}_{pile}"):
+        purpose = st.selectbox("Flag purpose", ["Maintenance", "Replacement"])
+        value = st.number_input(f"{metric} (mm)", min_value=0.0, value=None, step=1.0)
+        submitted = st.form_submit_button("Add flag", type="primary")
+    if submitted:
+        if value is None or not isfinite(value):
+            st.error("Enter a finite, non-negative value in mm.")
+            return
+        flags = st.session_state.setdefault("user_flags", {})
+        pile_flags = flags.setdefault((material, pile), [])
+        flag = {"purpose": purpose, "value": value}
+        if flag not in pile_flags:
+            pile_flags.append(flag)
+        st.rerun()
+
+
+def _pile_controls(material: str, piles: list[str]) -> tuple[str, list[dict[str, Any]]]:
+    """Separate pile selection from the chart threshold controls."""
+    pile = st.selectbox("Pile", piles, index=0, key=f"{material.lower()}_pile")
+    st.divider()
+    st.markdown("**Maintenance and replacement flags**")
+    st.caption("Add a threshold line to both charts for the selected pile.")
+    if st.button("Add flag", key=f"add_flag_{material}"):
+        _add_flag_dialog(material, pile)
+    flags = st.session_state.get("user_flags", {}).get((material, pile), [])
+    if flags:
+        st.caption("Flags are saved for this pile during the current session.")
+        for index, flag in enumerate(flags):
+            label, remove = st.columns([4, 1])
+            label.write(f"{flag['purpose']}: {flag['value']:g} mm")
+            if remove.button("Remove", key=f"remove_flag_{material}_{pile}_{index}"):
+                flags.pop(index)
+                st.rerun()
+    return pile, flags
 
 
 def render_dashboard(
@@ -411,17 +447,11 @@ def _render_timber_page(
 
     if comparison_payload is None:
         data = dashboard_timber_model_data()
-
     else:
         try:
-            data = comparison_data_from_payload(
-                comparison_payload
-            )["Timber"]
-
+            data = comparison_data_from_payload(comparison_payload)["Timber"]
         except ValueError as exc:
-            st.error(
-                f"Could not load comparison data: {exc}"
-            )
+            st.error(f"Could not load comparison data: {exc}")
             return
 
     # --------------------------------------------------
@@ -447,6 +477,7 @@ def _render_timber_page(
                     f"Timber - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 ),
                 use_container_width=True,
                 config={
@@ -465,71 +496,12 @@ def _render_timber_page(
                     f"Timber - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 )
 
-    # ==================================================
-    # TIMBER EXPORT
-    # ==================================================
+    render_ai_summary("Timber", data)
 
-    st.divider()
-
-    st.header("Export results")
-
-    st.caption(
-        "Download the historical data and AI forecasts "
-        "currently displayed for Timber."
-    )
-
-    timber_export_data = _build_timber_export_data(
-        data
-    )
-
-    timber_csv = (
-        timber_export_data
-        .to_csv(index=False)
-        .encode("utf-8")
-    )
-
-    st.download_button(
-        label="Export Timber Results",
-        data=timber_csv,
-        file_name="timber_forecast_results.csv",
-        mime="text/csv",
-        icon=":material/download:",
-        use_container_width=True,
-        key="download_timber_results",
-    )
-
-    with st.expander("Preview Timber export"):
-
-        st.dataframe(
-            timber_export_data.head(20),
-            use_container_width=True,
-        )
-
-        st.caption(
-            f"{len(timber_export_data):,} rows × "
-            f"{len(timber_export_data.columns):,} columns"
-        )
-
-    # --------------------------------------------------
-    # AI summary
-    # --------------------------------------------------
-
-    st.divider()
-
-    render_ai_summary(
-        "Timber",
-        data,
-    )
-
-    # --------------------------------------------------
-    # Backend contract
-    # --------------------------------------------------
-
-    with st.expander(
-        "Backend response contract"
-    ):
+    with st.expander("Backend response contract"):
         st.code(
             '''{
   "concrete": {
@@ -587,15 +559,7 @@ def _render_concrete_page() -> None:
         )
         return
 
-    pile = st.selectbox(
-        "Pile",
-        piles,
-        index=0,
-    )
-
-    # --------------------------------------------------
-    # Load pile data
-    # --------------------------------------------------
+    pile = st.selectbox("Pile", piles, index=0)
 
     try:
         data = dashboard_concrete_model_data(
@@ -683,6 +647,7 @@ def _render_concrete_page() -> None:
                 f"Concrete - {model_name}",
                 model_data["historical"],
                 model_data["projection"],
+                flags,
             )
 
             figure.update_layout(
@@ -723,6 +688,7 @@ def _render_concrete_page() -> None:
                     f"Concrete - {model_name}",
                     model_data["historical"],
                     model_data["projection"],
+                    flags,
                 )
 
     # ==================================================

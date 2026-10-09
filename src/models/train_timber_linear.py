@@ -25,7 +25,7 @@ from src.models.timber_scenarios import (
     prepare_projection_rows,
 )
 
-TARGET = "replacement_time_years"
+TARGET = "design_life_years"
 TIME_COLUMN = "year"
 
 # Use source attributes and deterioration-model inputs, but not calculated outputs
@@ -52,16 +52,16 @@ FEATURE_COLUMNS = [
     "summer_sea_temp_c",
     "design_time_years",
     "water_factor",
-    "timber_exposure_factor",
-    "model_hazard_wood",
-    "model_service_water",
+    "heartwood_factor",
+    "sapwood_factor",
     "salinity_factor",
     "shelter_factor",
     "protection_factor",
-    "model_contact_factor",
-    "model_knot_factor",
+    "contact_factor",
+    "knot_factor",
     "environment_factor",
     "construction_factor",
+    "combined_factor",
 ]
 
 
@@ -142,7 +142,7 @@ def train(data_path: Path, output_path: Path, test_fraction: float = 0.2) -> dic
         on=[TIME_COLUMN, SCENARIO_COLUMN],
         validate="one_to_one",
     )
-    scenario_values = scenario_evaluation["predicted_replacement_time_years"]
+    scenario_values = scenario_evaluation["predicted_design_life_years"]
     metrics = {
         "mae_years": float(mean_absolute_error(scenario_evaluation[TARGET], scenario_values)),
         "rmse_years": float(

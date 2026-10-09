@@ -1,0 +1,1688 @@
+material,asset_id,scenario,year,value,unit,metric,method
+timber,PileA,A1B|CSIRO Mk3.5,2021,50.4659,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2022,52.8869,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2023,55.5741,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2024,58.6289,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2025,60.8585,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2026,61.1294,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2027,61.3631,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2028,62.8534,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2029,65.6481,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2030,69.5777,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2031,72.7854,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2032,75.3969,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2033,77.9657,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2034,79.8331,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2035,83.1681,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2036,85.8281,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2037,88.5914,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2038,88.9154,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2039,91.1888,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2040,93.8015,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2041,95.0497,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2042,99.2356,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2043,101.5366,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2044,104.5027,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2045,107.4906,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2046,113.2172,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2047,116.5193,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2048,118.5403,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2049,121.024,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2050,124.1726,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2051,126.4915,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2052,128.6675,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2053,128.2273,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2054,131.4478,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2055,133.2446,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2056,133.4691,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2057,132.1291,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2058,132.1291,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2059,131.9645,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2060,132.9564,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2061,135.0721,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2062,135.02,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2063,135.089,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2064,135.7286,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2065,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2066,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2067,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2068,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2069,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2070,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|CSIRO Mk3.5,2021,48.8191,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2022,50.9584,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2023,53.0977,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2024,55.1993,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2025,57.2437,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2026,59.2968,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2027,61.3498,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2028,63.5106,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2029,65.6979,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2030,67.8854,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2031,70.0894,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2032,72.2935,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2033,74.5136,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2034,76.9791,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2035,79.4446,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2036,82.0827,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2037,84.7209,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2038,87.3593,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2039,89.9978,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2040,92.6365,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2041,95.2753,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2042,97.9143,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2043,100.4931,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2044,103.0083,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2045,105.5237,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2046,108.0391,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2047,110.5547,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2048,113.0705,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2049,115.5863,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2050,118.1023,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2051,120.6154,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2052,123.1286,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2053,125.8593,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2054,128.897,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2055,132.0879,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2056,135.8439,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2057,139.7327,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2058,143.6222,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2059,147.5617,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2060,152.0043,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2061,156.025,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2062,159.9789,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2063,163.8411,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2064,167.5208,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2065,171.1939,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2066,174.8233,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2067,178.1302,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2068,181.427,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2069,184.7983,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2070,188.2585,mm,deterioration_depth,mlp
+timber,PileA,A1B|CSIRO Mk3.5,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2008,21.6485,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2009,23.8621,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2010,26.0844,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2011,28.3345,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2012,30.6022,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2013,32.8874,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2014,35.1903,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2015,37.511,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2016,39.8496,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2017,42.2061,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2018,44.5808,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2019,46.9738,mm,deterioration_depth,observed
+timber,PileA,A1B|CSIRO Mk3.5,2020,49.385,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2021,50.6371,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2022,53.0194,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2023,55.9952,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2024,58.6518,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2025,60.758,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2026,60.9392,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2027,61.1147,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2028,62.6172,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2029,65.6654,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2030,70.0465,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2031,73.3405,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2032,76.048,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2033,78.5406,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2034,80.7728,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2035,84.5333,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2036,86.532,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2037,88.8127,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2038,89.5306,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2039,91.7742,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2040,94.1248,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2041,95.0221,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2042,98.7715,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2043,102.0983,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2044,105.8692,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2045,110.6137,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2046,114.6249,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2047,118.5236,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2048,120.5787,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2049,123.3533,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2050,127.8022,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2051,128.8019,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2052,128.7092,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2053,128.0069,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2054,128.8039,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2055,132.9564,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2056,135.0721,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2057,135.02,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2058,135.089,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2059,135.7286,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2060,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2061,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2062,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2063,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2064,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2065,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2066,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2067,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2068,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2069,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2070,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1B|MIROC-Medres,2021,50.6178,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2022,52.7857,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2023,54.9659,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2024,57.2567,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2025,59.5477,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2026,61.8388,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2027,64.1301,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2028,66.4216,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2029,68.7133,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2030,71.0345,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2031,73.5706,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2032,76.1072,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2033,78.6442,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2034,81.1816,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2035,83.7195,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2036,86.2579,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2037,88.8022,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2038,91.3491,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2039,93.8994,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2040,96.5299,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2041,99.1605,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2042,101.7914,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2043,104.4223,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2044,107.0535,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2045,109.6848,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2046,112.3162,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2047,114.9478,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2048,117.7225,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2049,120.7553,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2050,124.2193,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2051,127.6123,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2052,131.0061,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2053,134.3073,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2054,137.4489,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2055,140.591,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2056,143.7337,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2057,146.7481,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2058,149.6389,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2059,152.3549,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2060,154.875,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2061,157.8826,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2062,160.8597,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2063,163.5976,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2064,166.0479,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2065,168.4981,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2066,171.2429,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2067,173.6695,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2068,176.0951,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2069,178.5197,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2070,180.8321,mm,deterioration_depth,mlp
+timber,PileA,A1B|MIROC-Medres,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2008,21.6584,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2009,23.8799,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2010,26.1108,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2011,28.3722,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2012,30.6528,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2013,32.9526,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2014,35.2717,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2015,37.6103,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2016,39.9686,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2017,42.3466,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2018,44.7445,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2019,47.1624,mm,deterioration_depth,observed
+timber,PileA,A1B|MIROC-Medres,2020,49.6004,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2021,49.4091,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2022,51.6777,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2023,54.6082,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2024,57.5706,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2025,59.8872,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2026,61.0347,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2027,61.4845,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2028,62.9871,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2029,65.6673,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2030,68.4611,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2031,71.0108,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2032,73.5416,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2033,75.6553,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2034,77.2894,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2035,80.2346,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2036,82.6802,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2037,84.6681,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2038,85.2246,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2039,87.6786,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2040,89.7622,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2041,90.5263,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2042,94.3555,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2043,96.7028,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2044,98.5233,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2045,101.0336,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2046,104.0348,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2047,107.4915,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2048,108.2594,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2049,109.98,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2050,113.6364,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2051,116.0384,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2052,117.2601,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2053,117.1448,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2054,121.7303,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2055,124.4728,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2056,125.2321,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2057,125.2321,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2058,125.3875,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2059,125.7728,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2060,125.7154,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2061,125.7154,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2062,125.6476,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2063,125.6476,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2064,125.6476,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2065,125.7645,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2066,126.931,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2067,129.4664,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2068,130.0911,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2069,130.4815,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2070,131.7775,mm,deterioration_depth,gbm
+timber,PileA,A1B|MRI-CGCM2.3.2,2021,47.3364,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2022,49.4051,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2023,51.4738,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2024,53.5425,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2025,55.6112,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2026,57.6799,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2027,59.6855,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2028,61.8515,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2029,64.0607,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2030,66.2698,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2031,68.5098,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2032,70.7826,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2033,73.0948,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2034,75.5132,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2035,77.9317,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2036,80.3501,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2037,82.7685,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2038,85.1869,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2039,87.6053,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2040,90.0237,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2041,92.4539,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2042,95.017,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2043,97.5803,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2044,100.1436,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2045,102.7069,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2046,105.2704,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2047,107.8339,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2048,110.3479,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2049,112.7959,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2050,115.244,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2051,117.6888,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2052,120.2337,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2053,123.2126,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2054,126.1916,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2055,129.1706,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2056,132.1497,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2057,135.131,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2058,138.3924,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2059,142.1954,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2060,146.1375,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2061,150.0795,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2062,154.1847,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2063,158.8866,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2064,163.7089,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2065,168.5316,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2066,173.3545,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2067,177.9212,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2068,182.3425,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2069,186.6261,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2070,190.8195,mm,deterioration_depth,mlp
+timber,PileA,A1B|MRI-CGCM2.3.2,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2008,21.6149,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2009,23.8018,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2010,25.9948,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2011,28.2068,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2012,30.4308,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2013,32.6669,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2014,34.915,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2015,37.1752,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2016,39.4477,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2017,41.7323,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2018,44.0292,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2019,46.3385,mm,deterioration_depth,observed
+timber,PileA,A1B|MRI-CGCM2.3.2,2020,48.6601,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2021,50.4148,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2022,52.7811,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2023,55.5104,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2024,58.3234,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2025,60.8096,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2026,61.1294,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2027,61.4655,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2028,62.8657,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2029,65.6481,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2030,69.5777,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2031,72.5846,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2032,75.3969,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2033,77.9779,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2034,80.1364,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2035,83.8595,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2036,86.5283,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2037,88.3172,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2038,89.5856,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2039,91.6359,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2040,94.1799,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2041,94.6456,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2042,99.1758,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2043,102.5259,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2044,105.3937,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2045,109.9347,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2046,115.1456,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2047,118.5321,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2048,119.7892,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2049,121.3902,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2050,123.2244,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2051,127.0501,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2052,128.4092,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2053,134.4059,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2054,138.1302,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2055,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2056,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2057,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2058,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2059,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2060,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2061,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2062,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2063,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2064,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2065,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2066,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2067,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2068,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2069,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2070,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|CSIRO Mk3.5,2021,48.6565,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2022,50.7881,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2023,52.9196,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2024,55.0511,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2025,57.0527,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2026,59.0982,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2027,61.1436,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2028,63.2054,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2029,65.3816,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2030,67.558,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2031,69.9365,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2032,72.3154,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2033,74.6946,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2034,77.1377,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2035,79.8114,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2036,82.5672,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2037,85.3234,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2038,88.08,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2039,90.8369,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2040,93.5942,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2041,96.3476,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2042,98.9603,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2043,101.5733,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2044,104.1866,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2045,106.8003,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2046,109.4142,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2047,112.0285,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2048,114.6431,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2049,117.258,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2050,119.8732,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2051,122.8589,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2052,126.5377,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2053,130.2353,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2054,134.4479,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2055,138.4682,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2056,142.3724,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2057,146.0571,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2058,149.5248,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2059,152.5268,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2060,155.5292,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2061,158.506,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2062,161.3867,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2063,163.903,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2064,166.0952,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2065,168.2844,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2066,170.4707,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2067,172.4696,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2068,174.4401,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2069,176.4072,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2070,178.3711,mm,deterioration_depth,mlp
+timber,PileA,A1FI|CSIRO Mk3.5,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2008,21.6448,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2009,23.8555,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2010,26.0745,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2011,28.3204,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2012,30.5832,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2013,32.863,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2014,35.1598,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2015,37.4738,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2016,39.8051,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2017,42.1537,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2018,44.5197,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2019,46.9034,mm,deterioration_depth,observed
+timber,PileA,A1FI|CSIRO Mk3.5,2020,49.3046,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2021,50.5006,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2022,53.0154,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2023,55.9463,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2024,58.6518,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2025,60.758,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2026,60.9734,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2027,61.1147,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2028,62.6172,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2029,65.4461,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2030,69.8039,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2031,73.3282,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2032,76.048,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2033,79.0178,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2034,81.4857,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2035,84.5006,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2036,87.0252,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2037,88.719,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2038,89.0236,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2039,91.0863,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2040,93.8312,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2041,94.5989,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2042,98.8448,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2043,103.203,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2044,106.7031,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2045,109.9812,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2046,114.1584,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2047,116.6389,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2048,120.5639,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2049,122.0983,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2050,126.3065,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2051,133.3919,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2052,134.4674,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2053,134.3626,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2054,138.1302,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2055,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2056,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2057,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2058,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2059,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2060,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2061,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2062,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2063,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2064,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2065,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2066,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2067,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2068,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2069,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2070,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MIROC-Medres,2021,50.4222,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2022,52.6176,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2023,54.7405,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2024,56.9953,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2025,59.2752,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2026,61.5553,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2027,63.8356,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2028,66.116,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2029,68.3966,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2030,70.6774,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2031,73.3866,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2032,76.1639,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2033,78.9421,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2034,81.7213,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2035,84.5015,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2036,87.2915,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2037,90.0839,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2038,92.7442,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2039,95.3639,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2040,97.9846,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2041,100.6063,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2042,103.2289,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2043,105.8525,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2044,108.477,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2045,111.2184,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2046,114.3973,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2047,118.1562,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2048,121.9711,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2049,125.7304,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2050,129.2157,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2051,132.9035,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2052,136.5931,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2053,140.0371,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2054,142.7026,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2055,145.3674,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2056,148.0328,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2057,150.3634,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2058,152.0525,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2059,153.3424,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2060,154.4161,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2061,155.4874,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2062,156.5562,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2063,157.4128,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2064,158.5091,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2065,159.4482,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2066,160.2716,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2067,161.0919,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2068,161.8764,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2069,162.5178,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2070,163.1552,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MIROC-Medres,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2008,21.6547,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2009,23.8732,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2010,26.1009,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2011,28.3581,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2012,30.6338,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2013,32.9281,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2014,35.2411,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2015,37.573,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2016,39.9239,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2017,42.2938,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2018,44.683,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2019,47.0915,mm,deterioration_depth,observed
+timber,PileA,A1FI|MIROC-Medres,2020,49.5194,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2021,49.2718,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2022,51.6308,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2023,54.2284,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2024,57.3574,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2025,59.8319,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2026,60.8535,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2027,61.3889,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2028,62.9636,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2029,65.5524,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2030,68.3462,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2031,70.9552,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2032,73.5539,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2033,75.6553,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2034,77.2894,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2035,80.3186,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2036,83.1266,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2037,84.9306,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2038,85.4981,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2039,87.778,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2040,89.9554,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2041,91.073,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2042,95.0371,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2043,98.0998,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2044,100.2416,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2045,103.17,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2046,106.8394,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2047,110.85,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2048,112.111,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2049,113.9726,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2050,117.2155,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2051,120.0485,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2052,121.0801,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2053,121.0008,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2054,124.2511,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2055,130.0911,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2056,131.7775,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2057,131.7775,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2058,131.8393,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2059,131.9428,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2060,131.9253,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2061,133.9942,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2062,133.2446,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2063,132.3382,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2064,132.1291,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2065,131.9645,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2066,132.9564,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2067,135.02,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2068,135.089,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2069,135.089,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2070,141.1449,mm,deterioration_depth,gbm
+timber,PileA,A1FI|MRI-CGCM2.3.2,2021,47.1574,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2022,49.2175,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2023,51.2777,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2024,53.3379,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2025,55.3981,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2026,57.4583,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2027,59.6047,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2028,61.8128,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2029,64.0208,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2030,66.2287,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2031,68.4601,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2032,70.7564,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2033,73.0889,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2034,75.5568,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2035,78.0246,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2036,80.4925,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2037,82.9603,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2038,85.4281,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2039,87.8959,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2040,90.4227,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2041,93.0634,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2042,95.7043,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2043,98.3454,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2044,100.9866,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2045,103.628,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2046,106.2534,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2047,108.7639,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2048,111.2747,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2049,113.7855,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2050,116.2991,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2051,118.8527,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2052,121.4065,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2053,124.4031,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2054,127.4756,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2055,130.5483,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2056,133.6212,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2057,136.6944,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2058,139.8569,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2059,144.1087,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2060,148.7018,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2061,153.2957,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2062,157.883,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2063,162.1968,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2064,166.1516,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2065,170.0673,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2066,174.1214,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2067,178.1906,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2068,182.1764,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2069,186.0305,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2070,189.6958,mm,deterioration_depth,mlp
+timber,PileA,A1FI|MRI-CGCM2.3.2,2000,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2001,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2002,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2003,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2004,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2005,0.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2006,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2007,20.0,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2008,21.6109,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2009,23.7946,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2010,25.984,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2011,28.1915,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2012,30.4103,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2013,32.6405,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2014,34.8821,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2015,37.1351,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2016,39.3997,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2017,41.6758,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2018,43.9635,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2019,46.2628,mm,deterioration_depth,observed
+timber,PileA,A1FI|MRI-CGCM2.3.2,2020,48.5738,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2021,48.5828,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2022,50.8337,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2023,53.4952,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2024,56.2445,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2025,58.729,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2026,60.5848,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2027,61.1417,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2028,62.831,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2029,65.4059,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2030,68.1822,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2031,70.6763,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2032,72.9025,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2033,75.058,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2034,76.5974,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2035,79.2875,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2036,81.4317,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2037,83.4681,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2038,84.4384,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2039,86.6261,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2040,89.3125,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2041,90.0766,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2042,93.8137,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2043,96.161,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2044,97.6072,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2045,99.7263,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2046,102.3216,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2047,105.0762,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2048,105.8492,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2049,107.7798,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2050,111.7655,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2051,114.5394,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2052,115.7911,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2053,115.6404,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2054,119.9258,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2055,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2056,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2057,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2058,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2059,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2060,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2061,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2062,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2063,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2064,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2065,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2066,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2067,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2068,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2069,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2070,123.0001,mm,deterioration_depth,gbm
+timber,PileA,Base|(Reference),2021,44.2279,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2022,46.591,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2023,48.9409,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2024,51.2194,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2025,53.4978,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2026,55.7763,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2027,58.0548,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2028,60.3333,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2029,62.6118,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2030,64.8903,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2031,67.1688,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2032,69.4473,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2033,71.7258,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2034,74.0043,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2035,76.2828,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2036,78.5476,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2037,80.7364,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2038,82.9252,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2039,85.114,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2040,87.3015,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2041,89.4853,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2042,91.6692,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2043,93.853,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2044,96.1462,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2045,98.8185,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2046,101.5113,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2047,104.2039,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2048,106.8632,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2049,109.6476,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2050,112.4505,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2051,115.687,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2052,118.9926,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2053,122.2982,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2054,125.6038,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2055,128.9177,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2056,132.8583,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2057,136.9227,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2058,140.9503,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2059,144.914,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2060,148.8777,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2061,152.8414,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2062,156.8052,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2063,160.7689,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2064,164.7326,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2065,168.5046,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2066,172.1875,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2067,175.8705,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2068,179.5534,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2069,183.2364,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2070,186.8681,mm,deterioration_depth,mlp
+timber,PileA,Base|(Reference),2000,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2001,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2002,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2003,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2004,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2005,0.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2006,20.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2007,20.0,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2008,21.5396,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2009,23.6668,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2010,25.7939,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2011,27.921,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2012,30.0482,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2013,32.1753,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2014,34.3025,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2015,36.4296,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2016,38.5567,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2017,40.6839,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2018,42.811,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2019,44.9382,mm,deterioration_depth,observed
+timber,PileA,Base|(Reference),2020,47.0653,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2022,94.1447,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2023,100.3848,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2024,105.2741,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2025,110.8128,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2026,114.494,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2027,117.8415,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2028,118.4502,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2029,121.0952,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2030,130.2584,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2031,141.4576,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2032,150.3365,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2033,155.4761,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2034,161.4459,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2035,166.0696,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2036,172.315,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2037,180.115,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2038,182.6283,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2039,188.5302,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2040,194.9902,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2041,199.6931,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2042,201.6333,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2043,208.213,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2044,216.2803,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2045,223.5931,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2046,235.4459,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2047,244.2901,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2048,248.5361,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2049,253.4994,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2050,258.4797,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2051,259.9538,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2052,264.3719,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2053,266.9556,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2054,281.2411,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2055,282.433,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2056,285.302,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2057,284.3066,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2058,284.4014,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2059,287.3906,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2060,288.3825,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2061,290.3759,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2062,290.3327,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2063,290.4016,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2064,291.0095,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2065,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2066,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2067,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2068,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2069,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2070,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|CSIRO Mk3.5,2022,93.8677,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2023,99.4297,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2024,104.9938,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2025,110.5601,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2026,116.1285,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2027,121.6992,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2028,127.272,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2029,132.847,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2030,138.4242,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2031,144.0271,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2032,149.6325,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2033,155.2404,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2034,160.8507,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2035,166.4634,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2036,172.0787,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2037,177.6965,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2038,183.3168,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2039,188.9251,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2040,194.4199,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2041,199.9172,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2042,205.4171,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2043,210.9194,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2044,216.8843,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2045,223.0922,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2046,229.4074,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2047,236.3374,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2048,243.2839,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2049,250.2367,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2050,257.1643,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2051,263.9022,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2052,270.6437,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2053,277.3889,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2054,283.9803,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2055,290.409,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2056,296.3162,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2057,301.0248,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2058,304.901,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2059,307.5699,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2060,309.8497,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2061,311.8339,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2062,313.7636,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2063,315.6199,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2064,317.4242,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2065,319.2298,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2066,321.0416,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2067,322.7776,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2068,324.356,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2069,325.934,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2070,327.507,mm,deterioration_depth,mlp
+timber,PileB,A1B|CSIRO Mk3.5,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2009,23.9445,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2010,29.274,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2011,34.6665,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2012,40.1009,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2013,45.5776,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2014,51.0968,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2015,56.6586,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2016,62.2635,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2017,67.9115,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2018,73.6031,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2019,79.3384,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2020,85.1176,mm,deterioration_depth,observed
+timber,PileB,A1B|CSIRO Mk3.5,2021,90.9412,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2022,94.4108,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2023,101.2662,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2024,106.4082,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2025,111.2545,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2026,114.5103,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2027,117.928,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2028,118.3687,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2029,120.9117,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2030,130.2804,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2031,141.5065,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2032,151.1451,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2033,156.209,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2034,162.6139,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2035,170.4167,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2036,176.8604,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2037,181.9621,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2038,184.9799,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2039,189.0774,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2040,195.4447,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2041,199.6821,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2042,201.1519,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2043,209.8586,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2044,218.0838,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2045,227.7685,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2046,237.4191,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2047,247.0112,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2048,250.9287,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2049,260.388,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2050,268.3617,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2051,268.4193,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2052,270.6431,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2053,273.2631,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2054,281.5799,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2055,286.5193,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2056,290.3759,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2057,290.3327,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2058,290.4016,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2059,291.0095,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2060,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2061,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2062,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2063,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2064,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2065,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2066,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2067,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2068,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2069,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2070,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1B|MIROC-Medres,2022,97.2807,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2023,103.0013,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2024,108.7243,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2025,114.45,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2026,120.1782,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2027,125.9089,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2028,131.6423,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2029,137.3782,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2030,143.1168,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2031,148.9452,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2032,154.7764,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2033,160.6107,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2034,166.4479,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2035,172.2827,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2036,177.976,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2037,183.6723,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2038,189.3258,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2039,194.9552,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2040,201.0586,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2041,207.5241,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2042,214.5692,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2043,221.8985,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2044,229.2325,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2045,236.3641,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2046,243.4655,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2047,250.5714,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2048,257.6818,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2049,264.7967,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2050,271.9161,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2051,278.8615,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2052,285.8125,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2053,292.53,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2054,299.1355,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2055,305.1277,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2056,309.5824,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2057,312.6737,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2058,315.0032,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2059,317.1056,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2060,319.1477,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2061,321.1593,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2062,323.0588,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2063,324.6921,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2064,326.144,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2065,327.5892,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2066,329.0414,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2067,330.4812,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2068,331.7837,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2069,332.9285,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2070,334.0096,mm,deterioration_depth,mlp
+timber,PileB,A1B|MIROC-Medres,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2009,23.9806,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2010,29.3305,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2011,34.7493,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2012,40.214,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2013,45.725,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2014,51.2825,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2015,56.8868,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2016,62.5382,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2017,68.237,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2018,73.9836,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2019,79.7781,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2020,85.621,mm,deterioration_depth,observed
+timber,PileB,A1B|MIROC-Medres,2021,91.5125,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2022,92.1203,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2023,98.6393,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2024,103.5345,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2025,108.9971,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2026,112.6262,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2027,116.052,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2028,116.7633,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2029,118.3448,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2030,126.9066,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2031,136.9534,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2032,145.5353,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2033,150.3754,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2034,155.6985,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2035,161.567,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2036,166.797,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2037,170.9082,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2038,173.8032,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2039,178.4232,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2040,183.9207,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2041,187.8391,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2042,189.7551,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2043,196.3005,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2044,201.8228,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2045,208.9018,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2046,217.3022,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2047,226.6598,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2048,227.9516,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2049,233.6176,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2050,237.6048,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2051,240.079,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2052,243.0504,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2053,245.7769,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2054,259.4842,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2055,262.5404,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2056,266.6144,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2057,266.6144,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2058,266.7698,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2059,267.3015,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2060,267.2441,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2061,267.2441,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2062,267.1763,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2063,267.4673,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2064,267.4673,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2065,269.3309,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2066,272.187,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2067,275.7072,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2068,276.9916,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2069,276.9916,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2070,277.7879,mm,deterioration_depth,gbm
+timber,PileB,A1B|MRI-CGCM2.3.2,2022,90.9043,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2023,96.319,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2024,101.7347,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2025,107.1514,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2026,112.5691,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2027,117.9879,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2028,123.4077,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2029,128.8285,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2030,134.2503,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2031,139.6807,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2032,145.1121,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2033,150.5446,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2034,155.9782,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2035,161.4129,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2036,166.8487,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2037,172.2856,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2038,177.7236,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2039,183.1628,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2040,188.603,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2041,194.0443,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2042,199.4868,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2043,204.9304,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2044,210.3116,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2045,215.6418,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2046,220.9732,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2047,226.3057,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2048,231.7049,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2049,237.6638,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2050,243.6242,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2051,249.7581,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2052,256.343,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2053,262.9294,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2054,269.5175,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2055,276.1072,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2056,282.414,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2057,287.9102,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2058,292.4319,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2059,296.2208,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2060,299.0971,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2061,301.5295,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2062,303.7363,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2063,305.8023,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2064,307.831,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2065,309.7088,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2066,311.5801,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2067,313.452,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2068,315.3215,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2069,317.1085,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2070,318.8415,mm,deterioration_depth,mlp
+timber,PileB,A1B|MRI-CGCM2.3.2,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2009,23.8227,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2010,29.0829,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2011,34.3863,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2012,39.7184,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2013,45.0795,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2014,50.4695,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2015,55.8886,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2016,61.3369,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2017,66.8146,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2018,72.3217,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2019,77.8585,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2020,83.4249,mm,deterioration_depth,observed
+timber,PileB,A1B|MRI-CGCM2.3.2,2021,89.0212,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2022,93.9283,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2023,100.3211,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2024,104.9466,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2025,110.617,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2026,114.494,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2027,117.9439,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2028,118.4624,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2029,121.0952,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2030,130.2584,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2031,141.4576,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2032,150.3365,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2033,155.4883,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2034,161.536,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2035,167.2026,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2036,175.5556,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2037,181.3576,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2038,184.9068,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2039,188.9391,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2040,195.472,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2041,199.2732,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2042,201.4281,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2043,210.32,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2044,218.2625,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2045,227.1699,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2046,237.8813,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2047,251.7319,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2048,254.2911,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2049,260.874,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2050,267.1577,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2051,271.2681,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2052,274.0483,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2053,279.5795,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2054,288.2157,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2055,292.1633,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2056,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2057,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2058,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2059,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2060,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2061,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2062,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2063,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2064,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2065,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2066,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2067,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2068,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2069,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2070,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|CSIRO Mk3.5,2022,93.5381,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2023,99.0834,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2024,104.6308,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2025,110.1802,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2026,115.7316,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2027,121.285,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2028,126.8405,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2029,132.398,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2030,137.9576,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2031,143.808,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2032,149.664,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2033,155.5256,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2034,161.3928,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2035,167.2657,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2036,173.1443,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2037,179.0286,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2038,184.8919,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2039,190.6339,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2040,196.3816,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2041,202.135,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2042,208.1049,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2043,214.6599,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2044,221.406,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2045,228.8621,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2046,236.3272,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2047,243.8014,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2048,251.0376,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2049,258.2805,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2050,265.5322,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2051,273.0298,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2052,280.5395,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2053,287.8938,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2054,294.9701,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2055,301.2715,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2056,306.5235,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2057,310.5317,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2058,313.8171,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2059,316.6521,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2060,319.0396,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2061,321.3226,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2062,323.4254,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2063,325.399,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2064,327.157,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2065,328.8439,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2066,330.5349,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2067,332.2301,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2068,333.835,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2069,335.3507,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2070,336.859,mm,deterioration_depth,mlp
+timber,PileB,A1FI|CSIRO Mk3.5,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2009,23.9311,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2010,29.2529,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2011,34.6355,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2012,40.0587,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2013,45.5225,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2014,51.0274,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2015,56.5734,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2016,62.1609,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2017,67.79,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2018,73.4611,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2019,79.1743,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2020,84.9299,mm,deterioration_depth,observed
+timber,PileB,A1FI|CSIRO Mk3.5,2021,90.7281,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2022,94.3849,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2023,101.0704,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2024,106.4082,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2025,111.2545,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2026,114.5445,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2027,117.928,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2028,118.3687,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2029,120.8932,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2030,130.0748,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2031,141.4943,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2032,151.1451,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2033,157.2101,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2034,166.1429,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2035,171.4225,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2036,177.4626,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2037,181.7327,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2038,184.2916,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2039,188.633,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2040,195.2743,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2041,199.9297,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2042,201.4622,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2043,211.0882,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2044,219.1816,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2045,229.4123,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2046,242.471,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2047,254.2474,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2048,258.4717,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2049,265.0452,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2050,270.5496,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2051,275.2482,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2052,277.5991,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2053,279.5795,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2054,288.2157,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2055,292.1633,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2056,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2057,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2058,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2059,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2060,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2061,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2062,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2063,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2064,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2065,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2066,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2067,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2068,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2069,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2070,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MIROC-Medres,2022,96.9507,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2023,102.6545,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2024,108.3606,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2025,114.0692,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2026,119.7801,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2027,125.4935,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2028,131.2093,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2029,136.9275,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2030,142.6482,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2031,148.7407,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2032,154.8398,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2033,160.9454,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2034,167.0577,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2035,173.0918,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2036,179.0252,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2037,184.8841,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2038,190.7494,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2039,197.2626,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2040,204.1485,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2041,212.009,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2042,219.8801,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2043,227.5706,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2044,235.1782,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2045,242.7902,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2046,250.3771,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2047,257.9742,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2048,265.5816,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2049,273.1994,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2050,280.8275,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2051,288.5869,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2052,295.5158,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2053,302.0961,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2054,308.3374,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2055,314.1205,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2056,318.7491,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2057,321.9902,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2058,324.5177,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2059,326.6143,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2060,328.2976,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2061,329.8371,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2062,331.1989,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2063,332.5701,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2064,333.8508,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2065,335.0174,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2066,336.0547,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2067,337.0176,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2068,337.9833,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2069,338.9518,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2070,339.94,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MIROC-Medres,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2009,23.967,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2010,29.3093,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2011,34.7182,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2012,40.1716,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2013,45.6696,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2014,51.2127,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2015,56.8011,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2016,62.435,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2017,68.1147,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2018,73.8406,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2019,79.6128,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2020,85.4318,mm,deterioration_depth,observed
+timber,PileB,A1FI|MIROC-Medres,2021,91.2977,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2022,92.0538,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2023,98.2489,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2024,103.201,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2025,108.5251,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2026,112.2994,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2027,115.9248,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2028,116.7082,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2029,118.3112,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2030,126.7917,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2031,136.9643,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2032,145.3687,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2033,150.3754,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2034,155.6985,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2035,161.567,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2036,167.6627,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2037,172.4489,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2038,174.9485,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2039,178.8134,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2040,184.3636,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2041,187.9863,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2042,191.1493,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2043,199.0201,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2044,205.2577,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2045,212.5329,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2046,220.9776,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2047,233.2064,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2048,236.4169,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2049,242.2238,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2050,247.2567,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2051,249.0775,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2052,251.105,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2053,255.9495,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2054,268.3303,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2055,274.6845,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2056,277.7879,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2057,277.7879,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2058,277.9344,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2059,277.9961,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2060,277.8642,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2061,284.0662,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2062,284.2962,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2063,284.3066,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2064,284.3066,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2065,287.3906,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2066,288.3825,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2067,290.3327,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2068,290.4016,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2069,290.4016,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2070,293.8807,mm,deterioration_depth,gbm
+timber,PileB,A1FI|MRI-CGCM2.3.2,2022,90.5529,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2023,95.9504,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2024,101.3488,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2025,106.7482,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2026,112.1484,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2027,117.5496,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2028,122.9516,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2029,128.3546,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2030,133.7585,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2031,139.3451,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2032,144.9341,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2033,150.5255,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2034,156.1193,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2035,161.7156,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2036,167.3144,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2037,172.9156,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2038,178.5194,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2039,184.1256,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2040,189.7343,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2041,195.3456,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2042,200.9594,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2043,206.4762,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2044,211.9641,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2045,217.4545,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2046,222.9474,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2047,228.9003,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2048,235.098,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2049,241.4015,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2050,248.3205,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2051,255.4171,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2052,262.5192,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2053,269.6268,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2054,276.5395,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2055,283.2113,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2056,289.3904,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2057,294.7743,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2058,299.3011,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2059,302.7772,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2060,305.6043,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2061,308.0882,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2062,310.3751,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2063,312.533,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2064,314.5473,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2065,316.5387,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2066,318.5011,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2067,320.4001,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2068,322.2386,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2069,324.0103,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2070,325.6069,mm,deterioration_depth,mlp
+timber,PileB,A1FI|MRI-CGCM2.3.2,2000,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2001,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2002,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2003,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2004,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2005,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2006,0.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2007,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2008,20.0,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2009,23.8081,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2010,29.06,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2011,34.3528,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2012,39.6727,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2013,45.0199,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2014,50.3945,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2015,55.7966,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2016,61.2264,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2017,66.6838,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2018,72.1691,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2019,77.6823,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2020,83.2235,mm,deterioration_depth,observed
+timber,PileB,A1FI|MRI-CGCM2.3.2,2021,88.7929,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2022,90.9122,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2023,96.5412,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2024,101.2136,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2025,106.2042,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2026,109.8925,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2027,115.0296,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2028,115.8681,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2029,117.6029,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2030,126.093,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2031,136.1332,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2032,144.1865,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2033,148.8839,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2034,153.6289,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2035,158.1093,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2036,162.5637,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2037,168.021,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2038,171.2301,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2039,176.1122,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2040,182.43,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2041,186.5037,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2042,188.3324,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2043,194.8778,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2044,200.2695,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2045,207.1037,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2046,213.985,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2047,222.1421,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2048,223.9893,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2049,230.2163,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2050,234.7208,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2051,237.8514,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2052,240.6679,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2053,243.482,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2054,255.8234,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2055,258.4329,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2056,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2057,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2058,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2059,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2060,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2061,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2062,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2063,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2064,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2065,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2066,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2067,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2068,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2069,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2070,261.1642,mm,deterioration_depth,gbm
+timber,PileB,Base|(Reference),2022,83.952,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2023,89.1634,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2024,94.3748,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2025,99.5862,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2026,104.7976,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2027,110.009,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2028,115.1822,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2029,120.2939,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2030,125.4057,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2031,130.5175,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2032,135.6293,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2033,140.7411,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2034,145.8529,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2035,150.9647,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2036,156.0765,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2037,161.1883,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2038,166.3001,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2039,171.4119,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2040,176.5237,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2041,181.6355,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2042,186.7473,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2043,191.8591,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2044,196.9709,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2045,202.0827,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2046,207.1945,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2047,212.3063,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2048,217.4181,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2049,222.5299,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2050,227.6417,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2051,232.7534,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2052,237.8652,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2053,242.977,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2054,248.0888,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2055,253.2006,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2056,258.3124,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2057,263.4242,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2058,268.536,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2059,273.3218,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2060,277.4627,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2061,280.889,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2062,283.5572,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2063,286.2185,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2064,288.3282,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2065,290.1632,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2066,292.1521,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2067,294.0848,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2068,296.0174,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2069,297.7852,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2070,299.5521,mm,deterioration_depth,mlp
+timber,PileB,Base|(Reference),2000,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2001,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2002,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2003,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2004,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2005,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2006,0.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2007,20.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2008,20.0,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2009,23.5514,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2010,28.6565,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2011,33.7617,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2012,38.8668,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2013,43.9719,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2014,49.0771,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2015,54.1822,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2016,59.2874,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2017,64.3925,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2018,69.4976,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2019,74.6028,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2020,79.7079,mm,deterioration_depth,observed
+timber,PileB,Base|(Reference),2021,84.8131,mm,deterioration_depth,observed
