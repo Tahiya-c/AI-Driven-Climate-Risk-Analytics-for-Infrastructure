@@ -1,0 +1,925 @@
+asset_id,scenario,year,true_carb_depth_mm
+PileA,Colder & Wetter,2027,3.7037
+PileA,Colder & Wetter,2028,3.7506
+PileA,Colder & Wetter,2029,3.7969
+PileA,Colder & Wetter,2030,3.8426
+PileA,Colder & Wetter,2031,3.8882
+PileA,Colder & Wetter,2032,3.9335
+PileA,Colder & Wetter,2033,3.9786
+PileA,Colder & Wetter,2034,4.0235
+PileA,Colder & Wetter,2035,4.0682
+PileA,Colder & Wetter,2036,4.1127
+PileA,Colder & Wetter,2037,4.157
+PileA,Colder & Wetter,2038,4.2012
+PileA,Colder & Wetter,2039,4.2453
+PileA,Colder & Wetter,2040,4.2891
+PileA,Colder & Wetter,2041,4.3331
+PileA,Colder & Wetter,2042,4.377
+PileA,Colder & Wetter,2043,4.421
+PileA,Colder & Wetter,2044,4.465
+PileA,Colder & Wetter,2045,4.5091
+PileA,Colder & Wetter,2046,4.5531
+PileA,Colder & Wetter,2047,4.5972
+PileA,Colder & Wetter,2048,4.6414
+PileA,Colder & Wetter,2049,4.6855
+PileA,Colder & Wetter,2050,4.7297
+PileA,Colder & Wetter,2051,4.7741
+PileA,Colder & Wetter,2052,4.8186
+PileA,Colder & Wetter,2053,4.8633
+PileA,Colder & Wetter,2054,4.9081
+PileA,Colder & Wetter,2055,4.9531
+PileA,Colder & Wetter,2056,4.9983
+PileA,Colder & Wetter,2057,5.0436
+PileA,Colder & Wetter,2058,5.089
+PileA,Colder & Wetter,2059,5.1346
+PileA,Colder & Wetter,2060,5.1803
+PileA,Colder & Wetter,2061,5.2262
+PileA,Colder & Wetter,2062,5.2723
+PileA,Colder & Wetter,2063,5.3185
+PileA,Colder & Wetter,2064,5.365
+PileA,Colder & Wetter,2065,5.4116
+PileA,Colder & Wetter,2066,5.4585
+PileA,Colder & Wetter,2067,5.5054
+PileA,Colder & Wetter,2068,5.5526
+PileA,Colder & Wetter,2069,5.5999
+PileA,Colder & Wetter,2070,5.6474
+PileA,Hotter & Drier,2027,3.7022
+PileA,Hotter & Drier,2028,3.7489
+PileA,Hotter & Drier,2029,3.7951
+PileA,Hotter & Drier,2030,3.8407
+PileA,Hotter & Drier,2031,3.8861
+PileA,Hotter & Drier,2032,3.9313
+PileA,Hotter & Drier,2033,3.9762
+PileA,Hotter & Drier,2034,4.0209
+PileA,Hotter & Drier,2035,4.0655
+PileA,Hotter & Drier,2036,4.1098
+PileA,Hotter & Drier,2037,4.154
+PileA,Hotter & Drier,2038,4.198
+PileA,Hotter & Drier,2039,4.2419
+PileA,Hotter & Drier,2040,4.2856
+PileA,Hotter & Drier,2041,4.3293
+PileA,Hotter & Drier,2042,4.3731
+PileA,Hotter & Drier,2043,4.4169
+PileA,Hotter & Drier,2044,4.4607
+PileA,Hotter & Drier,2045,4.5045
+PileA,Hotter & Drier,2046,4.5484
+PileA,Hotter & Drier,2047,4.5923
+PileA,Hotter & Drier,2048,4.6362
+PileA,Hotter & Drier,2049,4.6802
+PileA,Hotter & Drier,2050,4.7242
+PileA,Hotter & Drier,2051,4.7683
+PileA,Hotter & Drier,2052,4.8126
+PileA,Hotter & Drier,2053,4.857
+PileA,Hotter & Drier,2054,4.9016
+PileA,Hotter & Drier,2055,4.9464
+PileA,Hotter & Drier,2056,4.9913
+PileA,Hotter & Drier,2057,5.0363
+PileA,Hotter & Drier,2058,5.0815
+PileA,Hotter & Drier,2059,5.1268
+PileA,Hotter & Drier,2060,5.1722
+PileA,Hotter & Drier,2061,5.2179
+PileA,Hotter & Drier,2062,5.2637
+PileA,Hotter & Drier,2063,5.3096
+PileA,Hotter & Drier,2064,5.3558
+PileA,Hotter & Drier,2065,5.4022
+PileA,Hotter & Drier,2066,5.4487
+PileA,Hotter & Drier,2067,5.4953
+PileA,Hotter & Drier,2068,5.5422
+PileA,Hotter & Drier,2069,5.5892
+PileA,Hotter & Drier,2070,5.6363
+PileA,Most Likely,2027,3.6769
+PileA,Most Likely,2028,3.7213
+PileA,Most Likely,2029,3.765
+PileA,Most Likely,2030,3.8082
+PileA,Most Likely,2031,3.8511
+PileA,Most Likely,2032,3.8936
+PileA,Most Likely,2033,3.9359
+PileA,Most Likely,2034,3.9778
+PileA,Most Likely,2035,4.0195
+PileA,Most Likely,2036,4.061
+PileA,Most Likely,2037,4.1022
+PileA,Most Likely,2038,4.1432
+PileA,Most Likely,2039,4.184
+PileA,Most Likely,2040,4.2245
+PileA,Most Likely,2041,4.2651
+PileA,Most Likely,2042,4.3056
+PileA,Most Likely,2043,4.346
+PileA,Most Likely,2044,4.3864
+PileA,Most Likely,2045,4.4268
+PileA,Most Likely,2046,4.4672
+PileA,Most Likely,2047,4.5075
+PileA,Most Likely,2048,4.5478
+PileA,Most Likely,2049,4.588
+PileA,Most Likely,2050,4.6282
+PileA,Most Likely,2051,4.6685
+PileA,Most Likely,2052,4.7089
+PileA,Most Likely,2053,4.7493
+PileA,Most Likely,2054,4.7899
+PileA,Most Likely,2055,4.8304
+PileA,Most Likely,2056,4.8711
+PileA,Most Likely,2057,4.9118
+PileA,Most Likely,2058,4.9526
+PileA,Most Likely,2059,4.9934
+PileA,Most Likely,2060,5.0343
+PileA,Most Likely,2061,5.0753
+PileA,Most Likely,2062,5.1164
+PileA,Most Likely,2063,5.1576
+PileA,Most Likely,2064,5.1989
+PileA,Most Likely,2065,5.2403
+PileA,Most Likely,2066,5.2817
+PileA,Most Likely,2067,5.3233
+PileA,Most Likely,2068,5.365
+PileA,Most Likely,2069,5.4067
+PileA,Most Likely,2070,5.4486
+PileB,Colder & Wetter,2027,3.0775
+PileB,Colder & Wetter,2028,3.117
+PileB,Colder & Wetter,2029,3.1561
+PileB,Colder & Wetter,2030,3.1947
+PileB,Colder & Wetter,2031,3.2331
+PileB,Colder & Wetter,2032,3.2713
+PileB,Colder & Wetter,2033,3.3094
+PileB,Colder & Wetter,2034,3.3473
+PileB,Colder & Wetter,2035,3.385
+PileB,Colder & Wetter,2036,3.4226
+PileB,Colder & Wetter,2037,3.4601
+PileB,Colder & Wetter,2038,3.4974
+PileB,Colder & Wetter,2039,3.5347
+PileB,Colder & Wetter,2040,3.5718
+PileB,Colder & Wetter,2041,3.6089
+PileB,Colder & Wetter,2042,3.6461
+PileB,Colder & Wetter,2043,3.6832
+PileB,Colder & Wetter,2044,3.7205
+PileB,Colder & Wetter,2045,3.7577
+PileB,Colder & Wetter,2046,3.795
+PileB,Colder & Wetter,2047,3.8323
+PileB,Colder & Wetter,2048,3.8697
+PileB,Colder & Wetter,2049,3.9071
+PileB,Colder & Wetter,2050,3.9445
+PileB,Colder & Wetter,2051,3.982
+PileB,Colder & Wetter,2052,4.0197
+PileB,Colder & Wetter,2053,4.0576
+PileB,Colder & Wetter,2054,4.0956
+PileB,Colder & Wetter,2055,4.1337
+PileB,Colder & Wetter,2056,4.1719
+PileB,Colder & Wetter,2057,4.2103
+PileB,Colder & Wetter,2058,4.2488
+PileB,Colder & Wetter,2059,4.2875
+PileB,Colder & Wetter,2060,4.3262
+PileB,Colder & Wetter,2061,4.3651
+PileB,Colder & Wetter,2062,4.4042
+PileB,Colder & Wetter,2063,4.4435
+PileB,Colder & Wetter,2064,4.4829
+PileB,Colder & Wetter,2065,4.5225
+PileB,Colder & Wetter,2066,4.5622
+PileB,Colder & Wetter,2067,4.6021
+PileB,Colder & Wetter,2068,4.6421
+PileB,Colder & Wetter,2069,4.6823
+PileB,Colder & Wetter,2070,4.7226
+PileB,Hotter & Drier,2027,3.0762
+PileB,Hotter & Drier,2028,3.1156
+PileB,Hotter & Drier,2029,3.1545
+PileB,Hotter & Drier,2030,3.193
+PileB,Hotter & Drier,2031,3.2313
+PileB,Hotter & Drier,2032,3.2694
+PileB,Hotter & Drier,2033,3.3073
+PileB,Hotter & Drier,2034,3.3451
+PileB,Hotter & Drier,2035,3.3827
+PileB,Hotter & Drier,2036,3.4201
+PileB,Hotter & Drier,2037,3.4574
+PileB,Hotter & Drier,2038,3.4946
+PileB,Hotter & Drier,2039,3.5317
+PileB,Hotter & Drier,2040,3.5686
+PileB,Hotter & Drier,2041,3.6056
+PileB,Hotter & Drier,2042,3.6426
+PileB,Hotter & Drier,2043,3.6796
+PileB,Hotter & Drier,2044,3.7167
+PileB,Hotter & Drier,2045,3.7538
+PileB,Hotter & Drier,2046,3.7909
+PileB,Hotter & Drier,2047,3.828
+PileB,Hotter & Drier,2048,3.8652
+PileB,Hotter & Drier,2049,3.9024
+PileB,Hotter & Drier,2050,3.9396
+PileB,Hotter & Drier,2051,3.9769
+PileB,Hotter & Drier,2052,4.0144
+PileB,Hotter & Drier,2053,4.0521
+PileB,Hotter & Drier,2054,4.0899
+PileB,Hotter & Drier,2055,4.1278
+PileB,Hotter & Drier,2056,4.1658
+PileB,Hotter & Drier,2057,4.204
+PileB,Hotter & Drier,2058,4.2422
+PileB,Hotter & Drier,2059,4.2806
+PileB,Hotter & Drier,2060,4.3191
+PileB,Hotter & Drier,2061,4.3578
+PileB,Hotter & Drier,2062,4.3967
+PileB,Hotter & Drier,2063,4.4357
+PileB,Hotter & Drier,2064,4.4748
+PileB,Hotter & Drier,2065,4.5141
+PileB,Hotter & Drier,2066,4.5536
+PileB,Hotter & Drier,2067,4.5932
+PileB,Hotter & Drier,2068,4.633
+PileB,Hotter & Drier,2069,4.6728
+PileB,Hotter & Drier,2070,4.7129
+PileB,Most Likely,2027,3.0541
+PileB,Most Likely,2028,3.0915
+PileB,Most Likely,2029,3.1283
+PileB,Most Likely,2030,3.1646
+PileB,Most Likely,2031,3.2007
+PileB,Most Likely,2032,3.2365
+PileB,Most Likely,2033,3.272
+PileB,Most Likely,2034,3.3074
+PileB,Most Likely,2035,3.3425
+PileB,Most Likely,2036,3.3774
+PileB,Most Likely,2037,3.4121
+PileB,Most Likely,2038,3.4467
+PileB,Most Likely,2039,3.481
+PileB,Most Likely,2040,3.5152
+PileB,Most Likely,2041,3.5494
+PileB,Most Likely,2042,3.5835
+PileB,Most Likely,2043,3.6176
+PileB,Most Likely,2044,3.6516
+PileB,Most Likely,2045,3.6857
+PileB,Most Likely,2046,3.7197
+PileB,Most Likely,2047,3.7537
+PileB,Most Likely,2048,3.7876
+PileB,Most Likely,2049,3.8216
+PileB,Most Likely,2050,3.8555
+PileB,Most Likely,2051,3.8895
+PileB,Most Likely,2052,3.9235
+PileB,Most Likely,2053,3.9576
+PileB,Most Likely,2054,3.9918
+PileB,Most Likely,2055,4.026
+PileB,Most Likely,2056,4.0603
+PileB,Most Likely,2057,4.0947
+PileB,Most Likely,2058,4.1291
+PileB,Most Likely,2059,4.1636
+PileB,Most Likely,2060,4.1981
+PileB,Most Likely,2061,4.2327
+PileB,Most Likely,2062,4.2674
+PileB,Most Likely,2063,4.3021
+PileB,Most Likely,2064,4.337
+PileB,Most Likely,2065,4.372
+PileB,Most Likely,2066,4.407
+PileB,Most Likely,2067,4.4421
+PileB,Most Likely,2068,4.4773
+PileB,Most Likely,2069,4.5126
+PileB,Most Likely,2070,4.5479
+PileC,Colder & Wetter,2027,2.5476
+PileC,Colder & Wetter,2028,2.5809
+PileC,Colder & Wetter,2029,2.6138
+PileC,Colder & Wetter,2030,2.6463
+PileC,Colder & Wetter,2031,2.6787
+PileC,Colder & Wetter,2032,2.7109
+PileC,Colder & Wetter,2033,2.743
+PileC,Colder & Wetter,2034,2.7749
+PileC,Colder & Wetter,2035,2.8068
+PileC,Colder & Wetter,2036,2.8385
+PileC,Colder & Wetter,2037,2.8701
+PileC,Colder & Wetter,2038,2.9016
+PileC,Colder & Wetter,2039,2.9331
+PileC,Colder & Wetter,2040,2.9644
+PileC,Colder & Wetter,2041,2.9958
+PileC,Colder & Wetter,2042,3.0272
+PileC,Colder & Wetter,2043,3.0587
+PileC,Colder & Wetter,2044,3.0901
+PileC,Colder & Wetter,2045,3.1217
+PileC,Colder & Wetter,2046,3.1532
+PileC,Colder & Wetter,2047,3.1848
+PileC,Colder & Wetter,2048,3.2164
+PileC,Colder & Wetter,2049,3.2481
+PileC,Colder & Wetter,2050,3.2797
+PileC,Colder & Wetter,2051,3.3115
+PileC,Colder & Wetter,2052,3.3435
+PileC,Colder & Wetter,2053,3.3756
+PileC,Colder & Wetter,2054,3.4078
+PileC,Colder & Wetter,2055,3.4401
+PileC,Colder & Wetter,2056,3.4726
+PileC,Colder & Wetter,2057,3.5051
+PileC,Colder & Wetter,2058,3.5378
+PileC,Colder & Wetter,2059,3.5706
+PileC,Colder & Wetter,2060,3.6035
+PileC,Colder & Wetter,2061,3.6366
+PileC,Colder & Wetter,2062,3.6698
+PileC,Colder & Wetter,2063,3.7031
+PileC,Colder & Wetter,2064,3.7366
+PileC,Colder & Wetter,2065,3.7703
+PileC,Colder & Wetter,2066,3.8041
+PileC,Colder & Wetter,2067,3.838
+PileC,Colder & Wetter,2068,3.872
+PileC,Colder & Wetter,2069,3.9062
+PileC,Colder & Wetter,2070,3.9405
+PileC,Hotter & Drier,2027,2.5465
+PileC,Hotter & Drier,2028,2.5796
+PileC,Hotter & Drier,2029,2.6124
+PileC,Hotter & Drier,2030,2.6448
+PileC,Hotter & Drier,2031,2.677
+PileC,Hotter & Drier,2032,2.7091
+PileC,Hotter & Drier,2033,2.7411
+PileC,Hotter & Drier,2034,2.7729
+PileC,Hotter & Drier,2035,2.8047
+PileC,Hotter & Drier,2036,2.8363
+PileC,Hotter & Drier,2037,2.8677
+PileC,Hotter & Drier,2038,2.8991
+PileC,Hotter & Drier,2039,2.9304
+PileC,Hotter & Drier,2040,2.9616
+PileC,Hotter & Drier,2041,2.9929
+PileC,Hotter & Drier,2042,3.0241
+PileC,Hotter & Drier,2043,3.0554
+PileC,Hotter & Drier,2044,3.0868
+PileC,Hotter & Drier,2045,3.1181
+PileC,Hotter & Drier,2046,3.1495
+PileC,Hotter & Drier,2047,3.1809
+PileC,Hotter & Drier,2048,3.2124
+PileC,Hotter & Drier,2049,3.2439
+PileC,Hotter & Drier,2050,3.2754
+PileC,Hotter & Drier,2051,3.307
+PileC,Hotter & Drier,2052,3.3388
+PileC,Hotter & Drier,2053,3.3707
+PileC,Hotter & Drier,2054,3.4027
+PileC,Hotter & Drier,2055,3.4348
+PileC,Hotter & Drier,2056,3.4671
+PileC,Hotter & Drier,2057,3.4994
+PileC,Hotter & Drier,2058,3.5319
+PileC,Hotter & Drier,2059,3.5645
+PileC,Hotter & Drier,2060,3.5972
+PileC,Hotter & Drier,2061,3.63
+PileC,Hotter & Drier,2062,3.663
+PileC,Hotter & Drier,2063,3.6961
+PileC,Hotter & Drier,2064,3.7294
+PileC,Hotter & Drier,2065,3.7628
+PileC,Hotter & Drier,2066,3.7964
+PileC,Hotter & Drier,2067,3.83
+PileC,Hotter & Drier,2068,3.8638
+PileC,Hotter & Drier,2069,3.8978
+PileC,Hotter & Drier,2070,3.9318
+PileC,Most Likely,2027,2.5268
+PileC,Most Likely,2028,2.5582
+PileC,Most Likely,2029,2.589
+PileC,Most Likely,2030,2.6195
+PileC,Most Likely,2031,2.6498
+PileC,Most Likely,2032,2.6798
+PileC,Most Likely,2033,2.7097
+PileC,Most Likely,2034,2.7394
+PileC,Most Likely,2035,2.7689
+PileC,Most Likely,2036,2.7982
+PileC,Most Likely,2037,2.8274
+PileC,Most Likely,2038,2.8564
+PileC,Most Likely,2039,2.8853
+PileC,Most Likely,2040,2.914
+PileC,Most Likely,2041,2.9427
+PileC,Most Likely,2042,2.9714
+PileC,Most Likely,2043,3.0001
+PileC,Most Likely,2044,3.0288
+PileC,Most Likely,2045,3.0574
+PileC,Most Likely,2046,3.086
+PileC,Most Likely,2047,3.1146
+PileC,Most Likely,2048,3.1432
+PileC,Most Likely,2049,3.1718
+PileC,Most Likely,2050,3.2003
+PileC,Most Likely,2051,3.2289
+PileC,Most Likely,2052,3.2576
+PileC,Most Likely,2053,3.2864
+PileC,Most Likely,2054,3.3151
+PileC,Most Likely,2055,3.344
+PileC,Most Likely,2056,3.3729
+PileC,Most Likely,2057,3.4018
+PileC,Most Likely,2058,3.4308
+PileC,Most Likely,2059,3.4599
+PileC,Most Likely,2060,3.489
+PileC,Most Likely,2061,3.5182
+PileC,Most Likely,2062,3.5474
+PileC,Most Likely,2063,3.5768
+PileC,Most Likely,2064,3.6062
+PileC,Most Likely,2065,3.6357
+PileC,Most Likely,2066,3.6652
+PileC,Most Likely,2067,3.6949
+PileC,Most Likely,2068,3.7246
+PileC,Most Likely,2069,3.7543
+PileC,Most Likely,2070,3.7842
+PileD,Colder & Wetter,2027,3.6387
+PileD,Colder & Wetter,2028,3.6848
+PileD,Colder & Wetter,2029,3.7304
+PileD,Colder & Wetter,2030,3.7754
+PileD,Colder & Wetter,2031,3.8202
+PileD,Colder & Wetter,2032,3.8648
+PileD,Colder & Wetter,2033,3.9092
+PileD,Colder & Wetter,2034,3.9533
+PileD,Colder & Wetter,2035,3.9973
+PileD,Colder & Wetter,2036,4.0411
+PileD,Colder & Wetter,2037,4.0848
+PileD,Colder & Wetter,2038,4.1282
+PileD,Colder & Wetter,2039,4.1716
+PileD,Colder & Wetter,2040,4.2147
+PileD,Colder & Wetter,2041,4.2579
+PileD,Colder & Wetter,2042,4.3012
+PileD,Colder & Wetter,2043,4.3445
+PileD,Colder & Wetter,2044,4.3878
+PileD,Colder & Wetter,2045,4.4311
+PileD,Colder & Wetter,2046,4.4744
+PileD,Colder & Wetter,2047,4.5178
+PileD,Colder & Wetter,2048,4.5612
+PileD,Colder & Wetter,2049,4.6046
+PileD,Colder & Wetter,2050,4.6481
+PileD,Colder & Wetter,2051,4.6917
+PileD,Colder & Wetter,2052,4.7355
+PileD,Colder & Wetter,2053,4.7795
+PileD,Colder & Wetter,2054,4.8236
+PileD,Colder & Wetter,2055,4.8678
+PileD,Colder & Wetter,2056,4.9122
+PileD,Colder & Wetter,2057,4.9567
+PileD,Colder & Wetter,2058,5.0014
+PileD,Colder & Wetter,2059,5.0462
+PileD,Colder & Wetter,2060,5.0911
+PileD,Colder & Wetter,2061,5.1363
+PileD,Colder & Wetter,2062,5.1816
+PileD,Colder & Wetter,2063,5.2271
+PileD,Colder & Wetter,2064,5.2728
+PileD,Colder & Wetter,2065,5.3186
+PileD,Colder & Wetter,2066,5.3646
+PileD,Colder & Wetter,2067,5.4108
+PileD,Colder & Wetter,2068,5.4572
+PileD,Colder & Wetter,2069,5.5037
+PileD,Colder & Wetter,2070,5.5503
+PileD,Hotter & Drier,2027,3.6372
+PileD,Hotter & Drier,2028,3.6832
+PileD,Hotter & Drier,2029,3.7286
+PileD,Hotter & Drier,2030,3.7735
+PileD,Hotter & Drier,2031,3.8182
+PileD,Hotter & Drier,2032,3.8626
+PileD,Hotter & Drier,2033,3.9069
+PileD,Hotter & Drier,2034,3.9509
+PileD,Hotter & Drier,2035,3.9947
+PileD,Hotter & Drier,2036,4.0383
+PileD,Hotter & Drier,2037,4.0818
+PileD,Hotter & Drier,2038,4.1251
+PileD,Hotter & Drier,2039,4.1682
+PileD,Hotter & Drier,2040,4.2112
+PileD,Hotter & Drier,2041,4.2543
+PileD,Hotter & Drier,2042,4.2973
+PileD,Hotter & Drier,2043,4.3404
+PileD,Hotter & Drier,2044,4.3835
+PileD,Hotter & Drier,2045,4.4267
+PileD,Hotter & Drier,2046,4.4698
+PileD,Hotter & Drier,2047,4.513
+PileD,Hotter & Drier,2048,4.5562
+PileD,Hotter & Drier,2049,4.5994
+PileD,Hotter & Drier,2050,4.6427
+PileD,Hotter & Drier,2051,4.6861
+PileD,Hotter & Drier,2052,4.7296
+PileD,Hotter & Drier,2053,4.7734
+PileD,Hotter & Drier,2054,4.8172
+PileD,Hotter & Drier,2055,4.8612
+PileD,Hotter & Drier,2056,4.9054
+PileD,Hotter & Drier,2057,4.9497
+PileD,Hotter & Drier,2058,4.9941
+PileD,Hotter & Drier,2059,5.0386
+PileD,Hotter & Drier,2060,5.0833
+PileD,Hotter & Drier,2061,5.1281
+PileD,Hotter & Drier,2062,5.1732
+PileD,Hotter & Drier,2063,5.2184
+PileD,Hotter & Drier,2064,5.2638
+PileD,Hotter & Drier,2065,5.3093
+PileD,Hotter & Drier,2066,5.3551
+PileD,Hotter & Drier,2067,5.4009
+PileD,Hotter & Drier,2068,5.447
+PileD,Hotter & Drier,2069,5.4932
+PileD,Hotter & Drier,2070,5.5395
+PileD,Most Likely,2027,3.6125
+PileD,Most Likely,2028,3.6562
+PileD,Most Likely,2029,3.6993
+PileD,Most Likely,2030,3.7418
+PileD,Most Likely,2031,3.784
+PileD,Most Likely,2032,3.8259
+PileD,Most Likely,2033,3.8675
+PileD,Most Likely,2034,3.9088
+PileD,Most Likely,2035,3.9499
+PileD,Most Likely,2036,3.9907
+PileD,Most Likely,2037,4.0313
+PileD,Most Likely,2038,4.0716
+PileD,Most Likely,2039,4.1118
+PileD,Most Likely,2040,4.1517
+PileD,Most Likely,2041,4.1916
+PileD,Most Likely,2042,4.2314
+PileD,Most Likely,2043,4.2713
+PileD,Most Likely,2044,4.311
+PileD,Most Likely,2045,4.3508
+PileD,Most Likely,2046,4.3905
+PileD,Most Likely,2047,4.4302
+PileD,Most Likely,2048,4.4698
+PileD,Most Likely,2049,4.5094
+PileD,Most Likely,2050,4.549
+PileD,Most Likely,2051,4.5887
+PileD,Most Likely,2052,4.6284
+PileD,Most Likely,2053,4.6682
+PileD,Most Likely,2054,4.7081
+PileD,Most Likely,2055,4.748
+PileD,Most Likely,2056,4.788
+PileD,Most Likely,2057,4.8281
+PileD,Most Likely,2058,4.8682
+PileD,Most Likely,2059,4.9084
+PileD,Most Likely,2060,4.9486
+PileD,Most Likely,2061,4.9889
+PileD,Most Likely,2062,5.0294
+PileD,Most Likely,2063,5.0699
+PileD,Most Likely,2064,5.1105
+PileD,Most Likely,2065,5.1513
+PileD,Most Likely,2066,5.1921
+PileD,Most Likely,2067,5.233
+PileD,Most Likely,2068,5.274
+PileD,Most Likely,2069,5.3151
+PileD,Most Likely,2070,5.3562
+PileE,Colder & Wetter,2027,10.9185
+PileE,Colder & Wetter,2028,11.0458
+PileE,Colder & Wetter,2029,11.1715
+PileE,Colder & Wetter,2030,11.2956
+PileE,Colder & Wetter,2031,11.419
+PileE,Colder & Wetter,2032,11.5416
+PileE,Colder & Wetter,2033,11.6635
+PileE,Colder & Wetter,2034,11.7848
+PileE,Colder & Wetter,2035,11.9054
+PileE,Colder & Wetter,2036,12.0254
+PileE,Colder & Wetter,2037,12.1448
+PileE,Colder & Wetter,2038,12.2637
+PileE,Colder & Wetter,2039,12.3821
+PileE,Colder & Wetter,2040,12.4999
+PileE,Colder & Wetter,2041,12.6178
+PileE,Colder & Wetter,2042,12.7357
+PileE,Colder & Wetter,2043,12.8536
+PileE,Colder & Wetter,2044,12.9715
+PileE,Colder & Wetter,2045,13.0894
+PileE,Colder & Wetter,2046,13.2073
+PileE,Colder & Wetter,2047,13.3252
+PileE,Colder & Wetter,2048,13.4431
+PileE,Colder & Wetter,2049,13.561
+PileE,Colder & Wetter,2050,13.6789
+PileE,Colder & Wetter,2051,13.7972
+PileE,Colder & Wetter,2052,13.9158
+PileE,Colder & Wetter,2053,14.0348
+PileE,Colder & Wetter,2054,14.154
+PileE,Colder & Wetter,2055,14.2737
+PileE,Colder & Wetter,2056,14.3936
+PileE,Colder & Wetter,2057,14.5138
+PileE,Colder & Wetter,2058,14.6342
+PileE,Colder & Wetter,2059,14.755
+PileE,Colder & Wetter,2060,14.876
+PileE,Colder & Wetter,2061,14.9975
+PileE,Colder & Wetter,2062,15.1194
+PileE,Colder & Wetter,2063,15.2416
+PileE,Colder & Wetter,2064,15.3643
+PileE,Colder & Wetter,2065,15.4874
+PileE,Colder & Wetter,2066,15.6108
+PileE,Colder & Wetter,2067,15.7346
+PileE,Colder & Wetter,2068,15.8588
+PileE,Colder & Wetter,2069,15.9833
+PileE,Colder & Wetter,2070,16.1081
+PileE,Hotter & Drier,2027,10.9151
+PileE,Hotter & Drier,2028,11.0422
+PileE,Hotter & Drier,2029,11.1676
+PileE,Hotter & Drier,2030,11.2914
+PileE,Hotter & Drier,2031,11.4144
+PileE,Hotter & Drier,2032,11.5367
+PileE,Hotter & Drier,2033,11.6582
+PileE,Hotter & Drier,2034,11.7791
+PileE,Hotter & Drier,2035,11.8994
+PileE,Hotter & Drier,2036,12.019
+PileE,Hotter & Drier,2037,12.1381
+PileE,Hotter & Drier,2038,12.2566
+PileE,Hotter & Drier,2039,12.3745
+PileE,Hotter & Drier,2040,12.492
+PileE,Hotter & Drier,2041,12.6095
+PileE,Hotter & Drier,2042,12.727
+PileE,Hotter & Drier,2043,12.8445
+PileE,Hotter & Drier,2044,12.9619
+PileE,Hotter & Drier,2045,13.0794
+PileE,Hotter & Drier,2046,13.1969
+PileE,Hotter & Drier,2047,13.3144
+PileE,Hotter & Drier,2048,13.4318
+PileE,Hotter & Drier,2049,13.5492
+PileE,Hotter & Drier,2050,13.6667
+PileE,Hotter & Drier,2051,13.7845
+PileE,Hotter & Drier,2052,13.9026
+PileE,Hotter & Drier,2053,14.021
+PileE,Hotter & Drier,2054,14.1398
+PileE,Hotter & Drier,2055,14.2589
+PileE,Hotter & Drier,2056,14.3783
+PileE,Hotter & Drier,2057,14.4979
+PileE,Hotter & Drier,2058,14.6178
+PileE,Hotter & Drier,2059,14.738
+PileE,Hotter & Drier,2060,14.8585
+PileE,Hotter & Drier,2061,14.9793
+PileE,Hotter & Drier,2062,15.1006
+PileE,Hotter & Drier,2063,15.2223
+PileE,Hotter & Drier,2064,15.3443
+PileE,Hotter & Drier,2065,15.4667
+PileE,Hotter & Drier,2066,15.5895
+PileE,Hotter & Drier,2067,15.7127
+PileE,Hotter & Drier,2068,15.8361
+PileE,Hotter & Drier,2069,15.96
+PileE,Hotter & Drier,2070,16.0841
+PileE,Most Likely,2027,10.8584
+PileE,Most Likely,2028,10.9802
+PileE,Most Likely,2029,11.1003
+PileE,Most Likely,2030,11.2186
+PileE,Most Likely,2031,11.336
+PileE,Most Likely,2032,11.4525
+PileE,Most Likely,2033,11.5682
+PileE,Most Likely,2034,11.683
+PileE,Most Likely,2035,11.797
+PileE,Most Likely,2036,11.9103
+PileE,Most Likely,2037,12.0229
+PileE,Most Likely,2038,12.1347
+PileE,Most Likely,2039,12.2459
+PileE,Most Likely,2040,12.3565
+PileE,Most Likely,2041,12.467
+PileE,Most Likely,2042,12.5773
+PileE,Most Likely,2043,12.6875
+PileE,Most Likely,2044,12.7976
+PileE,Most Likely,2045,12.9075
+PileE,Most Likely,2046,13.0173
+PileE,Most Likely,2047,13.1269
+PileE,Most Likely,2048,13.2365
+PileE,Most Likely,2049,13.3459
+PileE,Most Likely,2050,13.4551
+PileE,Most Likely,2051,13.5646
+PileE,Most Likely,2052,13.6742
+PileE,Most Likely,2053,13.784
+PileE,Most Likely,2054,13.8939
+PileE,Most Likely,2055,14.004
+PileE,Most Likely,2056,14.1142
+PileE,Most Likely,2057,14.2245
+PileE,Most Likely,2058,14.3349
+PileE,Most Likely,2059,14.4455
+PileE,Most Likely,2060,14.5561
+PileE,Most Likely,2061,14.667
+PileE,Most Likely,2062,14.7781
+PileE,Most Likely,2063,14.8895
+PileE,Most Likely,2064,15.0011
+PileE,Most Likely,2065,15.113
+PileE,Most Likely,2066,15.225
+PileE,Most Likely,2067,15.3372
+PileE,Most Likely,2068,15.4497
+PileE,Most Likely,2069,15.5623
+PileE,Most Likely,2070,15.675
+PileF,Colder & Wetter,2027,4.288
+PileF,Colder & Wetter,2028,4.3421
+PileF,Colder & Wetter,2029,4.3957
+PileF,Colder & Wetter,2030,4.4486
+PileF,Colder & Wetter,2031,4.5012
+PileF,Colder & Wetter,2032,4.5536
+PileF,Colder & Wetter,2033,4.6057
+PileF,Colder & Wetter,2034,4.6576
+PileF,Colder & Wetter,2035,4.7093
+PileF,Colder & Wetter,2036,4.7607
+PileF,Colder & Wetter,2037,4.812
+PileF,Colder & Wetter,2038,4.8631
+PileF,Colder & Wetter,2039,4.914
+PileF,Colder & Wetter,2040,4.9647
+PileF,Colder & Wetter,2041,5.0155
+PileF,Colder & Wetter,2042,5.0663
+PileF,Colder & Wetter,2043,5.1172
+PileF,Colder & Wetter,2044,5.1681
+PileF,Colder & Wetter,2045,5.219
+PileF,Colder & Wetter,2046,5.27
+PileF,Colder & Wetter,2047,5.321
+PileF,Colder & Wetter,2048,5.372
+PileF,Colder & Wetter,2049,5.4231
+PileF,Colder & Wetter,2050,5.4742
+PileF,Colder & Wetter,2051,5.5255
+PileF,Colder & Wetter,2052,5.577
+PileF,Colder & Wetter,2053,5.6287
+PileF,Colder & Wetter,2054,5.6806
+PileF,Colder & Wetter,2055,5.7326
+PileF,Colder & Wetter,2056,5.7848
+PileF,Colder & Wetter,2057,5.8372
+PileF,Colder & Wetter,2058,5.8898
+PileF,Colder & Wetter,2059,5.9425
+PileF,Colder & Wetter,2060,5.9954
+PileF,Colder & Wetter,2061,6.0485
+PileF,Colder & Wetter,2062,6.1018
+PileF,Colder & Wetter,2063,6.1553
+PileF,Colder & Wetter,2064,6.2091
+PileF,Colder & Wetter,2065,6.2631
+PileF,Colder & Wetter,2066,6.3172
+PileF,Colder & Wetter,2067,6.3716
+PileF,Colder & Wetter,2068,6.4261
+PileF,Colder & Wetter,2069,6.4809
+PileF,Colder & Wetter,2070,6.5358
+PileF,Hotter & Drier,2027,4.2862
+PileF,Hotter & Drier,2028,4.3402
+PileF,Hotter & Drier,2029,4.3936
+PileF,Hotter & Drier,2030,4.4463
+PileF,Hotter & Drier,2031,4.4988
+PileF,Hotter & Drier,2032,4.551
+PileF,Hotter & Drier,2033,4.6029
+PileF,Hotter & Drier,2034,4.6546
+PileF,Hotter & Drier,2035,4.7061
+PileF,Hotter & Drier,2036,4.7574
+PileF,Hotter & Drier,2037,4.8085
+PileF,Hotter & Drier,2038,4.8593
+PileF,Hotter & Drier,2039,4.91
+PileF,Hotter & Drier,2040,4.9606
+PileF,Hotter & Drier,2041,5.0111
+PileF,Hotter & Drier,2042,5.0617
+PileF,Hotter & Drier,2043,5.1124
+PileF,Hotter & Drier,2044,5.1631
+PileF,Hotter & Drier,2045,5.2138
+PileF,Hotter & Drier,2046,5.2645
+PileF,Hotter & Drier,2047,5.3153
+PileF,Hotter & Drier,2048,5.366
+PileF,Hotter & Drier,2049,5.4169
+PileF,Hotter & Drier,2050,5.4677
+PileF,Hotter & Drier,2051,5.5188
+PileF,Hotter & Drier,2052,5.57
+PileF,Hotter & Drier,2053,5.6214
+PileF,Hotter & Drier,2054,5.673
+PileF,Hotter & Drier,2055,5.7248
+PileF,Hotter & Drier,2056,5.7767
+PileF,Hotter & Drier,2057,5.8288
+PileF,Hotter & Drier,2058,5.881
+PileF,Hotter & Drier,2059,5.9334
+PileF,Hotter & Drier,2060,5.986
+PileF,Hotter & Drier,2061,6.0388
+PileF,Hotter & Drier,2062,6.0918
+PileF,Hotter & Drier,2063,6.145
+PileF,Hotter & Drier,2064,6.1984
+PileF,Hotter & Drier,2065,6.252
+PileF,Hotter & Drier,2066,6.3058
+PileF,Hotter & Drier,2067,6.3598
+PileF,Hotter & Drier,2068,6.414
+PileF,Hotter & Drier,2069,6.4684
+PileF,Hotter & Drier,2070,6.5229
+PileF,Most Likely,2027,4.2567
+PileF,Most Likely,2028,4.308
+PileF,Most Likely,2029,4.3586
+PileF,Most Likely,2030,4.4084
+PileF,Most Likely,2031,4.4579
+PileF,Most Likely,2032,4.5071
+PileF,Most Likely,2033,4.5559
+PileF,Most Likely,2034,4.6044
+PileF,Most Likely,2035,4.6526
+PileF,Most Likely,2036,4.7005
+PileF,Most Likely,2037,4.7481
+PileF,Most Likely,2038,4.7955
+PileF,Most Likely,2039,4.8426
+PileF,Most Likely,2040,4.8895
+PileF,Most Likely,2041,4.9363
+PileF,Most Likely,2042,4.9831
+PileF,Most Likely,2043,5.0298
+PileF,Most Likely,2044,5.0766
+PileF,Most Likely,2045,5.1232
+PileF,Most Likely,2046,5.1699
+PileF,Most Likely,2047,5.2164
+PileF,Most Likely,2048,5.263
+PileF,Most Likely,2049,5.3095
+PileF,Most Likely,2050,5.356
+PileF,Most Likely,2051,5.4025
+PileF,Most Likely,2052,5.4492
+PileF,Most Likely,2053,5.4959
+PileF,Most Likely,2054,5.5428
+PileF,Most Likely,2055,5.5897
+PileF,Most Likely,2056,5.6367
+PileF,Most Likely,2057,5.6837
+PileF,Most Likely,2058,5.7308
+PileF,Most Likely,2059,5.778
+PileF,Most Likely,2060,5.8253
+PileF,Most Likely,2061,5.8727
+PileF,Most Likely,2062,5.9202
+PileF,Most Likely,2063,5.9678
+PileF,Most Likely,2064,6.0155
+PileF,Most Likely,2065,6.0634
+PileF,Most Likely,2066,6.1114
+PileF,Most Likely,2067,6.1594
+PileF,Most Likely,2068,6.2076
+PileF,Most Likely,2069,6.2559
+PileF,Most Likely,2070,6.3042
+PileG,Colder & Wetter,2027,6.5763
+PileG,Colder & Wetter,2028,6.6572
+PileG,Colder & Wetter,2029,6.7372
+PileG,Colder & Wetter,2030,6.8162
+PileG,Colder & Wetter,2031,6.8949
+PileG,Colder & Wetter,2032,6.9732
+PileG,Colder & Wetter,2033,7.0511
+PileG,Colder & Wetter,2034,7.1288
+PileG,Colder & Wetter,2035,7.2061
+PileG,Colder & Wetter,2036,7.2831
+PileG,Colder & Wetter,2037,7.3599
+PileG,Colder & Wetter,2038,7.4364
+PileG,Colder & Wetter,2039,7.5127
+PileG,Colder & Wetter,2040,7.5888
+PileG,Colder & Wetter,2041,7.6649
+PileG,Colder & Wetter,2042,7.7411
+PileG,Colder & Wetter,2043,7.8174
+PileG,Colder & Wetter,2044,7.8938
+PileG,Colder & Wetter,2045,7.9702
+PileG,Colder & Wetter,2046,8.0467
+PileG,Colder & Wetter,2047,8.1233
+PileG,Colder & Wetter,2048,8.2
+PileG,Colder & Wetter,2049,8.2767
+PileG,Colder & Wetter,2050,8.3535
+PileG,Colder & Wetter,2051,8.4306
+PileG,Colder & Wetter,2052,8.508
+PileG,Colder & Wetter,2053,8.5857
+PileG,Colder & Wetter,2054,8.6638
+PileG,Colder & Wetter,2055,8.7421
+PileG,Colder & Wetter,2056,8.8207
+PileG,Colder & Wetter,2057,8.8996
+PileG,Colder & Wetter,2058,8.9787
+PileG,Colder & Wetter,2059,9.0581
+PileG,Colder & Wetter,2060,9.1378
+PileG,Colder & Wetter,2061,9.2178
+PileG,Colder & Wetter,2062,9.2982
+PileG,Colder & Wetter,2063,9.3789
+PileG,Colder & Wetter,2064,9.46
+PileG,Colder & Wetter,2065,9.5414
+PileG,Colder & Wetter,2066,9.6231
+PileG,Colder & Wetter,2067,9.7052
+PileG,Colder & Wetter,2068,9.7875
+PileG,Colder & Wetter,2069,9.8701
+PileG,Colder & Wetter,2070,9.9531
+PileG,Hotter & Drier,2027,6.5735
+PileG,Hotter & Drier,2028,6.6541
+PileG,Hotter & Drier,2029,6.7338
+PileG,Hotter & Drier,2030,6.8126
+PileG,Hotter & Drier,2031,6.891
+PileG,Hotter & Drier,2032,6.969
+PileG,Hotter & Drier,2033,7.0467
+PileG,Hotter & Drier,2034,7.124
+PileG,Hotter & Drier,2035,7.201
+PileG,Hotter & Drier,2036,7.2778
+PileG,Hotter & Drier,2037,7.3542
+PileG,Hotter & Drier,2038,7.4304
+PileG,Hotter & Drier,2039,7.5063
+PileG,Hotter & Drier,2040,7.5821
+PileG,Hotter & Drier,2041,7.6578
+PileG,Hotter & Drier,2042,7.7337
+PileG,Hotter & Drier,2043,7.8096
+PileG,Hotter & Drier,2044,7.8857
+PileG,Hotter & Drier,2045,7.9617
+PileG,Hotter & Drier,2046,8.0379
+PileG,Hotter & Drier,2047,8.1141
+PileG,Hotter & Drier,2048,8.1903
+PileG,Hotter & Drier,2049,8.2667
+PileG,Hotter & Drier,2050,8.343
+PileG,Hotter & Drier,2051,8.4197
+PileG,Hotter & Drier,2052,8.4967
+PileG,Hotter & Drier,2053,8.574
+PileG,Hotter & Drier,2054,8.6516
+PileG,Hotter & Drier,2055,8.7295
+PileG,Hotter & Drier,2056,8.8076
+PileG,Hotter & Drier,2057,8.886
+PileG,Hotter & Drier,2058,8.9647
+PileG,Hotter & Drier,2059,9.0436
+PileG,Hotter & Drier,2060,9.1228
+PileG,Hotter & Drier,2061,9.2023
+PileG,Hotter & Drier,2062,9.2821
+PileG,Hotter & Drier,2063,9.3623
+PileG,Hotter & Drier,2064,9.4428
+PileG,Hotter & Drier,2065,9.5237
+PileG,Hotter & Drier,2066,9.6048
+PileG,Hotter & Drier,2067,9.6863
+PileG,Hotter & Drier,2068,9.768
+PileG,Hotter & Drier,2069,9.8501
+PileG,Hotter & Drier,2070,9.9324
+PileG,Most Likely,2027,6.5259
+PileG,Most Likely,2028,6.6022
+PileG,Most Likely,2029,6.6773
+PileG,Most Likely,2030,6.7515
+PileG,Most Likely,2031,6.8251
+PileG,Most Likely,2032,6.8983
+PileG,Most Likely,2033,6.9709
+PileG,Most Likely,2034,7.0431
+PileG,Most Likely,2035,7.1148
+PileG,Most Likely,2036,7.1862
+PileG,Most Likely,2037,7.2571
+PileG,Most Likely,2038,7.3277
+PileG,Most Likely,2039,7.3978
+PileG,Most Likely,2040,7.4677
+PileG,Most Likely,2041,7.5375
+PileG,Most Likely,2042,7.6072
+PileG,Most Likely,2043,7.6769
+PileG,Most Likely,2044,7.7466
+PileG,Most Likely,2045,7.8162
+PileG,Most Likely,2046,7.8858
+PileG,Most Likely,2047,7.9553
+PileG,Most Likely,2048,8.0248
+PileG,Most Likely,2049,8.0942
+PileG,Most Likely,2050,8.1636
+PileG,Most Likely,2051,8.2331
+PileG,Most Likely,2052,8.3028
+PileG,Most Likely,2053,8.3727
+PileG,Most Likely,2054,8.4426
+PileG,Most Likely,2055,8.5128
+PileG,Most Likely,2056,8.583
+PileG,Most Likely,2057,8.6533
+PileG,Most Likely,2058,8.7238
+PileG,Most Likely,2059,8.7944
+PileG,Most Likely,2060,8.8651
+PileG,Most Likely,2061,8.936
+PileG,Most Likely,2062,9.0071
+PileG,Most Likely,2063,9.0783
+PileG,Most Likely,2064,9.1498
+PileG,Most Likely,2065,9.2214
+PileG,Most Likely,2066,9.2933
+PileG,Most Likely,2067,9.3652
+PileG,Most Likely,2068,9.4374
+PileG,Most Likely,2069,9.5097
+PileG,Most Likely,2070,9.5821

@@ -360,9 +360,10 @@ def to_model_series(result: ImportResult) -> list[dict]:
                 depth[0] = 0.0  # brand-new pile, no inspections: start at 0mm
                 last_observed_year = int(years[0]) - 1  # i.e. "nothing is observed yet"
 
-            # Forward-fill so every row up to the last known depth has a value;
-            # annual_rate is only meaningful where two consecutive real depths exist.
-            depth = pd.Series(depth).ffill().to_numpy()
+            # Inspections are often years apart: interpolate linearly between them (a
+            # flat fill would read as zero growth followed by a jump), then hold the
+            # last value so every row has a depth.
+            depth = pd.Series(depth).interpolate(limit_area="inside").ffill().to_numpy()
             annual_rate = np.diff(depth, prepend=depth[0])
             annual_rate[0] = np.nan
 

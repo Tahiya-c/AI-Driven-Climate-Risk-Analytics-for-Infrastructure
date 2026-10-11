@@ -25,6 +25,9 @@ torch>=2.0,<3.0
 # Concrete model comparison (src/models/concrete_benchmark_all.py, --models catboost).
 catboost>=1.2,<2.0
 
+# Supabase database + file storage for imports, forecasts and flags (src/db/).
+supabase>=2,<3
+
 # .xlsx read/write for the import pipelines (src/data/timber_import.py,
 # src/data/concrete_import.py -- pd.read_excel/ExcelWriter need this engine).
 openpyxl>=3.1,<4.0

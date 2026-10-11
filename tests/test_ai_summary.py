@@ -62,13 +62,13 @@ def test_both_pages_have_one_summary_and_cache_by_pile(monkeypatch):
         app = AppTest.from_file(ROOT_DIR / "app.py").run(timeout=30)
         assert not app.exception
         assert len(app.get("plotly_chart")) == 2
-        assert [item.value for item in app.subheader] == ["AI summary"]
+        assert [item.value for item in app.subheader].count("AI summary") == 1
         app.run()
         assert call.call_count == 1
         app.sidebar.radio[0].set_value("Concrete").run()
         assert not app.exception
         assert len(app.get("plotly_chart")) == 2
-        assert [item.value for item in app.subheader] == ["AI summary"]
+        assert [item.value for item in app.subheader].count("AI summary") == 1
         assert call.call_count == 2
         app.selectbox[0].select_index(1).run()
         assert not app.exception

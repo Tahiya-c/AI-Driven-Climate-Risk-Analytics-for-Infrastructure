@@ -1,0 +1,14 @@
+asset_id,zone,wc_ratio,fc_mpa,year,carb_depth_mm
+PileG,splash,0.5,100.0,2002,3.5
+PileG,splash,0.5,100.0,2004,4.0
+PileG,splash,0.5,100.0,2006,4.3
+PileG,splash,0.5,100.0,2008,4.7
+PileG,splash,0.5,100.0,2010,4.9
+PileG,splash,0.5,100.0,2012,5.2
+PileG,splash,0.5,100.0,2014,5.4
+PileG,splash,0.5,100.0,2016,5.6
+PileG,splash,0.5,100.0,2018,5.8
+PileG,splash,0.5,100.0,2020,6.0
+PileG,splash,0.5,100.0,2022,6.1
+PileG,splash,0.5,100.0,2024,6.3
+PileG,splash,0.5,100.0,2026,6.4

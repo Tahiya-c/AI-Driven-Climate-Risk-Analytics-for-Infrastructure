@@ -1,0 +1,8 @@
+asset_id,zone,wc_ratio,fc_mpa
+PileA,splash,0.41,40.0
+PileB,atmospheric,0.37,60.0
+PileC,tidal,0.33,80.0
+PileD,splash,0.4,100.0
+PileE,atmospheric,0.6,120.0
+PileF,tidal,0.42,60.0
+PileG,splash,0.5,100.0
