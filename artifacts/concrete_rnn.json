@@ -1,0 +1,20 @@
+{
+  "model_version": "concrete_rnn_tuned_v1",
+  "model_kind": "rnn",
+  "saved_at_utc": "2026-10-11T09:17:52+00:00",
+  "trained_on": "49 series, 7 piles, years <= 2026",
+  "params": {
+    "window": 6,
+    "hidden": 14,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "library_versions": {
+    "torch": "2.14.0",
+    "scikit-learn": "1.9.0",
+    "numpy": "2.5.2"
+  }
+}

@@ -15,6 +15,12 @@ artifacts/*
 !artifacts/timber_transfer_gbm.json
 !artifacts/timber_transfer_mlp.joblib
 !artifacts/timber_transfer_mlp.json
+# Concrete models of record, same reason (src/models/concrete_saved.py). Replace only via
+# `python -m src.models.concrete_saved --save`.
+!artifacts/concrete_rnn.pt
+!artifacts/concrete_rnn.json
+!artifacts/concrete_ridge.joblib
+!artifacts/concrete_ridge.json
 catboost_info/
 
 
