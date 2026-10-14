@@ -11,7 +11,6 @@ from src.config import ROOT_DIR
 from src.db import dashboard_data
 from src.db import import_pipeline as pipeline
 from src.db import repository as repo
-from src.ui.ai_summary import render_ai_summary
 from src.visualization.charts import (
     chart_frames,
     comparison_data_from_payload,
@@ -689,7 +688,6 @@ def _render_timber_page(
             st.error(f"Could not load comparison data: {exc}")
             return
         _render_model_charts("Timber", data, [], "timber_payload")
-        render_ai_summary("Timber", data)
         return
 
     pile, flags = _pile_controls("Timber")
@@ -726,8 +724,6 @@ def _render_timber_page(
     )
 
     st.divider()
-
-    render_ai_summary("Timber", data, pile["asset_id"])
 
     with st.expander("Backend response contract"):
         st.code(
@@ -858,18 +854,6 @@ def _render_concrete_page() -> None:
 
     with dataset_export_col:
         _render_result_file_export()
-
-    # --------------------------------------------------
-    # AI summary
-    # --------------------------------------------------
-
-    st.divider()
-
-    render_ai_summary(
-        "Concrete",
-        data,
-        pile["asset_id"],
-    )
 
 
 # =========================================================
