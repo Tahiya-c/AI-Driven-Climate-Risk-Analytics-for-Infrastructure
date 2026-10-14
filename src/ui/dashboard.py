@@ -948,7 +948,7 @@ def _render_import_page() -> None:
     st.subheader("2. Upload and validate")
 
     files = st.file_uploader(
-        "Import file" + (" (select all 4 CSVs)" if material == "Timber" else " (CSV)"),
+        "Import file" + ("" if material == "Timber" else " (CSV)"),
         type=["csv"],
         accept_multiple_files=True,
         key=f"upload_{key}",
