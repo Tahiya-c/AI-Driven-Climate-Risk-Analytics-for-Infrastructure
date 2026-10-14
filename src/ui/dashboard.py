@@ -411,7 +411,7 @@ def render_dashboard(
     st.session_state.setdefault("page", "Timber")
 
     with st.sidebar:
-        st.title("⚓ Port Pile Deterioration")
+        st.title("Port Pile Deterioration")
         st.caption("Port Kembla · timber and concrete piles")
 
         page = st.radio(
