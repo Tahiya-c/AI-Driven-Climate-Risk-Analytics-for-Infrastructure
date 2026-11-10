@@ -26,3 +26,6 @@ catboost_info/
 
 data/processed/*
 !data/processed/concrete_kembla_v6_consolidated.csv
+
+# Benchmark/eval script outputs regenerated on demand (see docs/*benchmark*.md)
+/results_*.csv
