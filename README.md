@@ -1,24 +1,26 @@
 # AI-Driven Climate Risk Analytics for Infrastructure
 
-A machine-learning dashboard that forecasts how concrete and timber port piles deteriorate under different climate change scenarios, helping port infrastructure teams plan inspections and replacements ahead of failure.
+An AI-driven analytics platform that forecasts how concrete and timber seaport piles deteriorate under three climate change scenarios — **Hotter & Drier**, **Most Likely**, and **Colder & Wetter** — trained on real pile inspection and engineering data from **Port Kembla, Australia**, paired with multi-decade climate projections running through 2070. The goal is to give port infrastructure teams an evidence-based, per-asset forecast to plan inspections and replacements ahead of failure, rather than relying on fixed inspection intervals alone.
 
-This project was built as a **final year university capstone project**, developed by a four-person team over roughly a year of research, model development, and testing — from scoping the problem and the underlying engineering datasets, through iterating on multiple model architectures, to a working Streamlit dashboard backed by a Supabase database.
+This project was built as a **final year university capstone project**: a four-person team spent roughly a year taking it from first principles — scoping the problem against real engineering datasets and deterministic reference models — through benchmarking multiple model architectures per material, to a production-style Streamlit dashboard backed by a Supabase database.
 
 ## Overview
 
-Seaport piles (concrete and timber) degrade over time due to environmental exposure — salinity, sea temperature, moisture, and other climate-linked factors. Port operators traditionally rely on deterministic engineering models and manual inspection schedules to estimate when a pile needs replacing. This project explores whether machine learning surrogate models can reproduce and extend those forecasts, and presents the results through an interactive dashboard that:
+Seaport piles degrade over time due to environmental exposure — salinity, sea temperature, moisture, and other climate-linked stressors. Port operators traditionally rely on deterministic engineering models (built in the style of AS 5604) and fixed manual inspection schedules to estimate when a pile needs replacing. This project trains machine-learning surrogate models on the real Port Kembla data underlying those deterministic models, to test whether they can match or extend their forecasting power, and presents the results through an interactive dashboard that:
 
-- Visualises each pile's predicted condition over time under multiple climate scenarios (`Baseline`, `Hotter & Drier`, `Most Likely`, `Colder & Wetter`).
+- Visualises each pile's predicted condition over time under each climate scenario, spliced from historical values into a future projection.
 - Forecasts the year a pile is expected to cross its replacement threshold.
-- Lets engineers import new inspection data and compare predictions against the existing deterministic models.
+- Lets engineers import new inspection data and compare model predictions against the existing deterministic reference models.
 
 ## Key Features
 
-- **Two independent forecasting pipelines** — a concrete carbonation-depth model (RNN / Ridge / CatBoost / Random Forest, benchmarked against each other) and a timber diameter-loss model (MLP / GBM, with quantile uncertainty bands).
-- **Scenario-based forecasting** across multiple climate projections, with historical-to-future trend charts.
+- **Real-world dataset.** Trained and evaluated on genuine Port Kembla concrete and timber pile inspection/engineering records — 7 concrete piles × 7 scenario combinations (49 series) and 2 timber piles tracked across 71 years (2000–2070) under 4 scenario labels — not synthetic or toy data.
+- **Best model selected per material, not a one-size-fits-all approach.** Concrete carbonation depth is forecast with an **RNN**, chosen after being rigorously benchmarked head-to-head against **CatBoost, Random Forest, and Ridge regression** (plus a persistence baseline) on both a known-pile split and a harder leave-one-pile-out generalisation test. Timber diameter loss is forecast with a **LightGBM / MLP** comparison, with residual-correction and quantile-uncertainty variants also evaluated.
+- **Continuous regression output, not a coarse risk label.** Every model predicts an actual deterioration-rate / remaining-diameter trajectory per pile, per year, per scenario — giving engineers a real forecast curve and projected replacement year rather than a single "low/medium/high" risk class.
+- **Scenario-based forecasting** across four labelled climate trajectories (`Baseline`, `Hotter & Drier`, `Most Likely`, `Colder & Wetter`), with historical-to-future trend charts.
 - **Data import pipeline** with schema validation for uploading new concrete/timber inspection datasets (`.xlsx`/`.csv`).
-- **Supabase-backed persistence** for imported data, forecasts, and dashboard state.
-- **Reproducible evaluation** — every model is trained and scored through the same benchmarking harness, with results and methodology written up in [`docs/`](docs).
+- **Python backend** — a Streamlit dashboard, Supabase for persisted imports/forecasts/dashboard state, and a pandas/scikit-learn/PyTorch/LightGBM modelling stack with Optuna-tuned hyperparameters and SHAP-based feature importance.
+- **Reproducible evaluation** — every model is trained and scored through the same benchmarking harness, with full results and methodology written up in [`docs/`](docs).
 
 ## Tech Stack
 
